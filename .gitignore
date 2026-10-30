@@ -1,0 +1,12 @@
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+__pycache__/
+*.pyc
+scratch/
+test_*.html
+test_*.png
+presentacion/test_*.html
+presentacion/test_*.png
+docs/Propuesta_comercial_Sercotec_PatagoniaCoach (1).pdf

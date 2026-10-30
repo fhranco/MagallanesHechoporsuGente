@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Magallanes — Hecho por su gente. Directorio comercial y vitrina de productores, artesanos y servicios de la Patagonia austral. Centro de Negocios Sercotec Punta Arenas.">
+  <title>Magallanes — Hecho por su gente | Directorio Comercial Sercotec</title>
+
+  <!-- Google Fonts Homologadas (sitios.sercotec.cl): Poppins + Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+
+  <!-- Estilos del Proyecto (Tokens centralizados de sitios.sercotec.cl) -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Tailwind CSS Runtime con Tokens de Sercotec Web -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0F69B4",
+            "primary-container": "#0D5AA0",
+            "on-primary": "#FFFFFF",
+            secondary: "#EB3C46",
+            "secondary-container": "#DB303C",
+            "on-secondary": "#FFFFFF",
+            tertiary: "#103D68",
+            "tertiary-container": "#436996",
+            "on-tertiary": "#FFFFFF",
+            "surface-warm": "#FAF7F2",
+            "surface-pure": "#FFFFFF",
+            "surface-accent-blue": "#EAF3FB",
+            "text-editorial": "#20242A",
+            "structure-dark": "#58595B",
+            "on-surface-variant": "#58595B",
+            "surface-container": "#EFEDED",
+            "surface-container-low": "#F5F3F3",
+            "surface-container-high": "#E9E8E7",
+            "primary-fixed": "#D3E4FF",
+            "secondary-fixed": "#FFDAD8",
+          },
+          fontFamily: {
+            poppins: ["Poppins", "-apple-system", "sans-serif"],
+            gobcl: ["gobCL", "sans-serif"],
+            mono: ["SF Mono", "SFMono-Regular", "ui-monospace", "monospace"],
+            "display-hero": ["Poppins", "-apple-system", "sans-serif"],
+            "display-hero-mobile": ["Poppins", "-apple-system", "sans-serif"],
+            "headline-lg": ["Poppins", "-apple-system", "sans-serif"],
+            "headline-lg-mobile": ["Poppins", "-apple-system", "sans-serif"],
+            "headline-md": ["Poppins", "-apple-system", "sans-serif"],
+            "headline-sm": ["Poppins", "-apple-system", "sans-serif"],
+            "title-editorial": ["Poppins", "-apple-system", "sans-serif"],
+            "label-stamp": ["SF Mono", "SFMono-Regular", "ui-monospace", "Menlo", "Monaco", "Consolas", "monospace"],
+            "label-meta": ["SF Mono", "SFMono-Regular", "ui-monospace", "Menlo", "Monaco", "Consolas", "monospace"],
+            "body-lg": ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Manrope", "sans-serif"],
+            "body-md": ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Manrope", "sans-serif"],
+            "body-sm": ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Manrope", "sans-serif"],
+            manrope: ["Manrope", "-apple-system", "sans-serif"]
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-2xl": "4rem",
+            "margin-mobile": "1.25rem",
+            "margin-desktop": "4rem",
+            gutter: "1.5rem"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            "2xl": "1rem"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface-warm font-body-md text-text-editorial antialiased">
+  <!-- Enlace accesible de salto al contenido -->
+  <a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+  <!-- =======================================================================
+       HEADER INSTITUCIONAL Y NAVEGACIÓN
+       ======================================================================= -->
+  <header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-warm/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.06)] border-b border-text-editorial/10">
+    <!-- Topbar Institucional Oficial (sitios.sercotec.cl + gobCL) -->
+    <div class="w-full bg-[#103D68] text-white py-1.5 px-margin-mobile md:px-margin-desktop min-h-[30px] flex items-center justify-between">
+      <div class="max-w-[1440px] w-full mx-auto flex items-center justify-between text-[11px] font-gobcl tracking-wide text-white/90">
+        <div class="flex items-center gap-space-sm flex-wrap">
+          <span class="font-bold text-white tracking-wider">SERCOTEC</span>
+          <span class="text-white/40">|</span>
+          <span class="font-medium">Centro de Negocios Punta Arenas</span>
+          <span class="text-white/40">·</span>
+          <span class="hidden sm:inline text-white/80">Operado por INACAP</span>
+        </div>
+        <div class="flex items-center gap-space-md text-[11px]">
+          <span class="text-white/70 hidden md:inline">Red Territorial Magallanes</span>
+          <a class="hover:text-white transition-colors underline decoration-white/40" href="#footer-regional">Sede Punta Arenas</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra Principal de Navegación -->
+    <div class="h-[76px] max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between gap-gutter">
+      <!-- Identidad de Marca: Texto Tipográfico Oficial Magallanes Hecho por su gente -->
+      <div class="flex items-center shrink-0">
+        <a class="flex flex-col group py-1" href="index.html" aria-label="Magallanes — Hecho por su Gente">
+          <span class="font-poppins text-[20px] md:text-[23px] font-black uppercase tracking-tight text-text-editorial leading-none group-hover:text-primary transition-colors">
+            MAGALLANES
+          </span>
+          <span class="font-poppins text-[11px] md:text-[12px] text-structure-dark font-medium tracking-normal mt-1 whitespace-nowrap">
+            Hecho por su gente
+          </span>
+        </a>
+      </div>
+
+      <!-- Menú de Enlaces Desktop (Poppins Medium) -->
+      <nav class="hidden md:flex items-center gap-space-md lg:gap-space-lg shrink-0" aria-label="Navegación principal">
+        <a aria-current="page" class="transition-colors whitespace-nowrap text-primary font-bold border-b-2 border-primary pb-1 text-[13px] font-poppins" href="index.html">
+          Inicio
+        </a>
+        <a class="text-[13px] font-medium text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1 font-poppins" href="directorio_de_negocios_de_magallanes_desktop/code.html">
+          Directorio
+        </a>
+        <a class="text-[13px] font-medium text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1 font-poppins" href="tu_historia_me_inspira_cr_nicas_regionales/code.html">
+          Historias
+        </a>
+        <a class="text-[13px] font-medium text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1 font-poppins" href="aprende_a_emprender_blog_de_contenidos/code.html">
+          Blog
+        </a>
+        <a class="text-[13px] font-medium text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1 font-poppins" href="agenda_del_centro_de_negocios_talleres_y_actividades/code.html">
+          Agenda
+        </a>
+      </nav>
+
+      <!-- Buscador Amplio y Botón Buscar -->
+      <div class="flex items-center gap-space-sm">
+        <form action="directorio_de_negocios_de_magallanes_desktop/code.html" method="GET" class="relative hidden lg:block">
+          <input aria-label="Buscar emprendimiento o rubro" class="w-64 xl:w-72 pl-9 pr-3 py-2 text-body-sm bg-surface-pure border border-text-editorial/20 rounded text-text-editorial placeholder:text-structure-dark/70 focus:outline-none focus:border-primary transition-all shadow-sm" id="header-search-input" name="q" placeholder="Buscar negocio o producto..." type="search">
+          <span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-structure-dark pointer-events-none">search</span>
+        </form>
+
+        <button aria-label="Abrir buscador" class="lg:hidden w-9 h-9 flex items-center justify-center rounded-full hover:bg-black/5 text-text-editorial transition-colors border-none" id="header-search-btn" type="button">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+        </button>
+
+        <!-- Botón Buscar en vez de Explorar catálogo -->
+        <a class="hidden sm:inline-flex items-center justify-center gap-1.5 bg-secondary hover:bg-secondary-container text-white text-[13px] font-semibold px-5 py-2.5 rounded shadow-sm transition-all whitespace-nowrap active:scale-[0.98] font-poppins" href="directorio_de_negocios_de_magallanes_desktop/code.html">
+          <span class="material-symbols-outlined text-[16px]">search</span>
+          <span>Buscar</span>
+        </a>
+
+        <!-- Botón Menú Hamburguesa Mobile -->
+        <button aria-label="Abrir menú de navegación" aria-expanded="false" class="md:hidden w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container text-text-editorial transition-colors" id="mobile-menu-btn" type="button">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div class="hidden md:hidden bg-surface-pure border-b border-text-editorial/10 px-6 py-4 space-y-3 font-poppins" id="mobile-nav-drawer" aria-hidden="true">
+      <a class="block text-[14px] font-bold text-primary py-1" href="index.html">Inicio</a>
+      <a class="block text-[14px] font-medium text-text-editorial py-1" href="directorio_de_negocios_de_magallanes_desktop/code.html">Directorio</a>
+      <a class="block text-[14px] font-medium text-text-editorial py-1" href="tu_historia_me_inspira_cr_nicas_regionales/code.html">Historias</a>
+      <a class="block text-[14px] font-medium text-text-editorial py-1" href="aprende_a_emprender_blog_de_contenidos/code.html">Blog</a>
+      <a class="block text-[14px] font-medium text-text-editorial py-1" href="agenda_del_centro_de_negocios_talleres_y_actividades/code.html">Agenda</a>
+      <div class="pt-2">
+        <a class="w-full flex items-center justify-center gap-1.5 bg-secondary text-white text-[13px] font-semibold py-2.5 rounded shadow-sm" href="directorio_de_negocios_de_magallanes_desktop/code.html">
+          <span class="material-symbols-outlined text-[16px]">search</span>
+          <span>Buscar</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       CONTENIDO PRINCIPAL (MAIN)
+       ======================================================================= -->
+  <main id="main-content" class="w-full pt-[102px]">
+    
+    <!-- SECCIÓN 1: HERO EDITORIAL CON BÚSQUEDA Y COMPOSICIÓN DOCUMENTAL -->
+    <section class="relative w-full bg-surface-warm overflow-hidden pb-space-2xl">
+      <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pt-space-xl lg:pt-space-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+          
+          <!-- Columna Izquierda: Mensaje y Buscador Territorial -->
+          <div class="lg:col-span-7 flex flex-col z-10">
+            <div class="flex items-center gap-space-sm mb-space-sm flex-wrap">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-secondary text-white rounded font-mono text-[11px] uppercase tracking-wider font-bold">
+                DIRECTORIO PRODUCTIVO
+              </span>
+              <span class="font-mono text-[11px] text-structure-dark uppercase tracking-wider font-semibold">
+                MAGALLANES &amp; ANTÁRTICA CHILENA
+              </span>
+            </div>
+
+            <h1 class="font-poppins text-[36px] sm:text-[44px] lg:text-[54px] text-text-editorial tracking-tight uppercase leading-[1.05] mb-space-md font-bold">
+              LO QUE BUSCAS,<br>
+              <span class="text-secondary font-black tracking-tight block my-0.5">ALGUIEN DE AQUÍ</span>
+              LO HACE.
+            </h1>
+
+            <p class="font-body-lg text-[16px] sm:text-[18px] text-structure-dark max-w-xl mb-space-lg leading-relaxed">
+              Plataforma de articulación comercial y vitrina territorial. Conecta en forma directa y sin comisiones con productores, talleres de autor y servicios de toda la Patagonia austral.
+            </p>
+
+            <!-- Motor de Búsqueda Territorial Integrado con borde destacado -->
+            <div class="w-full max-w-2xl bg-surface-pure rounded-xl p-2.5 sm:p-space-sm shadow-[0_14px_36px_rgba(16,61,104,0.12)] mb-space-md border-2 border-[#103D68]/20 hover:border-[#103D68]/40 transition-colors">
+              <form id="hero-search-form" action="directorio_de_negocios_de_magallanes_desktop/code.html" class="flex flex-col sm:flex-row gap-space-xs" method="GET">
+                <div class="flex-1 relative flex items-center border border-text-editorial/10 rounded-lg sm:border-transparent">
+                  <span class="material-symbols-outlined absolute left-3 text-[#103D68]" aria-hidden="true">search</span>
+                  <input class="w-full pl-10 pr-3 py-3 bg-transparent text-text-editorial font-body-md placeholder:text-structure-dark/60 focus:outline-none" name="q" placeholder="Buscar productos o servicios..." type="text" aria-label="Término de búsqueda de producto o negocio">
+                </div>
+
+                <div class="sm:w-48 relative flex items-center bg-surface-container-low rounded-lg px-2 border border-text-editorial/10 sm:border-transparent">
+                  <span class="material-symbols-outlined text-[#103D68] text-[20px] ml-1" aria-hidden="true">location_on</span>
+                  <select class="w-full py-3 pl-1 pr-6 bg-transparent text-body-sm font-semibold text-text-editorial appearance-none focus:outline-none cursor-pointer" name="comuna" aria-label="Seleccionar comuna">
+                    <option value="">Toda la Región</option>
+                    <option value="punta-arenas">Punta Arenas</option>
+                    <option value="puerto-natales">Puerto Natales</option>
+                    <option value="porvenir">Porvenir</option>
+                    <option value="cabo-de-hornos">Cabo de Hornos</option>
+                    <option value="torres-del-paine">Torres del Paine</option>
+                    <option value="primavera">Primavera</option>
+                    <option value="timaukel">Timaukel</option>
+                  </select>
+                  <span class="material-symbols-outlined absolute right-2 text-structure-dark pointer-events-none text-[18px]" aria-hidden="true">expand_more</span>
+                </div>
+
+                <button class="bg-primary hover:bg-primary-container text-on-primary font-poppins text-[14px] uppercase tracking-wider px-6 py-3 rounded-lg flex items-center justify-center gap-2 transition-all shadow-md active:scale-95 font-bold" type="submit">
+                  <span>Buscar</span>
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </button>
+              </form>
+            </div>
+
+            <!-- Chips de Rutas Rápidas estrictamente con paleta del Manual de Marca (Pág. 9) -->
+            <div class="flex flex-wrap items-center gap-2 pt-0.5">
+              <span class="font-mono text-[10px] text-[#58595B] uppercase tracking-wider mr-1 font-bold">Rutas rápidas:</span>
+              <a class="px-3.5 py-1.5 bg-white border border-[#787878]/30 text-[#58595B] font-semibold rounded-full hover:border-[#0F69B4] hover:text-[#0F69B4] hover:bg-[#0F69B4]/5 transition-all text-[12px] shadow-sm flex items-center gap-1.5" href="directorio_de_negocios_de_magallanes_desktop/code.html?rubro=artesania">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#787878]"></span>
+                Lana &amp; Madera
+              </a>
+              <a class="px-3.5 py-1.5 bg-white border border-[#787878]/30 text-[#58595B] font-semibold rounded-full hover:border-[#EB3C46] hover:text-[#EB3C46] hover:bg-[#EB3C46]/5 transition-all text-[12px] shadow-sm flex items-center gap-1.5" href="directorio_de_negocios_de_magallanes_desktop/code.html?rubro=gourmet">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#787878]"></span>
+                Ahumados &amp; Ruibarbo
+              </a>
+              <a class="px-3.5 py-1.5 bg-white border border-[#787878]/30 text-[#58595B] font-semibold rounded-full hover:border-[#0F69B4] hover:text-[#0F69B4] hover:bg-[#0F69B4]/5 transition-all text-[12px] shadow-sm flex items-center gap-1.5" href="directorio_de_negocios_de_magallanes_desktop/code.html?rubro=turismo">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#787878]"></span>
+                Guías Locales
+              </a>
+              <a class="px-3.5 py-1.5 bg-[#0F69B4]/10 border border-[#0F69B4]/40 text-[#0F69B4] font-bold rounded-full hover:bg-[#0F69B4] hover:text-white transition-all text-[12px] shadow-sm flex items-center gap-1.5" href="directorio_de_negocios_de_magallanes_desktop/code.html?tipo=b2b">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0F69B4]"></span>
+                Proveedores B2B
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Composición Collage Troquelado Oficial con Sello de Asesoría Sercotec + Washi Tape y Carisma -->
+          <div class="lg:col-span-5 relative flex flex-col items-center justify-center mt-space-lg lg:mt-0 select-none">
+            <!-- Sello Vintage Flotante -->
+            <div class="absolute -top-6 -right-2 z-20 ink-stamp -rotate-6 shadow-xs hidden sm:inline-flex">
+              <span class="text-[9px] text-[#EB3C46] tracking-widest font-mono">SELLO REGIONAL</span>
+              <span class="text-[12px] font-black text-[#EB3C46]">100% HECHO A MANO</span>
+              <span class="text-[8px] text-[#EB3C46]/80 font-mono">MAGALLANES 2026</span>
+            </div>
+
+            <div class="relative w-full max-w-[480px] lg:max-w-[540px] flex items-center justify-center washi-tape">
+              <img src="assets/images/home/hero_collage_diecut.webp" 
+                   alt="Composición oficial de oficios y productores regionales con marco sticker troquelado y sello Proyecto Asesorado por Centro de Negocios Sercotec Punta Arenas" 
+                   class="w-full h-auto object-contain drop-shadow-[0_18px_36px_rgba(16,61,104,0.14)] transition-transform duration-300 hover:scale-[1.02]"
+                   loading="eager">
+            </div>
+
+            <!-- Apunte Manuscrito Cálido -->
+            <div class="mt-4 flex items-center justify-between w-full max-w-[480px] px-3">
+              <span class="font-mono text-[11px] text-[#58595B] flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                Conexión directa por WhatsApp
+              </span>
+              <span class="font-handwritten text-[21px] text-[#0F69B4] font-bold -rotate-1 flex items-center gap-1">
+                «¡Sin comisiones ni intermediarios!»
+                <span class="text-[#EB3C46] text-[16px]">♥</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MARQUESINA INFINITA DE EMPRENDEDORES REGIONALES (TICKER SIN FIN) -->
+      <div class="w-full mt-space-xl pt-3 pb-2 border-y border-text-editorial/10 bg-white/70 backdrop-blur-sm">
+        <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-1.5 flex items-center">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-[#EB3C46] animate-pulse"></span>
+            <span class="font-mono text-[10px] uppercase tracking-wider text-[#58595B] font-bold">
+              Productores y talleres destacados de Magallanes
+            </span>
+          </div>
+        </div>
+
+        <div class="marquee-container marquee-fade-edges py-2">
+          <div class="marquee-track">
+            <!-- Set 1: Fichas de Emprendedores -->
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=telar" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group">
+              <img src="assets/images/home/img_01.jpg" alt="Tejidos Australes Porvenir" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Tejidos Australes</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Lana virgen · Porvenir</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#0F69B4]/10 text-[#0F69B4] font-bold px-2 py-0.5 rounded-full ml-1">Tierra del Fuego</span>
+            </a>
+
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=calafate" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group">
+              <img src="assets/images/home/img_02.jpg" alt="Sabor Natales Conservas" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Conservas del Estrecho</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Calafate &amp; Ruibarbo · Natales</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#EB3C46]/10 text-[#EB3C46] font-bold px-2 py-0.5 rounded-full ml-1">Última Esperanza</span>
+            </a>
+
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=lenga" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group">
+              <img src="assets/images/home/img_03.jpg" alt="Taller Lenga Fuego" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Taller Lenga Sur</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Tornería de autor · Punta Arenas</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#0F69B4]/10 text-[#0F69B4] font-bold px-2 py-0.5 rounded-full ml-1">Magallanes</span>
+            </a>
+
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=chocolate" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group">
+              <img src="assets/images/home/img_04.jpg" alt="Chocolatería Austral" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Chocolates Kau</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Cacao &amp; frutos nativos · Punta Arenas</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#58595B]/10 text-[#58595B] font-bold px-2 py-0.5 rounded-full ml-1">Gourmet</span>
+            </a>
+
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=orfebreria" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group">
+              <img src="assets/images/home/img_05.jpg" alt="Joyería Selk'nam" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Orfebrería Antártica</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Plata &amp; fósiles · Cabo de Hornos</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#0F69B4]/10 text-[#0F69B4] font-bold px-2 py-0.5 rounded-full ml-1">Antártica Chilena</span>
+            </a>
+
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=cerveza" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group">
+              <img src="assets/images/home/img_06.jpg" alt="Cervecería de la Patagonia" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Cerveza Hernando</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Agua de deshielo · Natales</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#EB3C46]/10 text-[#EB3C46] font-bold px-2 py-0.5 rounded-full ml-1">Última Esperanza</span>
+            </a>
+
+            <!-- Set 2: Duplicado idéntico para crear bucle sin fin (Infinite seamless loop) -->
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=telar" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group" aria-hidden="true">
+              <img src="assets/images/home/img_01.jpg" alt="Tejidos Australes Porvenir" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Tejidos Australes</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Lana virgen · Porvenir</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#0F69B4]/10 text-[#0F69B4] font-bold px-2 py-0.5 rounded-full ml-1">Tierra del Fuego</span>
+            </a>
+
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=calafate" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group" aria-hidden="true">
+              <img src="assets/images/home/img_02.jpg" alt="Sabor Natales Conservas" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Conservas del Estrecho</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Calafate &amp; Ruibarbo · Natales</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#EB3C46]/10 text-[#EB3C46] font-bold px-2 py-0.5 rounded-full ml-1">Última Esperanza</span>
+            </a>
+
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=lenga" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group" aria-hidden="true">
+              <img src="assets/images/home/img_03.jpg" alt="Taller Lenga Fuego" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Taller Lenga Sur</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Tornería de autor · Punta Arenas</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#0F69B4]/10 text-[#0F69B4] font-bold px-2 py-0.5 rounded-full ml-1">Magallanes</span>
+            </a>
+
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=chocolate" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group" aria-hidden="true">
+              <img src="assets/images/home/img_04.jpg" alt="Chocolatería Austral" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Chocolates Kau</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Cacao &amp; frutos nativos · Punta Arenas</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#58595B]/10 text-[#58595B] font-bold px-2 py-0.5 rounded-full ml-1">Gourmet</span>
+            </a>
+
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=orfebreria" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group" aria-hidden="true">
+              <img src="assets/images/home/img_05.jpg" alt="Joyería Selk'nam" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Orfebrería Antártica</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Plata &amp; fósiles · Cabo de Hornos</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#0F69B4]/10 text-[#0F69B4] font-bold px-2 py-0.5 rounded-full ml-1">Antártica Chilena</span>
+            </a>
+
+            <a href="directorio_de_negocios_de_magallanes_desktop/code.html?q=cerveza" class="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-text-editorial/10 shadow-sm hover:border-[#0F69B4] hover:shadow-md transition-all shrink-0 group" aria-hidden="true">
+              <img src="assets/images/home/img_06.jpg" alt="Cervecería de la Patagonia" class="w-8 h-8 rounded-full object-cover border border-[#0F69B4]/30">
+              <div class="flex flex-col text-left">
+                <span class="font-poppins text-[13px] font-semibold text-text-editorial leading-none group-hover:text-[#0F69B4] transition-colors">Cerveza Hernando</span>
+                <span class="font-body-md text-[11px] text-[#58595B]">Agua de deshielo · Natales</span>
+              </div>
+              <span class="font-mono text-[9px] bg-[#EB3C46]/10 text-[#EB3C46] font-bold px-2 py-0.5 rounded-full ml-1">Última Esperanza</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: MOSAICO LOOKBOOK - EXPLORA POR RUBROS PRODUCTIVOS -->
+    <section class="w-full bg-surface-pure py-space-2xl border-t border-text-editorial/5">
+      <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+          <div>
+            <span class="font-mono text-[10px] text-primary uppercase tracking-widest block mb-space-xs font-bold">
+              CURATORÍA DE OFICIOS Y PRODUCCIÓN LOCAL
+            </span>
+            <h2 class="font-poppins text-[26px] sm:text-[32px] lg:text-[38px] uppercase text-text-editorial tracking-tight font-bold">
+              EXPLORA POR RUBROS PRODUCTIVOS
+            </h2>
+          </div>
+          <p class="font-body-md text-structure-dark max-w-md mt-space-sm md:mt-0">
+            Una vitrina viva que organiza el trabajo regional en categorías claras para comprar con identidad territorial.
+          </p>
+        </div>
+
+        <!-- Cuadrícula Asimétrica Lookbook (5 Rubros + Banner B2B) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
+          <!-- Card 1: Para Comer (7 cols) -->
+          <a class="lg:col-span-7 group relative h-80 lg:h-96 rounded-xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-lg text-white transition-all duration-300 hover:shadow-2xl" href="directorio_de_negocios_de_magallanes_desktop/code.html?categoria=para-comer">
+            <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Gastronomía y productos gourmet de Magallanes" src="assets/images/home/img_04.jpg" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-text-editorial/95 via-text-editorial/40 to-transparent"></div>
+            <div class="relative z-10">
+              <span class="font-mono text-[10px] uppercase tracking-wider text-[#FFDAD8] mb-1 block font-bold">
+                <!-- [DEMO DATA: PENDIENTE SUSTITUCIÓN OFICIAL] -->
+                34 EMPRENDIMIENTOS ACTIVOS
+              </span>
+              <h3 class="font-poppins text-[22px] lg:text-[26px] uppercase font-bold text-white group-hover:text-primary-fixed transition-colors">
+                Para Comer &amp; Beber
+              </h3>
+              <p class="font-body-sm text-[13px] text-surface-container-high max-w-md mt-1 opacity-90">
+                Conservas de centolla, mermeladas de ruibarbo silvestre, ahumados tradicionales y cervezas del fin del mundo.
+              </p>
+            </div>
+          </a>
+
+          <!-- Card 2: Hecho a Mano (5 cols) -->
+          <a class="lg:col-span-5 group relative h-80 lg:h-96 rounded-xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-lg text-white transition-all duration-300 hover:shadow-2xl" href="directorio_de_negocios_de_magallanes_desktop/code.html?categoria=hecho-a-mano">
+            <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Artesanía y piezas hechas a mano en Patagonia" src="assets/images/home/img_05.jpg" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-text-editorial/95 via-text-editorial/40 to-transparent"></div>
+            <div class="relative z-10">
+              <span class="font-mono text-[10px] uppercase tracking-wider text-[#FFDAD8] mb-1 block font-bold">
+                <!-- [DEMO DATA: PENDIENTE SUSTITUCIÓN OFICIAL] -->
+                48 ARTESANOS REGISTRADOS
+              </span>
+              <h3 class="font-poppins text-[22px] lg:text-[26px] uppercase font-bold text-white group-hover:text-primary-fixed transition-colors">
+                Hecho a Mano
+              </h3>
+              <p class="font-body-sm text-[13px] text-surface-container-high max-w-sm mt-1 opacity-90">
+                Tejido a telar en pura lana merino, orfebrería austral, cerámica escultórica y cestería yagán.
+              </p>
+            </div>
+          </a>
+
+          <!-- Card 3: Para Regalar y Comprar (4 cols) -->
+          <a class="lg:col-span-4 group relative h-72 rounded-xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-md text-white transition-all duration-300 hover:shadow-xl" href="directorio_de_negocios_de_magallanes_desktop/code.html?categoria=regalar-y-comprar">
+            <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Regalos y recuerdos con identidad patagónica" src="assets/images/home/img_06.jpg" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-text-editorial/95 via-text-editorial/40 to-transparent"></div>
+            <div class="relative z-10">
+              <span class="font-mono text-[10px] uppercase tracking-wider text-[#FFDAD8] mb-0.5 block font-bold">Identidad &amp; Diseño</span>
+              <h3 class="font-poppins text-[18px] uppercase font-bold text-white group-hover:text-primary-fixed transition-colors">
+                Para Regalar y Comprar
+              </h3>
+              <p class="font-body-sm text-[13px] text-surface-container-high mt-1 line-clamp-2">
+                Kits con sello de origen austral y souvenirs con auténtica memoria patagónica.
+              </p>
+            </div>
+          </a>
+
+          <!-- Card 4: Para Explorar (4 cols) -->
+          <a class="lg:col-span-4 group relative h-72 rounded-xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-md text-white transition-all duration-300 hover:shadow-xl" href="directorio_de_negocios_de_magallanes_desktop/code.html?categoria=para-explorar">
+            <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Guías y experiencias turísticas con arraigo en Magallanes" src="assets/images/home/img_07.jpg" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-text-editorial/95 via-text-editorial/40 to-transparent"></div>
+            <div class="relative z-10">
+              <span class="font-mono text-[10px] uppercase tracking-wider text-[#FFDAD8] mb-0.5 block font-bold">Turismo con Arraigo</span>
+              <h3 class="font-poppins text-[18px] uppercase font-bold text-white group-hover:text-primary-fixed transition-colors">
+                Para Explorar
+              </h3>
+              <p class="font-body-sm text-[13px] text-surface-container-high mt-1 line-clamp-2">
+                Rutas patrimoniales, navegaciones en fiordos y experiencias de agroturismo fueguino.
+              </p>
+            </div>
+          </a>
+
+          <!-- Card 5: Servicios y Oficios (4 cols) -->
+          <a class="lg:col-span-4 group relative h-72 rounded-xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-md text-white transition-all duration-300 hover:shadow-xl" href="directorio_de_negocios_de_magallanes_desktop/code.html?categoria=servicios-y-oficios">
+            <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Talleres de oficios técnicos y servicios en Magallanes" src="assets/images/home/img_08.jpg" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-text-editorial/95 via-text-editorial/40 to-transparent"></div>
+            <div class="relative z-10">
+              <span class="font-mono text-[10px] uppercase tracking-wider text-[#FFDAD8] mb-0.5 block font-bold">Capacidad Técnica</span>
+              <h3 class="font-poppins text-[18px] uppercase font-bold text-white group-hover:text-primary-fixed transition-colors">
+                Servicios y Oficios
+              </h3>
+              <p class="font-body-sm text-[13px] text-surface-container-high mt-1 line-clamp-2">
+                Restauración, carpintería bioclimática, diseño y asesoría profesional en terreno.
+              </p>
+            </div>
+          </a>
+
+          <!-- Banner Horizontal Integrado: Proveedores B2B (12 cols) -->
+          <div class="lg:col-span-12 bg-surface-accent-blue rounded-xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-gutter shadow-sm border border-primary/10">
+            <div class="flex items-center gap-space-md">
+              <div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[26px]" aria-hidden="true">corporate_fare</span>
+              </div>
+              <div>
+                <span class="font-mono text-[10px] uppercase text-primary tracking-wider block font-bold">COMPRAS INSTITUCIONALES &amp; MAYORISTAS</span>
+                <h4 class="font-poppins text-[16px] sm:text-[18px] uppercase text-text-editorial font-bold">
+                  ¿Buscas proveedores calificados con resolución y capacidad de escala regional?
+                </h4>
+              </div>
+            </div>
+            <a class="shrink-0 inline-flex items-center gap-2 bg-text-editorial text-on-primary hover:bg-primary px-5 py-2.5 rounded font-poppins text-[12px] uppercase tracking-wider transition-colors font-bold" href="directorio_de_negocios_de_magallanes_desktop/code.html?filtro=b2b">
+              <span>Acceder a Vitrina B2B</span>
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: TU HISTORIA ME INSPIRA (CRÓNICAS REGIONALES) -->
+    <section class="w-full bg-surface-warm py-space-2xl border-t border-text-editorial/5">
+      <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+        <!-- Encabezado de Sección Editorial -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+          <div>
+            <span class="font-mono text-[10px] text-secondary uppercase tracking-widest block mb-space-xs font-bold">
+              EMPRENDIMIENTO DE LA SEMANA
+            </span>
+            <h2 class="font-poppins text-[26px] sm:text-[32px] lg:text-[38px] uppercase text-text-editorial tracking-tight font-bold">
+              TU HISTORIA ME INSPIRA
+            </h2>
+          </div>
+          <p class="font-body-md text-structure-dark max-w-lg mt-space-sm md:mt-0">
+            Detrás de cada emprendimiento hay una persona, una idea y una historia que merece ser contada.
+          </p>
+        </div>
+
+        <!-- Tarjeta Editorial de Gran Formato Asimétrica -->
+        <div class="bg-surface-pure rounded-2xl shadow-[0_16px_40px_rgba(16,61,104,0.06)] overflow-hidden border border-text-editorial/5">
+          <div class="grid grid-cols-1 lg:grid-cols-12">
+            <!-- Imagen de Don Osvaldo Calbún en su taller -->
+            <div class="lg:col-span-7 relative min-h-[380px] lg:min-h-[500px]">
+              <img class="w-full h-full object-cover" alt="Retrato documental de Don Osvaldo Calbún, maestro tornero en madera de lenga caída en Punta Arenas" src="assets/images/home/img_09.jpg" loading="lazy">
+              </div>
+
+            <!-- Relato Humano y Llamados a la Acción -->
+            <div class="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 text-secondary mb-space-sm">
+                  <span class="material-symbols-outlined text-[20px]" aria-hidden="true">auto_stories</span>
+                  <span class="font-mono text-[10px] uppercase tracking-wider font-bold">RELATO DE ARRAIGO</span>
+                </div>
+
+                <h3 class="font-poppins text-[22px] lg:text-[26px] uppercase text-text-editorial tracking-tight mb-space-xs font-bold">
+                  Don Osvaldo Calbún
+                </h3>
+                <p class="font-poppins text-[15px] text-primary font-semibold mb-space-md">
+                  Artesanías El Calafate
+                </p>
+
+                <blockquote class="font-body-lg text-[15px] lg:text-[16px] text-text-editorial italic leading-relaxed pl-space-md bg-surface-container-low/70 py-space-sm rounded-r-lg mb-space-md border-l-4 border-primary">
+                  “Nunca he volteado un árbol vivo. La Patagonia tiene sus propios ciclos: el viento derriba la lenga y el ciruelillo, y mi tarea en el torno es simplemente devolverle la vida en forma de platos, mates y cuencos que duren cien años.”
+                </blockquote>
+
+                <p class="font-body-md text-structure-dark mb-space-lg leading-relaxed text-[14px]">
+                  Con más de 30 años habitando el oficio de la tornería en Punta Arenas, Osvaldo rescata maderas muertas de estancias fueguinas. Cada pieza contiene las vetas y tempestades del clima austral, combinando diseño utilitario con respeto irrestricto por el bosque nativo.
+                </p>
+              </div>
+
+              <!-- Botones y Enlaces a Crónica Completa -->
+              <div class="pt-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md border-t border-text-editorial/10">
+                <a class="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary-container text-white px-6 py-3 rounded-lg font-poppins text-[13px] uppercase tracking-wider transition-all shadow-md active:scale-95 font-bold" href="ficha_individual_de_negocio_artesan_as_el_calafate_desktop/code.html">
+                  <span>Conoce su historia</span>
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+                <a class="inline-flex items-center gap-1.5 text-primary hover:text-primary-container font-mono text-[11px] uppercase tracking-wider group transition-colors font-bold" href="tu_historia_me_inspira_cr_nicas_regionales/code.html">
+                  <span>Ver todas las historias</span>
+                  <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" aria-hidden="true">north_east</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: BLOQUE AZUL PROFUNDO B2B (PROVEEDORES LOCALES) -->
+    <section class="w-full bg-[#103D68] text-white py-space-2xl">
+      <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+          
+          <div class="lg:col-span-6 space-y-space-md">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-pure/10 rounded font-mono text-[10px] uppercase tracking-wider text-[#D3E4FF] font-bold">
+              <span class="material-symbols-outlined text-[15px]" aria-hidden="true">verified_user</span>
+              ENCADENAMIENTO PRODUCTIVO SOSTENIBLE
+            </div>
+
+            <h2 class="font-poppins text-[26px] sm:text-[32px] lg:text-[38px] uppercase text-white tracking-tight leading-[1.08] font-bold">
+              TU PRÓXIMO PROVEEDOR PUEDE ESTAR MUCHO MÁS CERCA.
+            </h2>
+
+            <p class="font-body-lg text-[#D3E4FF]/90 leading-relaxed text-[16px]">
+              Las empresas de Magallanes cuentan con resoluciones sanitarias vigentes, capacidad de volumen y logística adaptada a las complejidades del territorio insular y continental. Reduzca huella de carbono y potencie la economía local.
+            </p>
+
+            <div class="grid grid-cols-3 gap-space-sm pt-space-xs text-left">
+              <div class="p-3 bg-surface-pure/5 rounded-lg border border-white/10">
+                <span class="font-poppins text-[26px] sm:text-[30px] font-bold text-white block">100%</span>
+                <span class="font-mono text-[10px] text-[#D3E4FF]">Resolución Sanitaria</span>
+              </div>
+              <div class="p-3 bg-surface-pure/5 rounded-lg border border-white/10">
+                <span class="font-poppins text-[26px] sm:text-[30px] font-bold text-white block">4</span>
+                <span class="font-mono text-[10px] text-[#D3E4FF]">Provincias Activas</span>
+              </div>
+              <div class="p-3 bg-surface-pure/5 rounded-lg border border-white/10">
+                <span class="font-poppins text-[26px] sm:text-[30px] font-bold text-white block">Directo</span>
+                <span class="font-mono text-[10px] text-[#D3E4FF]">Sin Intermediarios</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 flex flex-col gap-space-sm mt-space-lg lg:mt-0">
+            <!-- Card B2B Preview 1 -->
+            <div class="bg-surface-pure text-text-editorial p-space-md rounded-xl shadow-lg flex items-center justify-between gap-space-sm">
+              <div class="flex items-center gap-space-sm">
+                <div class="w-12 h-12 rounded-lg bg-surface-accent-blue text-primary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[24px]" aria-hidden="true">package_2</span>
+                </div>
+                <div>
+                  <span class="font-mono text-[10px] text-primary uppercase font-bold">ALIMENTOS &amp; MATERIAS PRIMAS</span>
+                  <h4 class="font-poppins text-[15px] sm:text-[16px] font-bold">
+                    <!-- [DEMO DATA: PENDIENTE SUSTITUCIÓN OFICIAL] -->
+                    Distribución Agropecuaria Tierra del Fuego
+                  </h4>
+                  <p class="font-body-sm text-[12px] text-structure-dark">Capacidad mayorista en cortes ovinos y hortalizas bajo cubierta.</p>
+                </div>
+              </div>
+              <a class="shrink-0 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-text-editorial hover:bg-primary hover:text-white transition-colors" href="directorio_de_negocios_de_magallanes_desktop/code.html?tipo=b2b" aria-label="Ver ficha de Distribución Agropecuaria">
+                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Card B2B Preview 2 -->
+            <div class="bg-surface-pure text-text-editorial p-space-md rounded-xl shadow-lg flex items-center justify-between gap-space-sm">
+              <div class="flex items-center gap-space-sm">
+                <div class="w-12 h-12 rounded-lg bg-surface-accent-blue text-primary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[24px]" aria-hidden="true">local_shipping</span>
+                </div>
+                <div>
+                  <span class="font-mono text-[10px] text-primary uppercase font-bold">LOGÍSTICA &amp; SUMINISTROS</span>
+                  <h4 class="font-poppins text-[15px] sm:text-[16px] font-bold">
+                    <!-- [DEMO DATA: PENDIENTE SUSTITUCIÓN OFICIAL] -->
+                    Servicios Industriales Cabo de Hornos
+                  </h4>
+                  <p class="font-body-sm text-[12px] text-structure-dark">Abastecimiento marítimo y apoyo logístico antártico permanente.</p>
+                </div>
+              </div>
+              <a class="shrink-0 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-text-editorial hover:bg-primary hover:text-white transition-colors" href="directorio_de_negocios_de_magallanes_desktop/code.html?tipo=b2b" aria-label="Ver ficha de Servicios Industriales">
+                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+
+            <div class="pt-space-xs text-right">
+              <a class="inline-flex items-center gap-2 text-[#D3E4FF] hover:text-white font-mono text-[10px] uppercase tracking-wider transition-colors font-bold" href="directorio_de_negocios_de_magallanes_desktop/code.html?filtro=b2b">
+                <span>Explorar catálogo completo para empresas e instituciones</span>
+                <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: APRENDE A EMPRENDER (BLOG DE CONTENIDOS) -->
+    <section class="w-full bg-surface-pure py-space-2xl border-t border-text-editorial/5">
+      <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+        <!-- Encabezado de Sección -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+          <div>
+            <span class="font-mono text-[10px] text-primary uppercase tracking-widest block mb-space-xs font-bold">
+              BLOG DE EMPRENDIMIENTO
+            </span>
+            <h2 class="font-poppins text-[26px] sm:text-[32px] lg:text-[38px] uppercase text-text-editorial tracking-tight font-bold">
+              APRENDE A EMPRENDER
+            </h2>
+          </div>
+          <p class="font-body-md text-structure-dark max-w-lg mt-space-sm md:mt-0">
+            Ideas, herramientas y conocimientos prácticos para fortalecer y hacer crecer tu negocio.
+          </p>
+        </div>
+
+        <!-- Cuadrícula de 3 Artículos: 1 Principal + 2 Secundarios -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl">
+          <!-- Artículo Principal (7 cols) -->
+          <article class="lg:col-span-7 bg-surface-warm rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group transition-all hover:shadow-xl border border-text-editorial/5">
+            <div class="relative h-64 sm:h-80 overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Artesana fotografiando prendas con tablet para su catálogo digital en Magallanes" src="assets/images/home/img_10.jpg" loading="lazy">
+              </div>
+            <div class="p-space-lg flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-space-sm text-structure-dark font-mono text-[11px] mb-2 font-medium">
+                  <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]" aria-hidden="true">schedule</span> 6 min lectura</span>
+                  <span>·</span>
+                  <span>Punta Arenas &amp; Provincias</span>
+                </div>
+                <h3 class="font-poppins text-[19px] lg:text-[21px] uppercase text-text-editorial font-bold leading-snug group-hover:text-primary transition-colors mb-space-xs">
+                  <a href="aprende_a_emprender_blog_de_contenidos/code.html">
+                    <!-- [DEMO DATA: PENDIENTE SUSTITUCIÓN OFICIAL] -->
+                    Del taller al mundo: Cómo los artesanos del fin del mundo están digitalizando sus vitrinas sin perder su esencia humana
+                  </a>
+                </h3>
+                <p class="font-body-md text-structure-dark line-clamp-3 mb-space-md text-[14px] leading-relaxed">
+                  Exploramos las estrategias concretas con que creadores de Puerto Natales, Porvenir y Punta Arenas conectan con mercados internacionales mientras preservan sus métodos manuales intactos.
+                </p>
+              </div>
+              <a class="inline-flex items-center gap-2 text-primary font-poppins text-[13px] uppercase tracking-wider group-hover:underline font-bold" href="aprende_a_emprender_blog_de_contenidos/code.html">
+                <span>Leer artículo completo</span>
+                <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Artículos Secundarios (5 cols) -->
+          <div class="lg:col-span-5 flex flex-col gap-gutter justify-between">
+            <!-- Secundario 1 -->
+            <article class="bg-surface-warm rounded-2xl p-space-lg shadow-sm flex flex-col justify-between group transition-all hover:shadow-lg flex-1 border border-text-editorial/5">
+              <div>
+                <div class="flex items-center justify-between mb-space-xs">
+                  <span class="px-2.5 py-0.5 bg-surface-container text-text-editorial rounded font-mono text-[10px] uppercase tracking-wider font-bold">
+                    GUÍA EMPRENDEDORA
+                  </span>
+                  <span class="text-structure-dark font-mono text-[10px] flex items-center gap-1 font-medium">
+                    <span class="material-symbols-outlined text-[14px]" aria-hidden="true">schedule</span> 4 min
+                  </span>
+                </div>
+                <h3 class="font-poppins text-[16px] uppercase text-text-editorial font-bold leading-tight group-hover:text-primary transition-colors my-2">
+                  <a href="aprende_a_emprender_blog_de_contenidos/code.html">
+                    <!-- [DEMO DATA: PENDIENTE SUSTITUCIÓN OFICIAL] -->
+                    5 claves para formalizar y hacer crecer tu emprendimiento en Magallanes
+                  </a>
+                </h3>
+                <p class="font-body-sm text-[13px] text-structure-dark line-clamp-2">
+                  Pasos legales, sanitarios y comerciales adaptados a los beneficios tributarios y zonales que ofrece la ley regional.
+                </p>
+              </div>
+              <div class="pt-space-md">
+                <a class="inline-flex items-center gap-1.5 text-primary font-poppins text-[12px] uppercase tracking-wider font-bold" href="aprende_a_emprender_blog_de_contenidos/code.html">
+                  <span>Ver guía práctica</span>
+                  <span class="material-symbols-outlined text-[14px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Secundario 2 -->
+            <article class="bg-surface-warm rounded-2xl p-space-lg shadow-sm flex flex-col justify-between group transition-all hover:shadow-lg flex-1 border border-text-editorial/5">
+              <div>
+                <div class="flex items-center justify-between mb-space-xs">
+                  <span class="px-2.5 py-0.5 bg-surface-accent-blue text-primary rounded font-mono text-[10px] uppercase tracking-wider font-bold">
+                    IMPACTO REGIONAL
+                  </span>
+                  <span class="text-structure-dark font-mono text-[10px] flex items-center gap-1 font-medium">
+                    <span class="material-symbols-outlined text-[14px]" aria-hidden="true">schedule</span> 5 min
+                  </span>
+                </div>
+                <h3 class="font-poppins text-[16px] uppercase text-text-editorial font-bold leading-tight group-hover:text-primary transition-colors my-2">
+                  <a href="aprende_a_emprender_blog_de_contenidos/code.html">
+                    <!-- [DEMO DATA: PENDIENTE SUSTITUCIÓN OFICIAL] -->
+                    La red de Centros Sercotec: Balance de impacto en Punta Arenas y provincias
+                  </a>
+                </h3>
+                <p class="font-body-sm text-[13px] text-structure-dark line-clamp-2">
+                  Cifras, historias de reconversión productiva y el rol de INACAP como operador técnico en la descentralización del apoyo económico.
+                </p>
+              </div>
+              <div class="pt-space-md">
+                <a class="inline-flex items-center gap-1.5 text-primary font-poppins text-[12px] uppercase tracking-wider font-bold" href="aprende_a_emprender_blog_de_contenidos/code.html">
+                  <span>Ver balance</span>
+                  <span class="material-symbols-outlined text-[14px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Botón de Salida al Blog -->
+        <div class="flex justify-center">
+          <a class="inline-flex items-center gap-2 bg-text-editorial hover:bg-primary text-white px-8 py-3.5 rounded-lg font-poppins text-[13px] uppercase tracking-wider transition-all shadow-md active:scale-95 font-bold" href="aprende_a_emprender_blog_de_contenidos/code.html">
+            <span>Explorar artículos</span>
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: AGENDA DEL CENTRO DE NEGOCIOS (TALLERES Y CAPACITACIONES) -->
+    <section class="w-full bg-surface-container-low py-space-2xl border-t border-text-editorial/5">
+      <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+        <!-- Encabezado de Sección -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+          <div>
+            <span class="font-mono text-[10px] text-secondary uppercase tracking-widest block mb-space-xs font-bold">
+              TALLERES · CAPACITACIONES · ACTIVIDADES
+            </span>
+            <h2 class="font-poppins text-[26px] sm:text-[32px] lg:text-[38px] uppercase text-text-editorial tracking-tight font-bold">
+              AGENDA DEL CENTRO DE NEGOCIOS
+            </h2>
+          </div>
+          <p class="font-body-md text-structure-dark max-w-lg mt-space-sm md:mt-0">
+            Encuentra actividades, conocimientos y espacios de encuentro para seguir desarrollando tu emprendimiento.
+          </p>
+        </div>
+
+        <!-- Grilla de 3 Próximas Actividades con Bloque de Fecha Monumental -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-xl">
+          <!-- Actividad 1 -->
+          <div class="bg-surface-pure rounded-2xl p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-xl hover:-translate-y-1 border border-text-editorial/5">
+            <div>
+              <div class="flex items-baseline gap-2 pb-space-sm mb-space-md border-b-2 border-surface-container">
+                <span class="font-poppins text-[38px] sm:text-[42px] font-bold text-primary leading-none">28</span>
+                <span class="font-poppins text-[18px] sm:text-[20px] uppercase text-text-editorial font-bold">MAR</span>
+                <span class="ml-auto font-mono text-[10px] bg-surface-accent-blue text-primary px-2 py-0.5 rounded uppercase font-bold">
+                  PRESENCIAL
+                </span>
+              </div>
+              <h3 class="font-poppins text-[18px] uppercase font-bold text-text-editorial leading-snug mb-space-xs">
+                <!-- [DEMO DATA: PENDIENTE SUSTITUCIÓN OFICIAL] -->
+                Presencia Digital y Visibilidad Comercial
+              </h3>
+              <div class="space-y-1.5 text-body-sm text-structure-dark my-space-md text-[13px]">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[18px] text-primary" aria-hidden="true">location_on</span>
+                  <span>Sede INACAP Punta Arenas</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[18px] text-primary" aria-hidden="true">schedule</span>
+                  <span>15:00 - 18:30 hrs</span>
+                </div>
+                <div class="flex items-center gap-2 text-[12px] text-structure-dark pt-1 font-gobcl">
+                  <span class="material-symbols-outlined text-[16px] text-secondary" aria-hidden="true">domain</span>
+                  <span>Org: Centro de Negocios Sercotec Punta Arenas</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-space-md">
+              <a class="w-full inline-flex items-center justify-center gap-2 bg-surface-container hover:bg-primary hover:text-white text-text-editorial py-2.5 rounded-lg font-poppins text-[13px] uppercase tracking-wider transition-colors font-semibold" href="agenda_del_centro_de_negocios_talleres_y_actividades/code.html">
+                <span>Ver actividad</span>
+                <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_right</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Actividad 2 -->
+          <div class="bg-surface-pure rounded-2xl p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-xl hover:-translate-y-1 border border-text-editorial/5">
+            <div>
+              <div class="flex items-baseline gap-2 pb-space-sm mb-space-md border-b-2 border-surface-container">
+                <span class="font-poppins text-[38px] sm:text-[42px] font-bold text-secondary leading-none">09</span>
+                <span class="font-poppins text-[18px] sm:text-[20px] uppercase text-text-editorial font-bold">ABR</span>
+                <span class="ml-auto font-mono text-[10px] bg-surface-container text-text-editorial px-2 py-0.5 rounded uppercase font-bold">
+                  ONLINE (ZOOM)
+                </span>
+              </div>
+              <h3 class="font-poppins text-[18px] uppercase font-bold text-text-editorial leading-snug mb-space-xs">
+                <!-- [DEMO DATA: PENDIENTE SUSTITUCIÓN OFICIAL] -->
+                Marketing Digital e IA para PyMEs
+              </h3>
+              <div class="space-y-1.5 text-body-sm text-structure-dark my-space-md text-[13px]">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[18px] text-secondary" aria-hidden="true">videocam</span>
+                  <span>Transmisión en vivo interactiva</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[18px] text-secondary" aria-hidden="true">schedule</span>
+                  <span>18:00 - 20:00 hrs</span>
+                </div>
+                <div class="flex items-center gap-2 text-[12px] text-structure-dark pt-1 font-gobcl">
+                  <span class="material-symbols-outlined text-[16px] text-secondary" aria-hidden="true">domain</span>
+                  <span>Org: Centro de Negocios Sercotec</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-space-md">
+              <a class="w-full inline-flex items-center justify-center gap-2 bg-surface-container hover:bg-secondary hover:text-white text-text-editorial py-2.5 rounded-lg font-poppins text-[13px] uppercase tracking-wider transition-colors font-semibold" href="agenda_del_centro_de_negocios_talleres_y_actividades/code.html">
+                <span>Ver actividad</span>
+                <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_right</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Actividad 3 -->
+          <div class="bg-surface-pure rounded-2xl p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-xl hover:-translate-y-1 border border-text-editorial/5">
+            <div>
+              <div class="flex items-baseline gap-2 pb-space-sm mb-space-md border-b-2 border-surface-container">
+                <span class="font-poppins text-[38px] sm:text-[42px] font-bold text-primary leading-none">22</span>
+                <span class="font-poppins text-[18px] sm:text-[20px] uppercase text-text-editorial font-bold">ABR</span>
+                <span class="ml-auto font-mono text-[10px] bg-surface-accent-blue text-primary px-2 py-0.5 rounded uppercase font-bold">
+                  PRESENCIAL
+                </span>
+              </div>
+              <h3 class="font-poppins text-[18px] uppercase font-bold text-text-editorial leading-snug mb-space-xs">
+                <!-- [DEMO DATA: PENDIENTE SUSTITUCIÓN OFICIAL] -->
+                Oportunidades y Encadenamiento B2B
+              </h3>
+              <div class="space-y-1.5 text-body-sm text-structure-dark my-space-md text-[13px]">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[18px] text-primary" aria-hidden="true">groups</span>
+                  <span>Salón de Ruedas de Negocios</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[18px] text-primary" aria-hidden="true">schedule</span>
+                  <span>09:30 - 13:00 hrs</span>
+                </div>
+                <div class="flex items-center gap-2 text-[12px] text-structure-dark pt-1 font-gobcl">
+                  <span class="material-symbols-outlined text-[16px] text-secondary" aria-hidden="true">domain</span>
+                  <span>Org: Centro de Negocios Sercotec</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-space-md">
+              <a class="w-full inline-flex items-center justify-center gap-2 bg-surface-container hover:bg-primary hover:text-white text-text-editorial py-2.5 rounded-lg font-poppins text-[13px] uppercase tracking-wider transition-colors font-semibold" href="agenda_del_centro_de_negocios_talleres_y_actividades/code.html">
+                <span>Ver actividad</span>
+                <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_right</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón Agenda Completa -->
+        <div class="flex justify-center">
+          <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-white px-8 py-3.5 rounded-lg font-poppins text-[13px] uppercase tracking-wider transition-all shadow-md active:scale-95 font-bold" href="agenda_del_centro_de_negocios_talleres_y_actividades/code.html">
+            <span>Ver agenda completa</span>
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 7: MÓDULO RED TERRITORIAL (PRE-FOOTER) -->
+    <section class="w-full bg-surface-pure py-space-xl border-t border-text-editorial/5" id="contacto-asesoria">
+      <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="bg-surface-accent-blue rounded-2xl p-space-lg lg:p-space-xl flex flex-col lg:flex-row items-center justify-between gap-gutter border border-primary/15">
+          <div class="space-y-space-xs max-w-2xl">
+            <span class="font-mono text-[10px] uppercase tracking-widest text-primary font-bold">
+              RED TERRITORIAL MAGALLANES
+            </span>
+            <h3 class="font-poppins text-[22px] sm:text-[26px] uppercase text-text-editorial font-bold">
+              ¿Eres emprendedor o artesano y aún no estás en este directorio?
+            </h3>
+            <p class="font-body-md text-structure-dark text-[14px] sm:text-[15px] leading-relaxed">
+              Acércate al Centro de Negocios Sercotec Punta Arenas, operado por INACAP. Recibe asesoría técnica gratuita, capacitación continua y acceso directo a esta vitrina regional oficial.
+            </p>
+          </div>
+          <div class="shrink-0 flex flex-col sm:flex-row gap-space-sm w-full lg:w-auto">
+            <a class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-white px-6 py-3.5 rounded-lg font-poppins text-[13px] uppercase tracking-wider transition-all shadow-sm text-center font-bold" href="#footer-regional">
+              <span>Conoce el Centro</span>
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">store</span>
+            </a>
+            <a class="inline-flex items-center justify-center gap-2 bg-surface-pure hover:bg-surface-container text-text-editorial px-6 py-3.5 rounded-lg font-poppins text-[13px] uppercase tracking-wider transition-all shadow-sm text-center font-bold border border-text-editorial/15" href="#footer-regional">
+              <span>Solicitar Asesoría</span>
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">contact_support</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================================
+       FOOTER INSTITUCIONAL (CENTRO DE NEGOCIOS SERCOTEC PUNTA ARENAS)
+       ======================================================================= -->
+  <footer class="w-full bg-[#1A1D20] text-white pt-12 pb-8 border-t border-white/10" id="footer-regional">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-white/10">
+        
+        <!-- Columna 1: Marca y Propósito (6 cols) -->
+        <div class="md:col-span-6 space-y-4">
+          <div class="flex flex-col">
+            <span class="font-poppins text-[20px] md:text-[22px] font-black uppercase tracking-tight text-white leading-none">
+              MAGALLANES
+            </span>
+            <span class="font-poppins text-[12px] text-white/60 font-medium tracking-normal mt-1">
+              Hecho por su gente
+            </span>
+          </div>
+          <p class="font-body-md text-[14px] text-white/70 max-w-md leading-relaxed">
+            Vitrina comercial territorial del Centro de Negocios Sercotec Punta Arenas, operado por INACAP. Conectamos directamente a la comunidad y empresas con artesanos, productores y servicios de toda la Patagonia austral.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2.5 py-1 bg-white/10 text-white/90 rounded font-mono text-[10px] font-bold">SERCOTEC</span>
+            <span class="px-2.5 py-1 bg-white/10 text-white/90 rounded font-mono text-[10px] font-bold">INACAP</span>
+            <span class="px-2.5 py-1 bg-white/10 text-white/90 rounded font-mono text-[10px] font-bold">MINISTERIO DE ECONOMÍA</span>
+          </div>
+        </div>
+
+        <!-- Columna 2: Ficha Oficial Centro Punta Arenas (Google Maps Verificado) (6 cols) -->
+        <div class="md:col-span-6 space-y-3 md:pl-8 lg:pl-12 border-t md:border-t-0 md:border-l border-white/10 pt-6 md:pt-0">
+          <h3 class="font-poppins text-[15px] uppercase text-white tracking-wider font-bold">
+            Centro de Negocios Sercotec Punta Arenas
+          </h3>
+          <div class="space-y-2 text-[13px] text-white/80 font-body-md">
+            <p class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-[#EB3C46] shrink-0 mt-0.5" aria-hidden="true">location_on</span>
+              <span>C. Lautaro Navarro 305, 6212767 Punta Arenas, Magallanes y la Antártica Chilena</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-[#0F69B4] shrink-0" aria-hidden="true">call</span>
+              <a href="tel:+56947041755" class="hover:text-white transition-colors underline decoration-white/30">+56 9 4704 1755</a>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-white/60 shrink-0" aria-hidden="true">schedule</span>
+              <span>Lunes a Viernes · 09:00 a 18:00 hrs</span>
+            </p>
+          </div>
+          <div class="pt-2">
+            <span class="inline-flex items-center gap-1.5 font-mono text-[11px] text-[#93C5FD]">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#3B82F6]"></span>
+              Cobertura en las 4 provincias: Magallanes, Última Esperanza, Tierra del Fuego y Antártica Chilena
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior de Demostración y Derechos Oficiales 2026 -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] text-white/60">
+        <p class="text-center sm:text-left">
+          © 2026 Centro de Negocios Sercotec Punta Arenas &amp; INACAP. Todos los derechos reservados.
+        </p>
+        <div class="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-full text-white/80">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#EB3C46]"></span>
+          <span>Demostración técnica — Propuesta desarrollada por <strong class="text-white font-semibold">Agencia PatagoniaCoach</strong> · Activo hasta el 15 de noviembre de 2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Modulares -->
+  <script src="js/main.js"></script>
+</body>
+</html>

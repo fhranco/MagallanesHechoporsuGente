@@ -1,0 +1,636 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary":"#ffffff","surface-container-high":"#e9e8e7","error-container":"#ffdad6","on-background":"#1b1c1c","on-error":"#ffffff","inverse-surface":"#303031","on-primary-container":"#d9e7ff","surface-bright":"#fbf9f9","primary-fixed-dim":"#a2c9ff","tertiary-container":"#436996","tertiary-fixed-dim":"#a4c9fc","secondary-container":"#db303c","secondary":"#b81027","on-primary-fixed-variant":"#004880","surface-pure":"#FFFFFF","on-tertiary":"#ffffff","inverse-primary":"#a2c9ff","secondary-fixed-dim":"#ffb3b0","surface-dim":"#dbdad9","on-error-container":"#93000a","on-primary-fixed":"#001c38","on-primary":"#ffffff","background":"#fbf9f9","on-surface-variant":"#414751","surface-variant":"#e3e2e2","surface-tint":"#0060a8","on-tertiary-container":"#d9e7ff","outline-variant":"#c1c7d3","outline":"#717782","primary-container":"#0f69b4","surface":"#fbf9f9","structure-dark":"#58595B","on-tertiary-fixed":"#001c38","error":"#ba1a1a","on-secondary-container":"#fffbff","surface-container-low":"#f5f3f3","tertiary-fixed":"#d3e4ff","secondary-fixed":"#ffdad8","on-surface":"#1b1c1c","surface-accent-blue":"#EAF3FB","surface-container":"#efeded","surface-container-highest":"#e3e2e2","surface-warm":"#FAF7F2","on-tertiary-fixed-variant":"#1f4874","tertiary":"#29517d","text-editorial":"#20242A","inverse-on-surface":"#f2f0f0","on-secondary-fixed-variant":"#93001a","primary":"#00518e","primary-fixed":"#d3e4ff","surface-container-lowest":"#ffffff","on-secondary-fixed":"#410006"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"4rem","gutter-lg":"2.5rem","space-lg":"1.5rem","margin":"2rem","margin-mobile":"1.25rem","space-md":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter-sm":"1rem","gutter":"1.5rem","space-2xl":"4rem"},"fontFamily":{"poppins":["Poppins","-apple-system","sans-serif"],"gobcl":["gobCL","sans-serif"],"mono":["SF Mono","SFMono-Regular","ui-monospace","monospace"],"display-hero":["Poppins","-apple-system","sans-serif"],"display-hero-mobile":["Poppins","-apple-system","sans-serif"],"headline-lg":["Poppins","-apple-system","sans-serif"],"headline-lg-mobile":["Poppins","-apple-system","sans-serif"],"headline-md":["Poppins","-apple-system","sans-serif"],"headline-sm":["Poppins","-apple-system","sans-serif"],"title-editorial":["Poppins","-apple-system","sans-serif"],"label-stamp":["SF Mono","SFMono-Regular","ui-monospace","Menlo","Monaco","Consolas","monospace"],"label-meta":["SF Mono","SFMono-Regular","ui-monospace","Menlo","Monaco","Consolas","monospace"],"body-lg":["-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Manrope","sans-serif"],"body-md":["-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Manrope","sans-serif"],"body-sm":["-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Manrope","sans-serif"],"manrope":["Manrope","-apple-system","sans-serif"]},"fontSize":{"label-stamp":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"display-hero-mobile":["38px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"title-editorial":["18px",{"lineHeight":"24px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-lg-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased" style="font-family: Roboto, sans-serif;"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-warm/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.06)] border-b border-text-editorial/10"><div class="w-full bg-[#103D68] text-white py-1 px-margin-mobile md:px-margin-desktop h-[26px] flex items-center justify-between"><div class="max-w-[1360px] w-full mx-auto flex items-center justify-between text-[11px] font-medium tracking-wide text-white/90"><div class="flex items-center gap-space-sm"><span class="font-bold text-white">SERCOTEC</span><span class="text-white/50">|</span><span class="">Centro de Negocios Punta Arenas</span><span class="text-white/50">·</span><span class="hidden sm:inline text-white/80">Operado por INACAP</span></div><div class="flex items-center gap-space-md text-[11px]"><span class="text-white/70 hidden md:inline">Red Territorial Magallanes</span><a class="hover:text-white transition-colors underline decoration-white/40" data-path="centro-de-negocios-punta-arenas" href="/centro-negocios-punta-arenas/">Sede Punta Arenas</a></div></div></div><div class="h-[72px] max-w-[1360px] mx-auto px-6 flex items-center justify-between gap-gutter"><div class="flex items-center"><a class="flex flex-col" data-path="inicio" href="/"><span class="font-display-hero text-[24px] font-bold uppercase tracking-tight text-text-editorial leading-none">MAGALLANES</span><span class="text-[12px] text-structure-dark font-medium tracking-normal mt-1 whitespace-nowrap">Hecho por su gente</span></a></div><nav class="hidden md:flex items-center gap-space-md lg:gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-primary pb-1"><a aria-current="page" class="transition-colors whitespace-nowrap text-primary font-bold border-b-2 border-primary pb-1" data-path="inicio" href="/">Inicio</a><a class="text-[13px] font-semibold text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1" data-path="directorio" href="/directorio/">Directorio</a><a class="text-[13px] font-semibold text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1" data-path="historias" href="/tu-historia-me-inspira/">Historias</a><a class="text-[13px] font-semibold text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1" data-path="blog" href="/aprende-a-emprender/">Blog</a><a class="text-[13px] font-semibold text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1" data-path="agenda" href="/agenda/">Agenda</a></nav><div class="flex items-center gap-space-sm"><div class="relative hidden lg:block"><input aria-label="Buscar emprendimiento o rubro" class="w-56 pl-9 pr-3 py-1.5 text-body-sm bg-surface-pure border border-text-editorial/20 rounded text-text-editorial placeholder:text-structure-dark/60 focus:outline-none focus:border-primary transition-colors" id="header-search-input" placeholder="Buscar negocio o producto..." type="search"><span class="material-symbols-outlined absolute left-2.5 top-2 text-[18px] text-structure-dark pointer-events-none">search</span></div><button aria-label="Buscar en el directorio" class="lg:hidden w-9 h-9 flex items-center justify-center rounded-full hover:bg-black/5 text-text-editorial transition-colors border-none" onclick="const el=document.getElementById('header-search-input'); if(el){el.focus();}else{window.location.href='/directorio/';}" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><a class="hidden sm:inline-flex items-center justify-center bg-secondary hover:bg-secondary-container text-white text-[13px] font-semibold px-5 py-2.5 rounded shadow-sm transition-all whitespace-nowrap active:scale-[0.98]" data-path="directorio" href="/directorio/">Explorar catálogo</a><button aria-label="Abrir menú" class="md:hidden w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container text-text-editorial transition-colors" onclick="const m=document.getElementById('mobile-nav-drawer'); if(m){m.classList.toggle('hidden');}" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div><div class="hidden md:hidden bg-surface-pure border-b border-text-editorial/10 px-6 py-4 space-y-3" id="mobile-nav-drawer"><a class="block text-[14px] font-semibold text-text-editorial py-1" data-path="inicio" href="/" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden');">Inicio</a><a class="block text-[14px] font-semibold text-text-editorial py-1" data-path="directorio" href="/directorio/" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden');">Directorio</a><a class="block text-[14px] font-semibold text-text-editorial py-1" data-path="historias" href="/tu-historia-me-inspira/" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden');">Historias</a><a class="block text-[14px] font-semibold text-text-editorial py-1" data-path="blog" href="/aprende-a-emprender/" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden');">Blog</a><a class="block text-[14px] font-semibold text-text-editorial py-1" data-path="agenda" href="/agenda/" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden');">Agenda</a><div class="pt-2"><a class="w-full flex items-center justify-center bg-secondary text-white text-[13px] font-semibold py-2.5 rounded shadow-sm" data-path="directorio" href="/directorio/" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden');">Explorar catálogo</a></div></div></header><main class="w-full pt-[98px] bg-surface min-h-[calc(100vh-320px)]"><div class="flex flex-col w-full">
+<!-- HERO EDITORIAL CON BÚSQUEDA Y COMPOSICIÓN DOCUMENTAL -->
+<section class="relative w-full bg-surface-warm overflow-hidden pb-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pt-space-xl lg:pt-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Columna Izquierda: Mensaje y Buscador -->
+<div class="lg:col-span-7 flex flex-col z-10">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-secondary text-on-secondary rounded font-label-stamp text-label-stamp uppercase tracking-widest">
+              DIRECTORIO PRODUCTIVO
+            </span>
+<span class="font-label-meta text-label-meta text-on-surface-variant uppercase tracking-wider">
+              MAGALLANES &amp; ANTÁRTICA CHILENA
+            </span>
+</div>
+<h1 class="font-display-hero text-display-hero text-text-editorial tracking-tight uppercase leading-[0.94] mb-space-md">
+            LO QUE BUSCAS,<br>
+<span class="text-primary font-light italic lowercase font-body-lg">alguien de aquí</span><br>
+            LO HACE.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-lg">
+            Plataforma de articulación comercial y vitrina territorial. Conecta en forma directa y sin comisiones con productores, talleres de autor y servicios de toda la Patagonia austral.
+          </p>
+<!-- Motor de Búsqueda Territorial Integrado -->
+<div class="w-full max-w-2xl bg-surface-pure rounded-xl p-space-sm shadow-[0_12px_32px_rgba(16,61,104,0.08)] mb-space-md">
+<form action="/directorio/" class="flex flex-col sm:flex-row gap-space-xs" method="GET">
+<div class="flex-1 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-structure-dark">search</span>
+<input class="w-full pl-10 pr-3 py-3 bg-transparent text-text-editorial font-body-md placeholder:text-structure-dark/60 focus:outline-none" name="q" placeholder="Buscar productos o servicios" type="text">
+</div>
+<div class="sm:w-48 relative flex items-center bg-surface-container-low rounded-lg px-2">
+<span class="material-symbols-outlined text-structure-dark text-[20px] ml-1">location_on</span>
+<select class="w-full py-3 pl-1 pr-6 bg-transparent text-body-sm font-semibold text-text-editorial appearance-none focus:outline-none cursor-pointer" name="comuna">
+<option value="">Toda la Región</option>
+<option value="punta-arenas">Punta Arenas</option>
+<option value="puerto-natales">Puerto Natales</option>
+<option value="porvenir">Porvenir</option>
+<option value="cabo-de-hornos">Cabo de Hornos</option>
+<option value="torres-del-paine">Torres del Paine</option>
+<option value="primavera">Primavera</option>
+<option value="timaukel">Timaukel</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 text-structure-dark pointer-events-none text-[18px]">expand_more</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-title-editorial text-title-editorial uppercase tracking-wider px-6 py-3 rounded-lg flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95" type="submit">
+<span class="">Buscar</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Chips Rápidos -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-stamp text-label-stamp text-structure-dark uppercase tracking-widest mr-1">Rutas rápidas:</span>
+<a class="px-3 py-1 bg-surface-container rounded-full text-body-sm font-medium text-text-editorial hover:bg-primary hover:text-on-primary transition-colors" href="/directorio/?rubro=artesania">Lana &amp; Madera</a>
+<a class="px-3 py-1 bg-surface-container rounded-full text-body-sm font-medium text-text-editorial hover:bg-primary hover:text-on-primary transition-colors" href="/directorio/?rubro=gourmet">Ahumados &amp; Ruibarbo</a>
+<a class="px-3 py-1 bg-surface-container rounded-full text-body-sm font-medium text-text-editorial hover:bg-primary hover:text-on-primary transition-colors" href="/directorio/?rubro=turismo">Guías Locales</a>
+<a class="px-3 py-1 bg-surface-accent-blue text-primary rounded-full text-body-sm font-bold hover:bg-primary hover:text-on-primary transition-colors" href="/directorio/?tipo=b2b">Proveedores B2B</a>
+</div>
+</div>
+<!-- Columna Derecha: Composición de 3 Fotos Documentales Superpuestas -->
+<div class="lg:col-span-5 relative h-[480px] sm:h-[540px] flex items-center justify-center mt-space-lg lg:mt-0">
+<!-- Fondo Geométrico de Acento -->
+<div class="absolute inset-4 bg-surface-accent-blue rounded-2xl transform rotate-1"></div>
+<!-- Foto Principal (Oficio Lana/Telar) -->
+<div class="absolute top-0 right-4 w-64 sm:w-72 h-80 rounded-xl overflow-hidden shadow-xl z-20 transition-transform hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of experienced craftswoman hands weaving pure sheep wool on traditional wooden loom in Punta Arenas, warm natural studio light, crisp textures of raw patagonian wool, documentary editorial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy8j3E3XGNvjac-x7u_v1mwMVRUrKlWCmeqrexqoSOgSGsfuz3rza9MLwttkhakN5c4EzcuKezJUGWw4nQU6_2SDC3dktBMfkrBG1O-AxHYJHNJLa0Cmvmu8keq45LeSEiwoOEV1It9soviqXCVlS9eXj-kMPF2ZYkcdfA6mamC3tQl6AMzxzL9tWPnjyTgbWPIgVFXBJBuT19GkAARDui-NxUa0CN7zzGCZ80m7w">
+<div class="absolute bottom-2 left-2 bg-text-editorial/90 backdrop-blur-sm px-2.5 py-1 rounded text-on-primary font-label-stamp text-label-stamp uppercase tracking-widest">
+              Taller Textil · Porvenir
+            </div>
+</div>
+<!-- Foto Secundaria (Cocina / Conservas de Calafate) -->
+<div class="absolute bottom-4 left-2 w-56 sm:w-64 h-64 rounded-xl overflow-hidden shadow-lg z-10 transition-transform hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="Artisanal food workshop with jars of native wild berry jams, calafate compote, dried sea herbs and sea salt crystals, moody Patagonian maritime daylight, rustic wood counter, editorial documentary aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Hf-Lib7NoYcuElrhKuD-D1Z2h22uxV1cCvd4e81LA_KHVg7FYZSYDKId_-B1UdYiT7I4kvGdsDrJ8tn-nC7nOUUfzn-VU2sTGGQz9U-JB0uGo-d1sWKai_tapJcW-Pb79iRUIJ6D5sM3K1ezvhuAUkrPbnZEkBVD7uQDJY5TX58ZPMH3WWtdU6A4Iynu9NKr8Cj_lZkg6avWZR7s6Lx410Aj-XXDGsfu9llp0rQ">
+<div class="absolute bottom-2 left-2 bg-text-editorial/90 backdrop-blur-sm px-2.5 py-1 rounded text-on-primary font-label-stamp text-label-stamp uppercase tracking-widest">
+              Sabor Austral · Natales
+            </div>
+</div>
+<!-- Sello HECHO AQUÍ Flotante -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-surface-pure text-text-editorial w-32 h-32 rounded-full shadow-2xl flex flex-col items-center justify-center p-3 text-center border-4 border-surface-warm rotate-[-8deg] hover:rotate-0 transition-transform">
+<span class="material-symbols-outlined text-secondary text-[26px] mb-0.5">verified</span>
+<span class="font-display-hero text-[15px] font-bold tracking-tight uppercase leading-none text-secondary">HECHO</span>
+<span class="font-display-hero text-[13px] font-bold tracking-widest uppercase leading-none text-text-editorial mt-0.5">AQUÍ</span>
+<span class="font-label-stamp text-[9px] uppercase tracking-wider text-structure-dark mt-1">100% REGIONAL</span>
+</div>
+<!-- Foto Terciaria Acento (Tornería / Carpintería) -->
+<div class="absolute -top-4 left-6 w-36 h-36 rounded-xl overflow-hidden shadow-md opacity-85 hidden sm:block">
+<img class="w-full h-full object-cover" data-alt="Carpenter shaping seasoned lenga and cipres wood using manual chisels, sawdust in soft atmospheric beam of sunlight, rustic southern Chile carpentry shop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9ooNGWluiy37XlHAJvorEUQ3GzBkYDsYFheAV3prydjA1M4-S93JTwLcxWuM-j5okbD_2rHAD1psk8i3CT-78uEDTCbpBkhWOvAaRk56E4YiB0cyg1M-ZolOMFknP8Lu7jUUFAr-iHZEt4TwVHKa1Tgi8xVn6-zr8haqqu9J3curc-uaZNl0fUfAz9SWNxMji27Ci1RM6pzzceEmlYLe2S1SyQw79xZIdqggeO1I">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MOSAICO LOOKBOOK: EXPLORA POR RUBROS PRODUCTIVOS -->
+<section class="w-full bg-surface-pure py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<span class="font-label-stamp text-label-stamp text-primary uppercase tracking-widest block mb-space-xs">
+            CURATORÍA DE OFICIOS Y PRODUCCIÓN LOCAL
+          </span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-text-editorial tracking-tight">
+            EXPLORA POR RUBROS PRODUCTIVOS
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-space-sm md:mt-0">
+          Una vitrina viva que organiza el trabajo regional en categorías claras para comprar con identidad territorial.
+        </p>
+</div>
+<!-- Cuadrícula Asimétrica Lookbook -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
+<!-- Card 1: Para Comer (Grande) -->
+<a class="lg:col-span-7 group relative h-80 lg:h-96 rounded-xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-lg text-on-primary transition-all duration-300 hover:shadow-2xl" href="/directorio/?categoria=para-comer">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Patagonian culinary delicacy presentation, fresh smoked salmon, cordero magallanico confit with calafate reduction glaze and native potatoes on handcrafted ceramic plate, moody editorial culinary lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASPKxXkgClbN7brfuGXMsqBU7C5YESXn6l26KY_mFvnbrtklYug4l6Vfw1BPVkAAx-Y3pTrvn-LEEsRTL_ZVbhmJh4iWPISFzgC0AkSTn-QVxth-nxkiCCXNRRU8XHEIhieVKFpMu-iyJXedq465wqsMVMd-2m9QbMwFGohyMK_4MyEKc4nZZCFQ7WoKOYoOPa0VasxQjjJoIkkctHKFewtcY8vQoEHqoc-iRGmSY">
+<div class="absolute inset-0 bg-gradient-to-t from-text-editorial/95 via-text-editorial/40 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-secondary-fixed mb-1 block">
+              34 EMPRENDIMIENTOS ACTIVOS
+            </span>
+<h3 class="font-headline-md text-headline-md uppercase font-bold text-on-primary group-hover:text-primary-fixed transition-colors">
+              Para Comer &amp; Beber
+            </h3>
+<p class="font-body-sm text-body-sm text-surface-container-high max-w-md mt-1 opacity-90">
+              Conservas de centolla, mermeladas de ruibarbo silvestre, ahumados tradicionales y cervezas del fin del mundo.
+            </p>
+</div>
+</a>
+<!-- Card 2: Hecho a Mano -->
+<a class="lg:col-span-5 group relative h-80 lg:h-96 rounded-xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-lg text-on-primary transition-all duration-300 hover:shadow-2xl" href="/directorio/?categoria=hecho-a-mano">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Artisanal hands crafting delicate jewelry with patagonian stones, silver wire and native wood accents on a leather working mat in Punta Arenas, warm ambient light, detailed macro photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQMuXw4hY4HghzvGTTi709yFIwwEIe9B58TImP5FtWP1Txj4Sz8og69PXwtPTn86IVoA4-uugZPhS-a3W9fzaN7YzkB7tvorI9fOHogNuT0FN2wcb_G_xJXGFjK6Gq3XcqOq16ZhSEMWxKPICxniVdzEsW1li3VBsS3Im9WD6gLpQ73guXFBgOporvoAx0HLSPvrP6csN4aqwtBvUHN4bwi1Qbk2NbL8kUGLWBTFg">
+<div class="absolute inset-0 bg-gradient-to-t from-text-editorial/95 via-text-editorial/40 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-secondary-fixed mb-1 block">
+              48 ARTESANOS REGISTRADOS
+            </span>
+<h3 class="font-headline-md text-headline-md uppercase font-bold text-on-primary group-hover:text-primary-fixed transition-colors">
+              Hecho a Mano
+            </h3>
+<p class="font-body-sm text-body-sm text-surface-container-high max-w-sm mt-1 opacity-90">
+              Tejido a telar en pura lana merino, orfebrería austral, cerámica escultórica y cestería yagán.
+            </p>
+</div>
+</a>
+<!-- Card 3: Para Regalar y Comprar -->
+<a class="lg:col-span-4 group relative h-72 rounded-xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-md text-on-primary transition-all duration-300 hover:shadow-xl" href="/directorio/?categoria=regalar-y-comprar">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Carefully curated gift boxes containing botanical candles with subantarctic scents, wool socks, natural lavender balms and handcrafted notebooks, minimalist editorial flatlay composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4luc_uDTEmXGdRc_AuL9Pg-6rLdTyAfVrG6owJQt8dZECv2Hlg1CXPWyLgDiJeHS_AERBRDzF4xQr-1Y1tEiDgZ9alf0RN4Sjt1EADMU7yJKTB-WaldgcBq2h5dODtjd0_Crp1fdyCCezE3waayWbvr4x2Q6MclMDFX7t3ChckS7lMCa-GhStObC6bOWk8WrvsgzaBK0MvKWvbs1nBjNZmDtig_2wQrG5GHcPFsk">
+<div class="absolute inset-0 bg-gradient-to-t from-text-editorial/95 via-text-editorial/40 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-secondary-fixed mb-0.5 block">Identidad &amp; Diseño</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-on-primary group-hover:text-primary-fixed transition-colors">
+              Para Regalar y Comprar
+            </h3>
+<p class="font-body-sm text-body-sm text-surface-container-high mt-1 line-clamp-2">
+              Kits con sello de origen austral y souvenirs con auténtica memoria patagónica.
+            </p>
+</div>
+</a>
+<!-- Card 4: Para Explorar -->
+<a class="lg:col-span-4 group relative h-72 rounded-xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-md text-on-primary transition-all duration-300 hover:shadow-xl" href="/directorio/?categoria=para-explorar">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Local Patagonian mountain guide showing trail paths overlooking snowy granite peaks and southern fjords, high aesthetic documentary outdoor photo with warm morning mist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD33GnGxC9oIA81ct7AlguoYyEfOv7b5I7p04GUBzU6xiZp4__iMfDsFDoYV39zdKYj_sBCggyIlZiTBIIcfZadeB1VU7Ks312tA0GWqKXeKqb7TeqvhNsVsMGUayYTuSwq-NCUPB-SdRujoG-JMBMTwu9K2RHo9U0w0yvM-UB5z4_Hxi5F42upgQU-W_dkFxb6gZm-ep2xEdFGI4LqpXrhFxuzKPz_MdSrU3hi9pA">
+<div class="absolute inset-0 bg-gradient-to-t from-text-editorial/95 via-text-editorial/40 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-secondary-fixed mb-0.5 block">Turismo con Arraigo</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-on-primary group-hover:text-primary-fixed transition-colors">
+              Para Explorar
+            </h3>
+<p class="font-body-sm text-body-sm text-surface-container-high mt-1 line-clamp-2">
+              Rutas patrimoniales, navegaciones en fiordos y experiencias de agroturismo fueguino.
+            </p>
+</div>
+</a>
+<!-- Card 5: Servicios y Oficios -->
+<a class="lg:col-span-4 group relative h-72 rounded-xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-md text-on-primary transition-all duration-300 hover:shadow-xl" href="/directorio/?categoria=servicios-y-oficios">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Regional architect and craft contractor examining technical blueprints in bright wood workshop studio overlooking Magallanes strait, clean professional documentary capture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaizZlXwiaQFIiE-KtaHTPDlYj0otHJaQ4rZGnFVDBNnUJcPOE0iDabUVfyjGb8gTrp7nMq2FxKKTpWcwK4xf0TQCWMxjOhizKMzfehXfgrYXyuQaSmMRX_VobB-D8MPte0x53o6Kq7Uhmrd2pCcFo5vQttfD38WB2sAXdVjzRMSThDpyiT6_TTgPMlzXPGmKJ8Mi4aYvKZ_weNDAGCkXGA7asu7YB9olllaaB1Kg">
+<div class="absolute inset-0 bg-gradient-to-t from-text-editorial/95 via-text-editorial/40 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-secondary-fixed mb-0.5 block">Capacidad Técnica</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-on-primary group-hover:text-primary-fixed transition-colors">
+              Servicios y Oficios
+            </h3>
+<p class="font-body-sm text-body-sm text-surface-container-high mt-1 line-clamp-2">
+              Restauración, carpintería bioclimática, diseño y asesoría profesional en terreno.
+            </p>
+</div>
+</a>
+<!-- Banner Horizontal Integrado: Proveedores B2B -->
+<div class="lg:col-span-12 bg-surface-accent-blue rounded-xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-gutter shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">corporate_fare</span>
+</div>
+<div>
+<span class="font-label-stamp text-label-stamp uppercase text-primary tracking-widest block">COMPRAS INSTITUCIONALES &amp; MAYORISTAS</span>
+<h4 class="font-title-editorial text-title-editorial uppercase text-text-editorial font-bold">
+                ¿Buscas proveedores calificados con resolución y capacidad de escala regional?
+              </h4>
+</div>
+</div>
+<a class="shrink-0 inline-flex items-center gap-2 bg-text-editorial text-on-primary hover:bg-primary px-5 py-2.5 rounded font-label-stamp text-label-stamp uppercase tracking-wider transition-colors" href="/directorio/?filtro=b2b">
+<span class="">Acceder a Vitrina B2B</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 1: TU HISTORIA ME INSPIRA (REEMPLAZA VITRINA DE OFICIO) -->
+<section class="w-full bg-surface-warm py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Encabezado de Sección Editorial -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<span class="font-label-stamp text-label-stamp text-secondary uppercase tracking-widest block mb-space-xs">
+            EMPRENDIMIENTO DE LA SEMANA
+          </span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-text-editorial tracking-tight">
+            TU HISTORIA ME INSPIRA
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mt-space-sm md:mt-0">
+          Detrás de cada emprendimiento hay una persona, una idea y una historia que merece ser contada.
+        </p>
+</div>
+<!-- Tarjeta Editorial de Gran Formato Asimétrica -->
+<div class="bg-surface-pure rounded-2xl shadow-[0_16px_40px_rgba(16,61,104,0.06)] overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Imagen de Don Osvaldo Calbún en su taller -->
+<div class="lg:col-span-7 relative min-h-[380px] lg:min-h-[500px]">
+<img class="w-full h-full object-cover" data-alt="Intimate portrait of master woodturner Don Osvaldo Calbún in his Punta Arenas woodcraft workshop, holding a turned bowl made of fallen Patagonian beech wood, fine wood shavings on workbench, natural cinematic window light, authentic craft portrait photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIvUyUTK1YzDUSRpUNhwBu02ZlBFJ4Y769ZDlbXjIoJXesXdILpk7Qe5M0tPVogIPHMM4mHpBuiGWmARO05t6rQVAJbPU3luZyPvlkuxa8oUK5zIqdfe8P8m3jY5ybtDnqdvFrhE5ys8wfyQb58lQGfoe05wS2SUlx2LLA4WwPcpfB58GSUGIUqFqkuDPzc2-dsp78cAr7cOFUIxWpW_VY9_-ljPQMT1dnkZcaQ5k">
+<div class="absolute top-4 left-4 flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-pure/95 backdrop-blur-sm rounded text-text-editorial font-label-stamp text-label-stamp uppercase tracking-widest shadow-sm">
+                PUNTA ARENAS
+              </span>
+<span class="px-3 py-1 bg-primary text-on-primary rounded font-label-stamp text-label-stamp uppercase tracking-widest shadow-sm">
+                ARTESANÍA EN MADERA
+              </span>
+</div>
+<div class="absolute bottom-4 left-4 bg-text-editorial/90 backdrop-blur-sm px-3 py-1.5 rounded text-surface-pure font-body-sm text-[12px]">
+              Taller "Artesanías El Calafate" · Sector Playa Norte
+            </div>
+</div>
+<!-- Relato Humano y Llamados a la Acción -->
+<div class="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest">RELATO DE ARRAIGO</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-text-editorial tracking-tight mb-space-xs">
+                Don Osvaldo Calbún
+              </h3>
+<p class="font-title-editorial text-title-editorial text-primary font-semibold mb-space-md">
+                Artesanías El Calafate
+              </p>
+<blockquote class="font-body-lg text-body-lg text-text-editorial italic leading-relaxed pl-space-md bg-surface-container-low/70 py-space-sm rounded-r-lg mb-space-md">
+                “Nunca he volteado un árbol vivo. La Patagonia tiene sus propios ciclos: el viento derriba la lenga y el ciruelillo, y mi tarea en el torno es simplemente devolverle la vida en forma de platos, mates y cuencos que duren cien años.”
+              </blockquote>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+                Con más de 30 años habitando el oficio de la tornería en Punta Arenas, Osvaldo rescata maderas muertas de estancias fueguinas. Cada pieza contiene las vetas y tempestades del clima austral, combinando diseño utilitario con respeto irrestricto por el bosque nativo.
+              </p>
+</div>
+<!-- Botones y Navegación sin rankings -->
+<div class="pt-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<a class="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary-container text-on-secondary px-6 py-3 rounded-lg font-title-editorial text-title-editorial uppercase tracking-wider transition-all shadow-md active:scale-95" href="/tu-historia-me-inspira/artesanias-el-calafate/">
+<span class="">Conoce su historia</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-1.5 text-primary hover:text-primary-container font-label-stamp text-label-stamp uppercase tracking-wider group transition-colors" href="/tu-historia-me-inspira/">
+<span class="">Ver todas las historias de la región</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BLOQUE AZUL PROFUNDO B2B: PROVEEDORES LOCALES -->
+<section class="w-full bg-[#103D68] text-on-tertiary py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 space-y-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-pure/10 rounded font-label-stamp text-label-stamp uppercase tracking-widest text-primary-fixed">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+            ENCADENAMIENTO PRODUCTIVO SOSTENIBLE
+          </div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-surface-pure tracking-tight leading-[1.05]">
+            TU PRÓXIMO PROVEEDOR PUEDE ESTAR MUCHO MÁS CERCA.
+          </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed/90 leading-relaxed">
+            Las empresas de Magallanes cuentan con resoluciones sanitarias vigentes, capacidad de volumen y logística adaptada a las complejidades del territorio insular y continental. Reduzca huella de carbono y potencie la economía local.
+          </p>
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs text-left">
+<div class="p-3 bg-surface-pure/5 rounded-lg">
+<span class="font-display-hero text-[30px] font-bold text-surface-pure block">100%</span>
+<span class="font-label-meta text-label-meta text-primary-fixed">Resolución Sanitaria</span>
+</div>
+<div class="p-3 bg-surface-pure/5 rounded-lg">
+<span class="font-display-hero text-[30px] font-bold text-surface-pure block">4</span>
+<span class="font-label-meta text-label-meta text-primary-fixed">Provincias Activas</span>
+</div>
+<div class="p-3 bg-surface-pure/5 rounded-lg">
+<span class="font-display-hero text-[30px] font-bold text-surface-pure block">Directo</span>
+<span class="font-label-meta text-label-meta text-primary-fixed">Sin Intermediarios</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 flex flex-col gap-space-sm">
+<!-- Card B2B Preview 1 -->
+<div class="bg-surface-pure text-text-editorial p-space-md rounded-xl shadow-lg flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-accent-blue text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">package_2</span>
+</div>
+<div>
+<span class="font-label-stamp text-[10px] text-primary uppercase font-bold">ALIMENTOS &amp; MATERIAS PRIMAS</span>
+<h4 class="font-title-editorial text-[16px] font-bold">Distribución Agropecuaria Tierra del Fuego</h4>
+<p class="font-body-sm text-[12px] text-structure-dark">Capacidad mayorista en cortes ovinos y hortalizas bajo cubierta.</p>
+</div>
+</div>
+<a class="shrink-0 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-text-editorial hover:bg-primary hover:text-on-primary transition-colors" href="/directorio/?tipo=b2b">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Card B2B Preview 2 -->
+<div class="bg-surface-pure text-text-editorial p-space-md rounded-xl shadow-lg flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-accent-blue text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<div>
+<span class="font-label-stamp text-[10px] text-primary uppercase font-bold">LOGÍSTICA &amp; SUMINISTROS</span>
+<h4 class="font-title-editorial text-[16px] font-bold">Servicios Industriales Cabo de Hornos</h4>
+<p class="font-body-sm text-[12px] text-structure-dark">Abastecimiento marítimo y apoyo logístico antártico permanente.</p>
+</div>
+</div>
+<a class="shrink-0 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-text-editorial hover:bg-primary hover:text-on-primary transition-colors" href="/directorio/?tipo=b2b">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="pt-space-xs text-right">
+<a class="inline-flex items-center gap-2 text-primary-fixed hover:text-surface-pure font-label-stamp text-label-stamp uppercase tracking-widest transition-colors" href="/directorio/?filtro=b2b">
+<span class="">Explorar catálogo completo para empresas e instituciones</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 2: APRENDE A EMPRENDER (BLOG DE EMPRENDIMIENTO) -->
+<section class="w-full bg-surface-pure py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Encabezado de Sección -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<span class="font-label-stamp text-label-stamp text-primary uppercase tracking-widest block mb-space-xs">
+            BLOG DE EMPRENDIMIENTO
+          </span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-text-editorial tracking-tight">
+            APRENDE A EMPRENDER
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mt-space-sm md:mt-0">
+          Ideas, herramientas y conocimientos prácticos para fortalecer y hacer crecer tu negocio.
+        </p>
+</div>
+<!-- Cuadrícula de 3 Artículos: 1 Principal Grande + 2 Secundarios -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl">
+<!-- Artículo Principal (Destacado con Imagen Amplia) -->
+<article class="lg:col-span-7 bg-surface-warm rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group transition-all hover:shadow-xl">
+<div class="relative h-64 sm:h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Artisan in southern Patagonia using a smartphone tablet to photograph handcrafted wool garments with studio lightbox, blending traditional heritage with modern e-commerce tools, bright clean documentary composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXMNZa7-F1np06PlRPFEM6SlrXKHP9F5vwVCdh5Fv_znY8R5raF0lYbJr7fl0jm09RjgasIfy_8E19RU2zQozOAkSLfVFUZBkUcbaiD5mPOFNS1sijFCPXHhKr0cQ4lh0IKOYRoyk6ks29tfEPaXq45aCvWQdwiWG6j7tOjz2STepeJFCau4b7CwYgZK1sHT-s6-cJFNJRlXk8rcMoWftmo63_wcbyP0UtzaERWwU">
+<div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded font-label-stamp text-label-stamp uppercase tracking-widest shadow-sm">
+              TRANSFORMACIÓN DIGITAL
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm text-structure-dark font-label-meta text-label-meta mb-2">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">schedule</span> 6 min lectura</span>
+<span class="">·</span>
+<span class="">Punta Arenas &amp; Provincias</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-text-editorial font-bold leading-snug group-hover:text-primary transition-colors mb-space-xs">
+<a href="/aprende-a-emprender/del-taller-al-mundo/" class="">
+                  Del taller al mundo: Cómo los artesanos del fin del mundo están digitalizando sus vitrinas sin perder su esencia humana
+                </a>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-space-md">
+                Exploramos las estrategias concretas con que creadores de Puerto Natales, Porvenir y Punta Arenas conectan con mercados internacionales mientras preservan sus métodos manuales intactos.
+              </p>
+</div>
+<a class="inline-flex items-center gap-2 text-primary font-title-editorial text-[14px] uppercase tracking-wider group-hover:underline" href="/aprende-a-emprender/del-taller-al-mundo/">
+<span class="">Leer artículo completo</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Artículos Secundarios (2 cards verticales) -->
+<div class="lg:col-span-5 flex flex-col gap-gutter justify-between">
+<!-- Secundario 1 -->
+<article class="bg-surface-warm rounded-2xl p-space-lg shadow-sm flex flex-col justify-between group transition-all hover:shadow-lg flex-1">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2.5 py-0.5 bg-surface-container text-text-editorial rounded font-label-stamp text-label-stamp uppercase tracking-wider">
+                  GUÍA EMPRENDEDORA
+                </span>
+<span class="text-structure-dark font-label-meta text-label-meta flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 4 min
+                </span>
+</div>
+<h3 class="font-title-editorial text-title-editorial uppercase text-text-editorial font-bold leading-tight group-hover:text-primary transition-colors my-2">
+<a href="/aprende-a-emprender/5-claves-para-formalizar-tu-negocio/" class="">
+                  5 claves para formalizar y hacer crecer tu emprendimiento en Magallanes
+                </a>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Pasos legales, sanitarios y comerciales adaptados a los beneficios tributarios y zonales que ofrece la ley regional.
+              </p>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-1.5 text-primary font-label-stamp text-label-stamp uppercase tracking-wider" href="/aprende-a-emprender/5-claves-para-formalizar-tu-negocio/">
+<span class="">Ver guía práctica</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Secundario 2 -->
+<article class="bg-surface-warm rounded-2xl p-space-lg shadow-sm flex flex-col justify-between group transition-all hover:shadow-lg flex-1">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2.5 py-0.5 bg-surface-accent-blue text-primary rounded font-label-stamp text-label-stamp uppercase tracking-wider font-bold">
+                  IMPACTO REGIONAL
+                </span>
+<span class="text-structure-dark font-label-meta text-label-meta flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 5 min
+                </span>
+</div>
+<h3 class="font-title-editorial text-title-editorial uppercase text-text-editorial font-bold leading-tight group-hover:text-primary transition-colors my-2">
+<a href="/aprende-a-emprender/balance-red-centros-sercotec/" class="">
+                  La red de Centros Sercotec: Balance de impacto en Punta Arenas y provincias
+                </a>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Cifras, historias de reconversión productiva y el rol de INACAP como operador técnico en la descentralización del apoyo económico.
+              </p>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-1.5 text-primary font-label-stamp text-label-stamp uppercase tracking-wider" href="/aprende-a-emprender/balance-red-centros-sercotec/">
+<span class="">Ver balance</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+<!-- Botón de Salida al Blog -->
+<div class="flex justify-center">
+<a class="inline-flex items-center gap-2 bg-text-editorial hover:bg-primary text-on-primary px-8 py-3.5 rounded-lg font-title-editorial text-title-editorial uppercase tracking-wider transition-all shadow-md active:scale-95" href="/aprende-a-emprender/">
+<span class="">Explorar artículos</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 3: AGENDA DEL CENTRO DE NEGOCIOS (REEMPLAZA TALLERES / FORMACIÓN) -->
+<section class="w-full bg-surface-container-low py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Encabezado de Sección -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<span class="font-label-stamp text-label-stamp text-secondary uppercase tracking-widest block mb-space-xs">
+            TALLERES · CAPACITACIONES · ACTIVIDADES
+          </span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-text-editorial tracking-tight">
+            AGENDA DEL CENTRO DE NEGOCIOS
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mt-space-sm md:mt-0">
+          Encuentra actividades, conocimientos y espacios de encuentro para seguir desarrollando tu emprendimiento.
+        </p>
+</div>
+<!-- Grilla de 3 Próximas Actividades con Bloque de Fecha Monumental -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-xl">
+<!-- Actividad 1 -->
+<div class="bg-surface-pure rounded-2xl p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-xl hover:-translate-y-1">
+<div>
+<!-- Asset Gráfico de Fecha Editorial -->
+<div class="flex items-baseline gap-2 pb-space-sm mb-space-md border-b-2 border-surface-container">
+<span class="font-display-hero text-[44px] font-bold text-primary leading-none">28</span>
+<span class="font-headline-sm text-headline-sm uppercase text-text-editorial font-bold">MAR</span>
+<span class="ml-auto font-label-stamp text-[10px] bg-surface-accent-blue text-primary px-2 py-0.5 rounded uppercase font-bold">
+                PRESENCIAL
+              </span>
+</div>
+<h3 class="font-headline-sm text-[20px] uppercase font-bold text-text-editorial leading-snug mb-space-xs">
+              Presencia Digital y Visibilidad Comercial
+            </h3>
+<div class="space-y-1.5 text-body-sm text-structure-dark my-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">location_on</span>
+<span class="">Sede INACAP Punta Arenas</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span class="">15:00 - 18:30 hrs</span>
+</div>
+<div class="flex items-center gap-2 text-[12px] text-on-surface-variant pt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">domain</span>
+<span class="">Org: Centro de Negocios Sercotec Punta Arenas</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-surface-container hover:bg-primary hover:text-on-primary text-text-editorial py-2.5 rounded-lg font-title-editorial text-[14px] uppercase tracking-wider transition-colors" href="/agenda/presencia-digital-punta-arenas/">
+<span class="">Ver actividad</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Actividad 2 -->
+<div class="bg-surface-pure rounded-2xl p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-xl hover:-translate-y-1">
+<div>
+<!-- Asset Gráfico de Fecha Editorial -->
+<div class="flex items-baseline gap-2 pb-space-sm mb-space-md border-b-2 border-surface-container">
+<span class="font-display-hero text-[44px] font-bold text-secondary leading-none">09</span>
+<span class="font-headline-sm text-headline-sm uppercase text-text-editorial font-bold">ABR</span>
+<span class="ml-auto font-label-stamp text-[10px] bg-surface-container text-text-editorial px-2 py-0.5 rounded uppercase font-bold">
+                ONLINE (ZOOM)
+              </span>
+</div>
+<h3 class="font-headline-sm text-[20px] uppercase font-bold text-text-editorial leading-snug mb-space-xs">
+              Marketing Digital e IA para PyMEs
+            </h3>
+<div class="space-y-1.5 text-body-sm text-structure-dark my-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">videocam</span>
+<span class="">Transmisión en vivo interactiva</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+<span class="">18:00 - 20:00 hrs</span>
+</div>
+<div class="flex items-center gap-2 text-[12px] text-on-surface-variant pt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">domain</span>
+<span class="">Org: Centro de Negocios Sercotec</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-surface-container hover:bg-secondary hover:text-on-secondary text-text-editorial py-2.5 rounded-lg font-title-editorial text-[14px] uppercase tracking-wider transition-colors" href="/agenda/marketing-digital-ia/">
+<span class="">Ver actividad</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Actividad 3 -->
+<div class="bg-surface-pure rounded-2xl p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-xl hover:-translate-y-1">
+<div>
+<!-- Asset Gráfico de Fecha Editorial -->
+<div class="flex items-baseline gap-2 pb-space-sm mb-space-md border-b-2 border-surface-container">
+<span class="font-display-hero text-[44px] font-bold text-primary leading-none">22</span>
+<span class="font-headline-sm text-headline-sm uppercase text-text-editorial font-bold">ABR</span>
+<span class="ml-auto font-label-stamp text-[10px] bg-surface-accent-blue text-primary px-2 py-0.5 rounded uppercase font-bold">
+                PRESENCIAL
+              </span>
+</div>
+<h3 class="font-headline-sm text-[20px] uppercase font-bold text-text-editorial leading-snug mb-space-xs">
+              Oportunidades y Encadenamiento B2B
+            </h3>
+<div class="space-y-1.5 text-body-sm text-structure-dark my-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">groups</span>
+<span class="">Salón de Ruedas de Negocios</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span class="">09:30 - 13:00 hrs</span>
+</div>
+<div class="flex items-center gap-2 text-[12px] text-on-surface-variant pt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">domain</span>
+<span class="">Org: Centro de Negocios Sercotec</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-surface-container hover:bg-primary hover:text-on-primary text-text-editorial py-2.5 rounded-lg font-title-editorial text-[14px] uppercase tracking-wider transition-colors" href="/agenda/encadenamiento-b2b/">
+<span class="">Ver actividad</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Botón Agenda Completa -->
+<div class="flex justify-center">
+<a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary px-8 py-3.5 rounded-lg font-title-editorial text-title-editorial uppercase tracking-wider transition-all shadow-md active:scale-95" href="/agenda/">
+<span class="">Ver agenda completa</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- MÓDULO DE RED TERRITORIAL (CIERRE ANTES DEL FOOTER) -->
+<section class="w-full bg-surface-pure py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-surface-accent-blue rounded-2xl p-space-lg lg:p-space-xl flex flex-col lg:flex-row items-center justify-between gap-gutter">
+<div class="space-y-space-xs max-w-2xl">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-primary font-bold">
+            RED TERRITORIAL MAGALLANES
+          </span>
+<h3 class="font-headline-md text-headline-md uppercase text-text-editorial font-bold">
+            ¿Eres emprendedor o artesano y aún no estás en este directorio?
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Acércate al Centro de Negocios Sercotec Punta Arenas, operado por INACAP. Recibe asesoría técnica gratuita, capacitación continua y acceso directo a esta vitrina regional oficial.
+          </p>
+</div>
+<div class="shrink-0 flex flex-col sm:flex-row gap-space-sm w-full lg:w-auto">
+<a class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary px-6 py-3.5 rounded-lg font-title-editorial text-[14px] uppercase tracking-wider transition-all shadow-sm text-center" href="/centro-negocios-punta-arenas/">
+<span class="">Conoce el Centro</span>
+<span class="material-symbols-outlined text-[18px]">store</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 bg-surface-pure hover:bg-surface-container text-text-editorial px-6 py-3.5 rounded-lg font-title-editorial text-[14px] uppercase tracking-wider transition-all shadow-sm text-center" href="/contacto/">
+<span class="">Solicitar Asesoría</span>
+<span class="material-symbols-outlined text-[18px]">contact_support</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-text-editorial text-on-tertiary pt-space-2xl pb-space-xl mt-space-2xl"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-2xl"><div class="lg:col-span-4 space-y-space-md"><div class="space-y-space-xs"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-surface-pure">MAGALLANES — HECHO POR SU GENTE</span><p class="font-label-stamp text-label-stamp uppercase tracking-widest text-secondary-fixed">DIRECTORIO COMERCIAL DE LA PATAGONIA</p></div><p class="font-body-md text-body-md text-surface-container-high max-w-sm">Plataforma de articulación comercial, vitrina territorial y visualización de productores, artesanos y servicios de la Región de Magallanes y de la Antártica Chilena.</p><div class="pt-space-sm space-y-space-xs"><span class="font-label-meta text-label-meta uppercase tracking-wider text-outline-variant block">Impulso Institucional</span><div class="flex flex-wrap items-center gap-space-sm text-surface-warm font-label-stamp text-label-stamp"><span class="px-space-sm py-space-xs bg-tertiary-container rounded">SERCOTEC</span><span class="px-space-sm py-space-xs bg-tertiary-container rounded">INACAP</span><span class="px-space-sm py-space-xs bg-tertiary-container rounded">MINISTERIO DE ECONOMÍA</span></div></div></div><div class="lg:col-span-3 space-y-space-md"><h3 class="font-title-editorial text-title-editorial uppercase text-surface-pure tracking-wider">Centro de Negocios Sercotec</h3><div class="p-space-sm bg-surface-pure/5 rounded border border-surface-pure/10 space-y-space-xs"><span class="font-title-editorial text-[14px] text-surface-pure font-bold block">Centro de Negocios Punta Arenas</span><p class="font-body-sm text-[12px] text-surface-container-high leading-relaxed">Operado por INACAP. Asesoría técnica integral, vinculación comercial y formación especializada gratuita para emprendedores regionales.</p><a class="inline-flex items-center gap-space-xs font-label-stamp text-label-stamp uppercase text-secondary-fixed hover:text-surface-pure transition-colors pt-1" data-path="centro-de-negocios-punta-arenas" href="/centro-negocios-punta-arenas/"><span class="material-symbols-outlined text-[15px]">store</span><span class="">Conoce el Centro Punta Arenas</span></a></div><div class="pt-space-xs"><span class="font-label-meta text-label-meta text-outline-variant block uppercase">Programa Regional</span><span class="font-body-sm text-body-sm text-surface-warm font-semibold">Red de Mentores y Asistencia Técnica Sercotec Magallanes</span></div></div><div class="lg:col-span-3 space-y-space-md"><h3 class="font-title-editorial text-title-editorial uppercase text-surface-pure tracking-wider">Soporte Territorial (4 Provincias)</h3><div class="space-y-space-sm font-body-sm text-body-sm text-surface-container-high"><div class="border-l-2 border-primary pl-space-sm"><strong class="text-surface-pure block font-medium">Provincia de Magallanes</strong><span class="text-[12px] text-surface-container-high block">Punta Arenas · Laguna Blanca · Río Verde · San Gregorio</span></div><div class="border-l-2 border-primary pl-space-sm"><strong class="text-surface-pure block font-medium">Provincia de Última Esperanza</strong><span class="text-[12px] text-surface-container-high block">Puerto Natales · Torres del Paine</span></div><div class="border-l-2 border-primary pl-space-sm"><strong class="text-surface-pure block font-medium">Provincia de Tierra del Fuego</strong><span class="text-[12px] text-surface-container-high block">Porvenir · Primavera · Timaukel</span></div><div class="border-l-2 border-primary pl-space-sm"><strong class="text-surface-pure block font-medium">Provincia Antártica Chilena</strong><span class="text-[12px] text-surface-container-high block">Cabo de Hornos (Puerto Williams) · Antártica</span></div></div></div><div class="lg:col-span-2 space-y-space-md"><h3 class="font-title-editorial text-title-editorial uppercase text-surface-pure tracking-wider">Atención &amp; Contacto</h3><div class="space-y-space-sm font-body-sm text-body-sm text-surface-container-high"><p class="">Canal de atención ciudadana y orientación a postulaciones comerciales.</p><a class="inline-flex items-center gap-space-xs font-label-stamp text-label-stamp uppercase tracking-wider text-secondary-fixed hover:text-surface-pure transition-colors" data-path="contacto-sercotec" href="/contacto/"><span class="material-symbols-outlined text-[16px]">support_agent</span><span class="">Atención Ciudadana</span></a><div class="pt-space-xs font-label-meta text-label-meta text-outline-variant"><p class="">Horario: Lun - Vie 09:00 a 18:00 hrs</p><p class="">Punta Arenas, Región de Magallanes</p></div></div></div></div><div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md font-label-meta text-label-meta text-surface-dim border-t border-surface-pure/10"><p class="">Plataforma oficial de difusión de emprendedores de Magallanes y de la Antártica Chilena. © 2025 Sercotec &amp; INACAP. Todos los derechos reservados.</p><div class="flex items-center gap-space-md"><a class="hover:text-surface-pure transition-colors" data-path="terminos-institucionales" href="#">Términos Institucionales</a><a class="hover:text-surface-pure transition-colors" data-path="privacidad-de-datos" href="#">Privacidad de Datos</a><a class="text-secondary-fixed hover:text-surface-pure transition-colors" data-path="directorio" href="/directorio/">Directorio Oficial</a></div></div></div></footer>
+
+
+</body></html>

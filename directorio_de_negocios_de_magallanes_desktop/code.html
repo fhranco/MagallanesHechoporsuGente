@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/>
+
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#ffb3b0","on-tertiary-fixed-variant":"#1f4874","on-surface":"#1b1c1c","text-editorial":"#20242A","structure-dark":"#58595B","surface-bright":"#fbf9f9","on-secondary-fixed":"#410006","primary":"#00518e","outline":"#717782","on-tertiary":"#ffffff","tertiary-fixed-dim":"#a4c9fc","surface-container":"#efeded","surface-dim":"#dbdad9","surface-tint":"#0060a8","tertiary-fixed":"#d3e4ff","on-secondary-container":"#fffbff","surface-container-highest":"#e3e2e2","tertiary-container":"#436996","on-primary-container":"#d9e7ff","surface-container-high":"#e9e8e7","on-primary":"#ffffff","on-error":"#ffffff","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface-variant":"#e3e2e2","on-error-container":"#93000a","secondary-container":"#db303c","on-secondary-fixed-variant":"#93001a","error":"#ba1a1a","surface-container-low":"#f5f3f3","tertiary":"#29517d","surface-warm":"#FAF7F2","on-primary-fixed-variant":"#004880","inverse-surface":"#303031","on-background":"#1b1c1c","outline-variant":"#c1c7d3","surface-pure":"#FFFFFF","on-surface-variant":"#414751","surface":"#fbf9f9","primary-container":"#0f69b4","inverse-primary":"#a2c9ff","on-tertiary-fixed":"#001c38","primary-fixed-dim":"#a2c9ff","on-secondary":"#ffffff","surface-accent-blue":"#EAF3FB","primary-fixed":"#d3e4ff","secondary-fixed":"#ffdad8","on-tertiary-container":"#d9e7ff","secondary":"#b81027","on-primary-fixed":"#001c38","background":"#fbf9f9","inverse-on-surface":"#f2f0f0"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"1.25rem","space-2xl":"4rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","gutter-sm":"1rem","margin":"2rem","space-xl":"2.5rem","gutter":"1.5rem","gutter-lg":"2.5rem","margin-desktop":"4rem","space-sm":"0.5rem"},"fontFamily":{"poppins":["Poppins","-apple-system","sans-serif"],"gobcl":["gobCL","sans-serif"],"mono":["SF Mono","SFMono-Regular","ui-monospace","monospace"],"display-hero":["Poppins","-apple-system","sans-serif"],"display-hero-mobile":["Poppins","-apple-system","sans-serif"],"headline-lg":["Poppins","-apple-system","sans-serif"],"headline-lg-mobile":["Poppins","-apple-system","sans-serif"],"headline-md":["Poppins","-apple-system","sans-serif"],"headline-sm":["Poppins","-apple-system","sans-serif"],"title-editorial":["Poppins","-apple-system","sans-serif"],"label-stamp":["SF Mono","SFMono-Regular","ui-monospace","Menlo","Monaco","Consolas","monospace"],"label-meta":["SF Mono","SFMono-Regular","ui-monospace","Menlo","Monaco","Consolas","monospace"],"body-lg":["-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Manrope","sans-serif"],"body-md":["-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Manrope","sans-serif"],"body-sm":["-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Manrope","sans-serif"],"manrope":["Manrope","-apple-system","sans-serif"]},"fontSize":{"display-hero-mobile":["38px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["22px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-meta":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-stamp":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"title-editorial":["18px",{"lineHeight":"24px","letterSpacing":"0.02em","fontWeight":"700"}]}}}};</script>  <!-- Google Fonts Homologadas (sitios.sercotec.cl): Poppins + Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head><body class="bg-surface-warm font-body-md text-text-editorial antialiased">  <!-- =======================================================================
+       HEADER INSTITUCIONAL Y NAVEGACIÓN HOMOLOGADA
+       ======================================================================= -->
+  <header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-warm/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.06)] border-b border-text-editorial/10">
+    <!-- Topbar Institucional Oficial (sitios.sercotec.cl + gobCL) -->
+    <div class="w-full bg-[#103D68] text-white py-1.5 px-margin-mobile md:px-margin-desktop min-h-[30px] flex items-center justify-between">
+      <div class="max-w-[1440px] w-full mx-auto flex items-center justify-between text-[11px] font-gobcl tracking-wide text-white/90">
+        <div class="flex items-center gap-space-sm flex-wrap">
+          <span class="font-bold tracking-wider text-white">SERCOTEC</span>
+          <span class="text-white/40">|</span>
+          <span>Centro de Negocios Punta Arenas</span>
+          <span class="text-white/40">·</span>
+          <span class="hidden sm:inline text-white/80">Operado por INACAP</span>
+        </div>
+        <div class="flex items-center gap-space-md text-[11px]">
+          <span class="text-white/70 hidden md:inline">Red Territorial Magallanes</span>
+          <a class="hover:text-white transition-colors underline decoration-white/40" href="#footer-regional">Sede Punta Arenas</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra Principal de Navegación -->
+    <div class="h-[76px] max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between gap-gutter">
+      <!-- Identidad de Marca: Texto Tipográfico Oficial Magallanes Hecho por su gente -->
+      <div class="flex items-center shrink-0">
+        <a class="flex flex-col group py-1" href="../index.html" aria-label="Magallanes — Hecho por su Gente">
+          <span class="font-poppins text-[20px] md:text-[23px] font-black uppercase tracking-tight text-text-editorial leading-none group-hover:text-primary transition-colors">
+            MAGALLANES
+          </span>
+          <span class="font-poppins text-[11px] md:text-[12px] text-structure-dark font-medium tracking-normal mt-1 whitespace-nowrap">
+            Hecho por su gente
+          </span>
+        </a>
+      </div>
+
+      <!-- Menú de Enlaces Desktop (Poppins) -->
+      <nav class="hidden md:flex items-center gap-space-md lg:gap-space-lg shrink-0" aria-label="Navegación principal">
+        <a class="text-[13px] font-medium text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1 font-poppins" href="../index.html">Inicio</a>
+        <a aria-current="page" class="transition-colors whitespace-nowrap text-primary font-bold border-b-2 border-primary pb-1 text-[13px] font-poppins" href="../directorio_de_negocios_de_magallanes_desktop/code.html">Directorio</a>
+        <a class="text-[13px] font-medium text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1 font-poppins" href="../tu_historia_me_inspira_cr_nicas_regionales/code.html">Historias</a>
+        <a class="text-[13px] font-medium text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1 font-poppins" href="../aprende_a_emprender_blog_de_contenidos/code.html">Blog</a>
+        <a class="text-[13px] font-medium text-text-editorial/80 hover:text-primary transition-colors whitespace-nowrap pb-1 font-poppins" href="../agenda_del_centro_de_negocios_talleres_y_actividades/code.html">Agenda</a>
+      </nav>
+
+      <!-- Buscador Amplio y Botón Buscar -->
+      <div class="flex items-center gap-space-sm sm:gap-space-md">
+        <form action="../directorio_de_negocios_de_magallanes_desktop/code.html" method="GET" class="relative hidden lg:block w-64 xl:w-72">
+          <input aria-label="Buscar productos o servicios en el catálogo" class="w-full pl-8 pr-3 py-1.5 text-[13px] bg-surface-pure/90 border border-text-editorial/20 rounded font-body-md text-text-editorial placeholder:text-structure-dark/60 focus:outline-none focus:border-primary focus:bg-surface-pure transition-all" name="q" placeholder="Buscar negocio o producto..." type="search">
+          <span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-structure-dark pointer-events-none">search</span>
+        </form>
+
+        <button aria-label="Abrir buscador" class="lg:hidden w-9 h-9 flex items-center justify-center rounded-full hover:bg-black/5 text-text-editorial transition-colors border-none" id="header-search-btn" type="button">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+        </button>
+
+        <!-- Botón Buscar -->
+        <a class="hidden sm:inline-flex items-center justify-center gap-1.5 bg-secondary hover:bg-secondary-container text-white text-[13px] font-semibold px-5 py-2.5 rounded shadow-sm transition-all whitespace-nowrap active:scale-[0.98] font-poppins" href="../directorio_de_negocios_de_magallanes_desktop/code.html">
+          <span class="material-symbols-outlined text-[16px]">search</span>
+          <span>Buscar</span>
+        </a>
+
+        <!-- Botón Menú Hamburguesa Mobile -->
+        <button aria-label="Abrir menú de navegación" aria-expanded="false" class="md:hidden w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container text-text-editorial transition-colors" id="mobile-menu-btn" type="button">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div class="hidden md:hidden bg-surface-pure border-b border-text-editorial/10 px-6 py-4 space-y-3 font-poppins" id="mobile-nav-drawer" aria-hidden="true">
+      <a class="block text-[14px] font-medium text-text-editorial py-1" href="../index.html">Inicio</a>
+      <a class="block text-[14px] font-bold text-primary py-1" href="../directorio_de_negocios_de_magallanes_desktop/code.html">Directorio</a>
+      <a class="block text-[14px] font-medium text-text-editorial py-1" href="../tu_historia_me_inspira_cr_nicas_regionales/code.html">Historias</a>
+      <a class="block text-[14px] font-medium text-text-editorial py-1" href="../aprende_a_emprender_blog_de_contenidos/code.html">Blog</a>
+      <a class="block text-[14px] font-medium text-text-editorial py-1" href="../agenda_del_centro_de_negocios_talleres_y_actividades/code.html">Agenda</a>
+      <div class="pt-2">
+        <a class="w-full flex items-center justify-center gap-1.5 bg-secondary text-white text-[13px] font-semibold py-2.5 rounded shadow-sm" href="../directorio_de_negocios_de_magallanes_desktop/code.html">
+          <span class="material-symbols-outlined text-[16px]">search</span>
+          <span>Buscar</span>
+        </a>
+      </div>
+    </div>
+  </header><main class="w-full pt-[102px] bg-surface-warm"><div class="flex flex-col w-full">
+<!-- BREADCRUMB & HEADER SECTION -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop pt-space-lg pb-space-xl">
+<!-- Breadcrumb -->
+<nav aria-label="Ruta de navegación" class="flex items-center gap-2 mb-space-md text-on-surface-variant">
+<a class="font-label-meta text-label-meta hover:text-primary transition-colors flex items-center gap-1" href="../index.html">
+<span class="material-symbols-outlined text-[16px]">home</span>
+        Inicio
+      </a>
+<span class="font-label-meta text-label-meta text-outline-variant">/</span>
+<span class="font-label-meta text-label-meta text-text-editorial font-semibold">Directorio Comercial</span>
+</nav>
+<!-- Header Copy & Layout -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-3xl space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-secondary font-bold">
+            01 / DIRECTORIO COMERCIAL DE MAGALLANES
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-text-editorial uppercase tracking-tight">
+          DESCUBRE LOS NEGOCIOS DE MAGALLANES.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl pt-2">
+          Explora productos, servicios y emprendimientos de nuestra región. Encuentra lo que necesitas y conecta directamente con quienes lo hacen posible.
+        </p>
+</div>
+<!-- Quick Metrics pill -->
+<div class="flex items-center gap-4 bg-surface-pure p-space-sm rounded-lg shadow-sm">
+<div class="px-space-md py-1 border-r border-outline-variant/30 text-center">
+<span class="font-headline-sm text-headline-sm text-primary block leading-none">100</span>
+<span class="font-label-meta text-label-meta text-structure-dark uppercase tracking-wider">Negocios</span>
+</div>
+<div class="px-space-md py-1 border-r border-outline-variant/30 text-center">
+<span class="font-headline-sm text-headline-sm text-secondary block leading-none">04</span>
+<span class="font-label-meta text-label-meta text-structure-dark uppercase tracking-wider">Comunas</span>
+</div>
+<div class="px-space-md py-1 text-center">
+<span class="font-headline-sm text-headline-sm text-tertiary block leading-none">100%</span>
+<span class="font-label-meta text-label-meta text-structure-dark uppercase tracking-wider">Austral</span>
+</div>
+</div>
+</div>
+<!-- Search Hero Bar -->
+<div class="bg-surface-pure rounded-xl p-space-sm shadow-md transition-shadow hover:shadow-lg">
+<form class="flex flex-col md:flex-row items-stretch gap-space-sm" onsubmit="event.preventDefault();">
+<div class="flex-1 flex items-center px-space-md bg-surface-container-low rounded-lg focus-within:bg-surface-pure transition-colors">
+<span class="material-symbols-outlined text-structure-dark mr-3 text-[22px]">search</span>
+<input class="w-full py-3.5 bg-transparent font-body-md text-body-md text-text-editorial placeholder:text-outline focus:outline-none" placeholder="Buscar por nombre, producto (ej. centeno, lana, soldadura)..." type="text"/>
+</div>
+<div class="flex items-center px-space-md bg-surface-container-low rounded-lg min-w-[240px]">
+<span class="material-symbols-outlined text-structure-dark mr-2 text-[20px]">location_on</span>
+<select aria-label="Filtrar por comuna" class="w-full py-3.5 bg-transparent font-body-md text-body-md text-text-editorial focus:outline-none cursor-pointer">
+<option value="">Todas las comunas</option>
+<option value="punta-arenas">Punta Arenas (Sede Central)</option>
+<option value="puerto-natales">Puerto Natales</option>
+<option value="porvenir">Porvenir (Tierra del Fuego)</option>
+<option value="cabo-de-hornos">Cabo de Hornos (Pto. Williams)</option>
+</select>
+</div>
+<button class="bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-label-stamp uppercase tracking-widest px-space-xl py-3.5 rounded-lg flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95" type="submit">
+<span class="material-symbols-outlined text-[18px]">explore</span>
+          Buscar en el directorio
+        </button>
+</form>
+</div>
+</section>
+<!-- TWO-COLUMN WORKSPACE (FILTERS SIDEBAR + DIRECTORY GRID) -->
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop pb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- LEFT SIDEBAR: FILTERS (Sticky) -->
+<aside class="lg:col-span-3 space-y-space-lg lg:sticky lg:top-[110px]">
+<div class="bg-surface-pure rounded-xl p-space-lg shadow-sm space-y-space-lg">
+<!-- Filter Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-highest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h2 class="font-title-editorial text-title-editorial uppercase tracking-wider text-text-editorial">Filtros</h2>
+</div>
+<button class="font-label-meta text-label-meta text-secondary hover:underline cursor-pointer">
+              Limpiar filtros
+            </button>
+</div>
+<!-- Commercial Orientation -->
+<div class="space-y-space-sm">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-structure-dark block">
+              Orientación Comercial
+            </span>
+<div class="flex flex-col gap-1.5">
+<label class="flex items-center justify-between p-2 rounded-lg bg-surface-accent-blue cursor-pointer transition-colors">
+<span class="flex items-center gap-2">
+<input checked="" class="accent-primary" name="orientacion" type="radio"/>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Todos los tipos</span>
+</span>
+<span class="font-label-stamp text-label-stamp bg-surface-pure px-2 py-0.5 rounded text-primary">100</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="flex items-center gap-2">
+<input class="accent-primary" name="orientacion" type="radio"/>
+<span class="font-body-sm text-body-sm text-text-editorial">B2C · Consumo y Turistas</span>
+</span>
+<span class="font-label-stamp text-label-stamp text-structure-dark">64</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="flex items-center gap-2">
+<input class="accent-primary" name="orientacion" type="radio"/>
+<span class="font-body-sm text-body-sm text-text-editorial">B2B · Proveedores Industriales</span>
+</span>
+<span class="font-label-stamp text-label-stamp text-structure-dark">36</span>
+</label>
+</div>
+</div>
+<!-- Rubros / Categorías -->
+<div class="space-y-space-sm pt-space-xs">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-structure-dark block">
+              Rubros & Categorías
+            </span>
+<div class="space-y-2">
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="flex items-center gap-2.5">
+<input checked="" class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial group-hover:text-primary transition-colors">Gastronomía & Alimentos</span>
+</span>
+<span class="font-label-meta text-label-meta text-structure-dark">24</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="flex items-center gap-2.5">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial group-hover:text-primary transition-colors">Hecho a Mano & Artesanía</span>
+</span>
+<span class="font-label-meta text-label-meta text-structure-dark">18</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="flex items-center gap-2.5">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial group-hover:text-primary transition-colors">Comercio Local & Regalos</span>
+</span>
+<span class="font-label-meta text-label-meta text-structure-dark">16</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="flex items-center gap-2.5">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial group-hover:text-primary transition-colors">Turismo Austral & Experiencias</span>
+</span>
+<span class="font-label-meta text-label-meta text-structure-dark">12</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="flex items-center gap-2.5">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial group-hover:text-primary transition-colors">Servicios Técnicos & Oficios</span>
+</span>
+<span class="font-label-meta text-label-meta text-structure-dark">14</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="flex items-center gap-2.5">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial group-hover:text-primary transition-colors">Proveedores Industriales B2B</span>
+</span>
+<span class="font-label-meta text-label-meta text-structure-dark">16</span>
+</label>
+</div>
+</div>
+<!-- Comunas de Magallanes -->
+<div class="space-y-space-sm pt-space-xs">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-structure-dark block">
+              Comunas del Territorio
+            </span>
+<div class="space-y-2">
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="flex items-center gap-2">
+<input checked="" class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial group-hover:text-primary transition-colors">Punta Arenas</span>
+</span>
+<span class="font-label-meta text-label-meta text-primary font-bold">52</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="flex items-center gap-2">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial group-hover:text-primary transition-colors">Puerto Natales</span>
+</span>
+<span class="font-label-meta text-label-meta text-structure-dark">26</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="flex items-center gap-2">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial group-hover:text-primary transition-colors">Porvenir (T. del Fuego)</span>
+</span>
+<span class="font-label-meta text-label-meta text-structure-dark">14</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="flex items-center gap-2">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial group-hover:text-primary transition-colors">Cabo de Hornos (P. Williams)</span>
+</span>
+<span class="font-label-meta text-label-meta text-structure-dark">8</span>
+</label>
+</div>
+</div>
+<!-- Modalidad de Atención -->
+<div class="space-y-space-sm pt-space-xs">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-structure-dark block">
+              Modalidad de Venta
+            </span>
+<div class="space-y-2">
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial">Local físico / Taller</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial">Venta online / Envíos nacionales</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-editorial">Atención a faenas & flotas</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Postulation Banner in Sidebar -->
+<div class="bg-tertiary text-on-tertiary rounded-xl p-space-lg shadow-md relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]">storefront</span>
+</div>
+<div class="relative z-10 space-y-space-sm">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-tertiary-container rounded">
+<span class="font-label-stamp text-label-stamp uppercase text-tertiary-fixed font-bold tracking-widest">Convocatoria Abierta</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-tertiary leading-tight">
+              ¿Tienes un negocio en Magallanes?
+            </h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed/90">
+              Súmate al directorio oficial con el respaldo y asesoría técnica del Centro de Negocios Sercotec.
+            </p>
+<a class="inline-flex items-center gap-2 bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-label-stamp uppercase tracking-wider px-space-md py-2.5 rounded-lg transition-colors w-full justify-center" href="#">
+              Postular mi emprendimiento
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- RIGHT COLUMN: CONTROL BAR + GRID CARDS -->
+<main class="lg:col-span-9 space-y-space-lg">
+<!-- Control Bar: Counter + Sorting + Active Chips -->
+<div class="bg-surface-pure rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<p class="font-body-md text-body-md text-text-editorial font-medium">
+                Mostrando <strong class="text-primary font-bold">6</strong> negocios destacados de <strong class="text-text-editorial">100</strong> disponibles
+              </p>
+</div>
+<!-- Sorting Select -->
+<div class="flex items-center gap-2">
+<span class="font-label-meta text-label-meta text-structure-dark uppercase tracking-wider hidden sm:inline">Ordenar:</span>
+<select aria-label="Ordenar listado" class="bg-surface-container-low font-body-sm text-body-sm text-text-editorial px-space-sm py-2 rounded-lg border-0 focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer">
+<option value="recientes">Más recientes</option>
+<option value="az">Orden alfabético A - Z</option>
+<option value="comuna">Por comuna</option>
+<option value="popular">Más consultados</option>
+</select>
+</div>
+</div>
+<!-- Active Filter Chips -->
+<div class="flex flex-wrap items-center gap-2 pt-2 border-t border-surface-container-highest">
+<span class="font-label-stamp text-label-stamp uppercase tracking-wider text-structure-dark mr-1">Filtros activos:</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-accent-blue text-primary rounded-lg font-label-meta text-label-meta">
+              Punta Arenas
+              <button aria-label="Quitar filtro Punta Arenas" class="hover:text-secondary flex items-center">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-accent-blue text-primary rounded-lg font-label-meta text-label-meta">
+              Gastronomía & Alimentos
+              <button aria-label="Quitar filtro Gastronomía" class="hover:text-secondary flex items-center">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<button class="font-label-meta text-label-meta text-structure-dark hover:text-secondary underline ml-2">
+              Borrar todos
+            </button>
+</div>
+</div>
+<!-- 3-COLUMN LOOKBOOK DIRECTORY GRID -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
+<!-- TARJETA 1: Panadería y Café Australis -->
+<article class="bg-surface-pure rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of artisanal sourdough rye bread loaf with dusted flour alongside a specialty coffee cup inside a rustic Patagonian bakery with warm incandescent light, timber shelves, and morning mist outside the window in Punta Arenas Chile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwrOUgZPgfC8yf9su9Xi-Awzt_sIaffZ3H12gz3RRI7YD0LiL1OswdURBaFjSP-S81A8jt1-1Lm2aI2cO9jH-0TB23gmpaTyI_e-HqUGJajbJxl3B7sFsoPhz-TtQwtONDR20FkY0VBNOQziuXr6ulJJxQkObV8qNjTja4mBhZtcSIJ91QCJDYTywVrkTMb5pbda_-52XBZsI3uh7bdhXtwns6JWXs2wvq8FEI66Y"/>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-2">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-bold">
+                  Gastronomía & Panadería
+                </span>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary transition-colors leading-snug">
+                  Panadería y Café Australis
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                  Elaboración artesanal de panes de centeno austral, trenzas fueguinas y cafetería de especialidad con granos tostados en la región.
+                </p>
+</div>
+<div class="pt-space-sm space-y-2 border-t border-surface-container-highest">
+<div class="flex items-center gap-2">
+<a class="flex-1 bg-surface-container-low hover:bg-surface-accent-blue text-primary font-headline-sm text-label-stamp uppercase tracking-wider py-2.5 px-3 rounded-lg text-center transition-colors" href="../ficha_individual_de_negocio_artesan_as_el_calafate_desktop/code.html">
+                    Conocer negocio
+                  </a>
+<a aria-label="Contactar por WhatsApp a Panadería Australis" class="bg-[#25D366] hover:bg-[#20ba59] text-white p-2.5 rounded-lg flex items-center justify-center transition-colors shadow-sm" href="https://wa.me/56912345678" rel="noopener noreferrer" target="_blank" title="Consultar por WhatsApp">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- TARJETA 2: Tejidos Viento del Sur -->
+<article class="bg-surface-pure rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal raw sheep wool yarn skeins in natural un-dyed cream, ochre, and slate tones on a traditional wooden loom, soft morning light in Puerto Natales craft atelier with Chilean Patagonia mountains subtly visible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ojIHgYy1cw8foTQWIs4S93cjzp-HopuMuMOeohsN8CvujGw2xW5D_c75jdERoenNo_8bA6DzPw7vMeIIhP1_Pvq4SpwxqEEVJJp32bXaiXsVsVn-YY1hqMCBd9dwLS_dy2bzKaZHyNGIP6yms7s0CmoujZbzOic_tOsRayQbVoJAEacSj7Jp7Giv2B7bo_bKwb10QdvwWaQhVq3YMzgLRAnkbNeNNhB3obmDGxI"/>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-2">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-bold">
+                  Artesanía & Confección
+                </span>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary transition-colors leading-snug">
+                  Tejidos Viento del Sur
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                  Prendas tejidas a mano y en telar con lana 100% magallánica sin teñir químicamente. Diseños de identidad patagónica y envíos a todo Chile.
+                </p>
+</div>
+<div class="pt-space-sm space-y-2 border-t border-surface-container-highest">
+<div class="flex items-center gap-2">
+<a class="flex-1 bg-surface-container-low hover:bg-surface-accent-blue text-primary font-headline-sm text-label-stamp uppercase tracking-wider py-2.5 px-3 rounded-lg text-center transition-colors" href="../ficha_individual_de_negocio_artesan_as_el_calafate_desktop/code.html">
+                    Conocer negocio
+                  </a>
+<a aria-label="Contactar por WhatsApp a Tejidos Viento del Sur" class="bg-[#25D366] hover:bg-[#20ba59] text-white p-2.5 rounded-lg flex items-center justify-center transition-colors shadow-sm" href="https://wa.me/56912345679" rel="noopener noreferrer" target="_blank" title="Consultar por WhatsApp">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- TARJETA 3: Maestranza Fueguina (B2B) -->
+<article class="bg-surface-pure rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group border-t-2 border-primary">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Industrial naval mechanical workshop in Porvenir Tierra del Fuego with bright welding sparks flying from a steel boat shaft, heavy precision lathe machinery in the background, blue tone industrial ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxDegPCSNss83MFP_CBmCtyzyOEkRaRA4g05hSA0Qjhd9aiD194jjSHqOHHW_AHLJXrS9Ds3ZxzCV33Rlyg2QVT7Vf-wByckJT5_1I8d897Tb9p142LkwjfHFvQLepfu0WX5Ah-tvw1zpMMImqkNbhSZbbCxGK6KT0tHo9dEOaLId8duVLLd5ea__yavIheXOGISY6I48oMT4rVnAdLmd4Gr34j29GIStsV2h385s"/>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-2">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-primary font-bold">
+                  Oficios Técnicos & Metalmecánica
+                </span>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary transition-colors leading-snug">
+                  Maestranza Fueguina
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                  Corte, soldadura de alta resistencia y mantención para embarcaciones pesqueras y faenas mineras en Tierra del Fuego. Factura inmediata.
+                </p>
+</div>
+<div class="pt-space-sm space-y-2 border-t border-surface-container-highest">
+<div class="flex items-center gap-2">
+<a class="flex-1 bg-surface-accent-blue hover:bg-primary hover:text-on-primary text-primary font-headline-sm text-label-stamp uppercase tracking-wider py-2.5 px-3 rounded-lg text-center transition-colors" href="../ficha_individual_de_negocio_artesan_as_el_calafate_desktop/code.html">
+                    Ficha Técnica B2B
+                  </a>
+<a aria-label="Contactar por WhatsApp a Maestranza Fueguina" class="bg-[#25D366] hover:bg-[#20ba59] text-white p-2.5 rounded-lg flex items-center justify-center transition-colors shadow-sm" href="https://wa.me/56912345680" rel="noopener noreferrer" target="_blank" title="Consultar por WhatsApp">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- TARJETA 4: Expediciones Navarino -->
+<article class="bg-surface-pure rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Kayaker paddling across the pristine deep blue waters of the Beagle Channel in Puerto Williams, rugged snow-capped Dientes de Navarino mountain peaks under a dramatic sub-antarctic sky, authentic expedition atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT35jmW3W9EOJ7Ie2sD74Kxd8_0NsxxwqFrRMU6-QOU-rPattHEGMi9j5neYOcmE7nfIL2YKtPVzdQIBMSFHYkXXAQSRPocjC6oTnmNB6VZ3RQp3jTexghhf9L9kfYIw1DqiQm7pvyWSPsvQ1ugz31RZ1c5ZM1RTgG4z1t8bWzLl7TC3o4EcZnMuRb7gkgdipW1-E6zm5cC6fUZSH-fckqeW_4r_R2Xuh42EqPHPQ"/>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-2">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-bold">
+                  Turismo de Experiencia
+                </span>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary transition-colors leading-snug">
+                  Expediciones Navarino
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                  Guías locales certificados por Sernatur para el circuito Dientes de Navarino y navegación austral personalizada.
+                </p>
+</div>
+<div class="pt-space-sm space-y-2 border-t border-surface-container-highest">
+<div class="flex items-center gap-2">
+<a class="flex-1 bg-surface-container-low hover:bg-surface-accent-blue text-primary font-headline-sm text-label-stamp uppercase tracking-wider py-2.5 px-3 rounded-lg text-center transition-colors" href="../ficha_individual_de_negocio_artesan_as_el_calafate_desktop/code.html">
+                    Conocer negocio
+                  </a>
+<a aria-label="Contactar por WhatsApp a Expediciones Navarino" class="bg-[#25D366] hover:bg-[#20ba59] text-white p-2.5 rounded-lg flex items-center justify-center transition-colors shadow-sm" href="https://wa.me/56912345681" rel="noopener noreferrer" target="_blank" title="Consultar por WhatsApp">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- TARJETA 5: Maderas Nativas Australes (B2B) -->
+<article class="bg-surface-pure rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group border-t-2 border-primary">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stacks of finely milled Patagonian Lenga timber planks neatly aligned in an outdoor sawmill yard near Punta Arenas, warm natural wood textures, clean cuts, CONAF certified stamps on wood ends." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHeF2-ex4rLvQ5B6SOnMHA8bayQiY9nxn4N3nGdbgNRK3dYZXn-2fSJ3gbR9bkDtOYtymawrxpKqYgvOVMPtNl7rSv4OlTM9vkFJAO7N9vx0R-MrJupKk5fl2N8oTwbXoiBu_t97rbkyxHyxWyaenvjbsPPfOIRoo5EVyq8ED7x0u3dh_V5OUDhaKWBEwfeBylrCMqH5F7hTmGLVL7RUckrRt2wkVTB9Ok0qP56H4"/>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-2">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-primary font-bold">
+                  Construcción & Maderas B2B
+                </span>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary transition-colors leading-snug">
+                  Maderas Nativas Australes
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                  Abastecimiento de madera de lenga y coigüe con plan de manejo sustentable CONAF. Vigas, tablas, pisos y piezas para carpintería fina.
+                </p>
+</div>
+<div class="pt-space-sm space-y-2 border-t border-surface-container-highest">
+<div class="flex items-center gap-2">
+<a class="flex-1 bg-surface-accent-blue hover:bg-primary hover:text-on-primary text-primary font-headline-sm text-label-stamp uppercase tracking-wider py-2.5 px-3 rounded-lg text-center transition-colors" href="../ficha_individual_de_negocio_artesan_as_el_calafate_desktop/code.html">
+                    Ficha Técnica B2B
+                  </a>
+<a aria-label="Contactar por WhatsApp a Maderas Nativas Australes" class="bg-[#25D366] hover:bg-[#20ba59] text-white p-2.5 rounded-lg flex items-center justify-center transition-colors shadow-sm" href="https://wa.me/56912345682" rel="noopener noreferrer" target="_blank" title="Consultar por WhatsApp">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- TARJETA 6: Tostaduría Don Pedro -->
+<article class="bg-surface-pure rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rustic burlap sacks overflowing with freshly roasted almonds, walnuts, and dark roast coffee beans inside a traditional grocery store in Punta Arenas, warm ambient light, vintage scoop scale in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9tfpjAQ3cYYm6js-SITuHax2cl60_XctLbZLFlhURLHFt9TR5gc-WUJjj1FaS2q9zPc94uz-C0bxlEGbf05xHy8g4m2ZZjzkFIRMxRko7fT236RJS1Um_PKrHcMqHMkZbCPN8lSEJVmxpWO0ZUzWLy9sSS3KN2Q3toA-strm4nncKKU7Zk92MfBjhpnqjjHDqH-yEnvHXv1DHFQKrqrmKYvYmSxFNuxHgDx6Yb7Q"/>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-2">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-bold">
+                  Comercio de Barrio & Granel
+                </span>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary transition-colors leading-snug">
+                  Tostaduría Don Pedro
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                  Tostado diario de frutos secos, harinas integrales, mieles de bosque nativo y condimentos al por mayor y menor para familias y locales gastronómicos.
+                </p>
+</div>
+<div class="pt-space-sm space-y-2 border-t border-surface-container-highest">
+<div class="flex items-center gap-2">
+<a class="flex-1 bg-surface-container-low hover:bg-surface-accent-blue text-primary font-headline-sm text-label-stamp uppercase tracking-wider py-2.5 px-3 rounded-lg text-center transition-colors" href="../ficha_individual_de_negocio_artesan_as_el_calafate_desktop/code.html">
+                    Conocer negocio
+                  </a>
+<a aria-label="Contactar por WhatsApp a Tostaduría Don Pedro" class="bg-[#25D366] hover:bg-[#20ba59] text-white p-2.5 rounded-lg flex items-center justify-center transition-colors shadow-sm" href="https://wa.me/56912345683" rel="noopener noreferrer" target="_blank" title="Consultar por WhatsApp">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- PAGINATION SECTION (Clean Gob.cl / Accessible Standard) -->
+<div class="pt-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md border-t border-surface-container-highest">
+<p class="font-body-sm text-body-sm text-on-surface-variant order-2 sm:order-1">
+            Página <strong>1</strong> de <strong>17</strong> en el registro territorial
+          </p>
+<nav aria-label="Paginación de resultados" class="flex items-center gap-1 order-1 sm:order-2">
+<button aria-label="Página anterior" class="px-3 py-2 rounded-lg bg-surface-container text-outline cursor-not-allowed font-body-sm text-body-sm flex items-center gap-1" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+<span class="hidden md:inline">Anterior</span>
+</button>
+<button aria-current="page" class="w-10 h-10 rounded-lg bg-primary text-on-primary font-headline-sm text-label-stamp flex items-center justify-center shadow-sm">
+              1
+            </button>
+<button class="w-10 h-10 rounded-lg bg-surface-pure text-text-editorial hover:bg-surface-accent-blue font-headline-sm text-label-stamp flex items-center justify-center transition-colors">
+              2
+            </button>
+<button class="w-10 h-10 rounded-lg bg-surface-pure text-text-editorial hover:bg-surface-accent-blue font-headline-sm text-label-stamp flex items-center justify-center transition-colors">
+              3
+            </button>
+<span class="w-8 text-center text-outline font-bold">...</span>
+<button class="w-10 h-10 rounded-lg bg-surface-pure text-text-editorial hover:bg-surface-accent-blue font-headline-sm text-label-stamp flex items-center justify-center transition-colors">
+              17
+            </button>
+<button aria-label="Página siguiente" class="px-3 py-2 rounded-lg bg-surface-pure hover:bg-surface-accent-blue text-primary font-body-sm text-body-sm flex items-center gap-1 transition-colors shadow-sm">
+<span class="hidden md:inline">Siguiente</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</nav>
+</div>
+</main>
+</div>
+</div>
+<!-- INSTITUTIONAL ADVISORY STRIP (Sercotec Support) -->
+<section class="w-full bg-surface-accent-blue py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop">
+<div class="bg-surface-pure rounded-xl p-space-lg md:p-space-xl shadow-sm flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md max-w-2xl">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">support_agent</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-stamp text-label-stamp uppercase tracking-widest text-primary font-bold">
+              Asesoría Técnica y Formalización
+            </span>
+<h4 class="font-headline-sm text-headline-sm text-text-editorial">
+              ¿Tu negocio aún no está formalizado ante el SII o buscas financiamiento?
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              El Centro de Negocios Sercotec Punta Arenas, operado por INACAP, brinda acompañamiento gratuito integral: modelo de negocios, resolución sanitaria, facturación y postulación a fondos concursables (Capital Semilla y Abeja).
+            </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm w-full lg:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-label-stamp uppercase tracking-wider px-space-lg py-3.5 rounded-lg transition-colors text-center" href="#">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+            Agendar Asesoría Gratuita
+          </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface-container-low hover:bg-surface-container text-text-editorial font-headline-sm text-label-stamp uppercase tracking-wider px-space-md py-3.5 rounded-lg transition-colors text-center" href="#">
+            Conocer Programas
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div></main>  <!-- =======================================================================
+       FOOTER INSTITUCIONAL (CENTRO DE NEGOCIOS SERCOTEC PUNTA ARENAS)
+       ======================================================================= -->
+  <footer class="w-full bg-[#1A1D20] text-white pt-12 pb-8 border-t border-white/10" id="footer-regional">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-white/10">
+        
+        <!-- Columna 1: Marca y Propósito (6 cols) -->
+        <div class="md:col-span-6 space-y-4">
+          <div class="flex flex-col">
+            <span class="font-poppins text-[20px] md:text-[22px] font-black uppercase tracking-tight text-white leading-none">
+              MAGALLANES
+            </span>
+            <span class="font-poppins text-[12px] text-white/60 font-medium tracking-normal mt-1">
+              Hecho por su gente
+            </span>
+          </div>
+          <p class="font-body-md text-[14px] text-white/70 max-w-md leading-relaxed">
+            Vitrina comercial territorial del Centro de Negocios Sercotec Punta Arenas, operado por INACAP. Conectamos directamente a la comunidad y empresas con artesanos, productores y servicios de toda la Patagonia austral.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2.5 py-1 bg-white/10 text-white/90 rounded font-mono text-[10px] font-bold">SERCOTEC</span>
+            <span class="px-2.5 py-1 bg-white/10 text-white/90 rounded font-mono text-[10px] font-bold">INACAP</span>
+            <span class="px-2.5 py-1 bg-white/10 text-white/90 rounded font-mono text-[10px] font-bold">MINISTERIO DE ECONOMÍA</span>
+          </div>
+        </div>
+
+        <!-- Columna 2: Ficha Oficial Centro Punta Arenas (Google Maps Verificado) (6 cols) -->
+        <div class="md:col-span-6 space-y-3 md:pl-8 lg:pl-12 border-t md:border-t-0 md:border-l border-white/10 pt-6 md:pt-0">
+          <h3 class="font-poppins text-[15px] uppercase text-white tracking-wider font-bold">
+            Centro de Negocios Sercotec Punta Arenas
+          </h3>
+          <div class="space-y-2 text-[13px] text-white/80 font-body-md">
+            <p class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-[#EB3C46] shrink-0 mt-0.5" aria-hidden="true">location_on</span>
+              <span>C. Lautaro Navarro 305, 6212767 Punta Arenas, Magallanes y la Antártica Chilena</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-[#0F69B4] shrink-0" aria-hidden="true">call</span>
+              <a href="tel:+56947041755" class="hover:text-white transition-colors underline decoration-white/30">+56 9 4704 1755</a>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-white/60 shrink-0" aria-hidden="true">schedule</span>
+              <span>Lunes a Viernes · 09:00 a 18:00 hrs</span>
+            </p>
+          </div>
+          <div class="pt-2">
+            <span class="inline-flex items-center gap-1.5 font-mono text-[11px] text-[#93C5FD]">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#3B82F6]"></span>
+              Cobertura en las 4 provincias: Magallanes, Última Esperanza, Tierra del Fuego y Antártica Chilena
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior de Demostración y Derechos Oficiales 2026 -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] text-white/60">
+        <p class="text-center sm:text-left">
+          © 2026 Centro de Negocios Sercotec Punta Arenas &amp; INACAP. Todos los derechos reservados.
+        </p>
+        <div class="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-full text-white/80">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#EB3C46]"></span>
+          <span>Demostración técnica — Propuesta desarrollada por <strong class="text-white font-semibold">Agencia PatagoniaCoach</strong> · Activo hasta el 15 de noviembre de 2026</span>
+        </div>
+      </div>
+    </div>
+  </footer><script src="../js/main.js"></script>
+</body></html>

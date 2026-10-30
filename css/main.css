@@ -1,0 +1,540 @@
+/**
+ * Magallanes Hecho por su Gente - Estilos Principales
+ * Centro de Negocios Sercotec Punta Arenas (Operado por INACAP)
+ * 
+ * ARQUITECTURA TIPOGRÁFICA:
+ * Sincronización oficial con sitios.sercotec.cl (Extracción Peek en producción)
+ * - Titulares H1-H4: Poppins (Google Fonts)
+ * - Cuerpo de lectura: Manrope / Pila del Sistema (-apple-system)
+ * - Badges y Metadatos: SF Mono / Monospace (10px - 11px)
+ * - Sello Institucional: gobCL disponible para firmas del Estado
+ */
+
+/* ==========================================================================
+   1. TIPOGRAFÍA INSTITUCIONAL GOBCL (Manual de Marca)
+   ========================================================================== */
+@font-face {
+  font-family: 'gobCL';
+  src: url('../assets/fonts/gobCL/gobCL_Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gobCL';
+  src: url('../assets/fonts/gobCL/gobCL_Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gobCL';
+  src: url('../assets/fonts/gobCL/gobCL_Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gobCL';
+  src: url('../assets/fonts/gobCL/gobCL_Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   2. TOKENS TIPOGRÁFICOS Y CROMÁTICOS DE SITIOS.SERCOTEC.CL + DESIGN.MD
+   ========================================================================== */
+:root {
+  /* Tipografías Oficiales sitios.sercotec.cl */
+  --font-poppins: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-apple-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Manrope', Arial, sans-serif;
+  --font-sf-mono: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas, monospace;
+  --font-gobcl: 'gobCL', sans-serif;
+
+  /* Escala Tipográfica Exacta de sitios.sercotec.cl */
+  --text-10: 10px;
+  --text-11: 11px;
+  --text-12: 12px;
+  --text-14: 14px;
+  --text-16: 16px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-25: 25px;
+  --text-28: 28px;
+  --text-32: 32px;
+
+  /* Paleta Institucional Oficial Sercotec (Pantone / Hex) */
+  --color-sercotec-blue: #0F69B4;        /* Pantone 293C / RGB(15, 105, 180) */
+  --color-sercotec-red: #EB3C46;         /* Pantone 185C / RGB(235, 60, 70) */
+  --color-sercotec-gray-dark: #58595B;   /* Pantone Cool Gray 11C */
+  --color-sercotec-gray-med: #787878;    /* Pantone Cool Gray 9C */
+
+  /* Paleta Editorial Entorno Austral */
+  --color-b2b-navy: #103D68;             /* Azul marino B2B institucional */
+  --color-surface-warm: #FAF7F2;         /* Papel cálido editorial de fondo */
+  --color-surface-pure: #FFFFFF;         /* Blanco puro contenedor */
+  --color-surface-accent-blue: #EAF3FB;  /* Azul hielo para badges y tags */
+  --color-text-editorial: #20242A;       /* Gris carbón editorial de lectura */
+  --color-text-muted: #58595B;           /* Metadatos y etiquetas secundarias */
+
+  /* Bordes y Formas (Conforme Gob.cl) */
+  --radius-sm: 2px;
+  --radius-base: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 9999px;
+
+  /* Espaciado Modular */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+
+  /* Márgenes de Contenedor */
+  --margin-mobile: 1.25rem;
+  --margin-tablet: 2rem;
+  --margin-desktop: 4rem;
+}
+
+/* ==========================================================================
+   3. RESET Y REGLAS BASE
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-apple-system);
+  color: var(--color-text-editorial);
+  background-color: var(--color-surface-warm);
+  line-height: 1.5;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   3. REGLA CRÍTICA TIPOGRÁFICA (SERCOTEC + GOBCL + APPLE SYSTEM)
+   - Titulares H1, H2, H3, H4: Poppins (Google Fonts)
+   - Cuerpo y descripciones: Pila moderna de sistema (-apple-system) / Manrope
+   - Badges («HECHO AQUÍ», comuna, fechas de agenda): SF Mono / Monoespaciada a 10px-11px
+   - Sello Institucional: gobCL para firmas del Estado
+   ========================================================================== */
+
+/* 1. Titulares H1, H2, H3, H4 y Títulos Editoriales con Poppins */
+h1, h2, h3, h4, h5, h6,
+.font-poppins,
+.font-headline-lg,
+.font-headline-md,
+.font-headline-sm,
+.font-display-hero,
+.font-display-hero-mobile,
+.font-headline-lg-mobile,
+.font-title-editorial,
+.type-h1,
+.type-h2,
+.type-h2-40,
+.type-h2-28,
+.type-h3,
+.type-subheading,
+.type-subheading-22,
+.type-subheading-22-600,
+.type-large-body,
+.type-link {
+  font-family: var(--font-poppins) !important;
+  letter-spacing: -0.01em;
+}
+
+/* 2. Cuerpo, párrafos y descripciones con Pila del Sistema / Manrope */
+body, p, li, input, select, textarea,
+.font-body-lg,
+.font-body-md,
+.font-body-sm,
+.type-body {
+  font-family: var(--font-apple-system) !important;
+}
+
+/* 3. Badges («HECHO AQUÍ», comuna, fechas, metadatos) con SF Mono */
+.font-label-stamp,
+.font-label-meta,
+.font-mono-stamp,
+.badge-mono,
+.font-mono,
+.type-small {
+  font-family: var(--font-sf-mono) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.06em !important;
+}
+
+/* 4. Tipografía gobCL para firmas institucionales */
+.font-gobcl {
+  font-family: var(--font-gobcl) !important;
+}
+
+/* ==========================================================================
+   4. ACCESIBILIDAD Y FOCO VISIBLE (WCAG 2.1 AA)
+   ========================================================================== */
+:focus-visible {
+  outline: 2px solid var(--color-sercotec-blue) !important;
+  outline-offset: 2px !important;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: var(--color-sercotec-blue);
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  border-radius: var(--radius-base);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+}
+
+/* ==========================================================================
+   5. BOTONES Y COMPONENTES GOBIERNO DE CHILE
+   ========================================================================== */
+.btn-gobcl-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-sercotec-blue);
+  color: #FFFFFF;
+  border-radius: var(--radius-base);
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-poppins);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 1px 3px rgba(16, 61, 104, 0.12);
+}
+
+.btn-gobcl-primary:hover {
+  background-color: #0d5aa0;
+  box-shadow: 0 4px 12px rgba(16, 61, 104, 0.2);
+}
+
+.btn-gobcl-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-gobcl-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-sercotec-red);
+  color: #FFFFFF;
+  border-radius: var(--radius-base);
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-poppins);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 1px 3px rgba(235, 60, 70, 0.2);
+}
+
+.btn-gobcl-secondary:hover {
+  background-color: #db303c;
+  box-shadow: 0 4px 12px rgba(235, 60, 70, 0.3);
+}
+
+.btn-gobcl-secondary:active {
+  transform: scale(0.98);
+}
+
+/* Área de protección del logotipo oficial */
+.logo-protection-zone {
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Badges con SF Mono (Estilo sitios.sercotec.cl: .type-small) */
+.badge-mono {
+  font-family: var(--font-sf-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.badge-mono-sm {
+  font-family: var(--font-sf-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-warm);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C1C7D3;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sercotec-gray-dark);
+}
+
+/* ==========================================================================
+   7. MARQUESINA INFINITA DE EMPRENDEDORES (TICKER SIN FIN)
+   ========================================================================== */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  user-select: none;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Máscara de desvanecimiento en los extremos */
+.marquee-fade-edges {
+  mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+}
+
+/* ==========================================================================
+   8. ELEMENTOS DE CARISMA, ARTESANÍA Y CALOR HUMANO (ANTI-AI SLOP)
+   ========================================================================== */
+
+/* Tipografía manuscrita para notas de taller y apuntes humanos */
+.font-handwritten {
+  font-family: 'Caveat', cursive, -apple-system, sans-serif !important;
+}
+
+/* Washi Tape (Cinta de embalaje kraft de taller artesanal) */
+.washi-tape {
+  position: relative;
+}
+.washi-tape::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1.5deg);
+  width: 110px;
+  height: 24px;
+  background: rgba(230, 212, 178, 0.85);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  border-left: 3px dashed rgba(170, 150, 110, 0.5);
+  border-right: 3px dashed rgba(170, 150, 110, 0.5);
+  z-index: 25;
+  pointer-events: none;
+}
+
+.washi-tape-angle-left::before {
+  left: 20px;
+  transform: rotate(-8deg);
+  width: 80px;
+}
+
+.washi-tape-angle-right::before {
+  left: auto;
+  right: 20px;
+  transform: rotate(8deg);
+  width: 80px;
+}
+
+/* Estilo Polaroid Táctil con inclinación orgánica y rebote físico */
+.polaroid-craft {
+  background: #FFFFFF;
+  padding: 10px 10px 22px 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+  will-change: transform;
+}
+.polaroid-craft:hover {
+  transform: rotate(0deg) translateY(-8px) scale(1.025) !important;
+  box-shadow: 0 20px 32px rgba(0,0,0,0.14), 0 4px 8px rgba(0,0,0,0.06);
+  z-index: 30;
+}
+
+/* Sellos de Tinta Vintage Magallánica (Rubber Ink Stamps) */
+.ink-stamp {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2.5px dashed #b81027;
+  border-radius: 10px;
+  padding: 6px 12px;
+  color: #b81027;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  background: rgba(184, 16, 39, 0.03);
+  box-shadow: inset 0 0 0 1px rgba(184, 16, 39, 0.15);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  user-select: none;
+}
+.ink-stamp:hover {
+  transform: scale(1.08) rotate(0deg) !important;
+  box-shadow: 0 8px 16px rgba(184, 16, 39, 0.15);
+}
+
+.ink-stamp-blue {
+  border-color: #00518e;
+  color: #00518e;
+  background: rgba(0, 81, 142, 0.03);
+  box-shadow: inset 0 0 0 1px rgba(0, 81, 142, 0.15);
+}
+.ink-stamp-blue:hover {
+  box-shadow: 0 8px 16px rgba(0, 81, 142, 0.15);
+}
+
+/* Sello Circular Giratorio Sutil */
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spin-slow {
+  animation: slowRotate 28s linear infinite;
+}
+.spin-slow:hover {
+  animation-play-state: paused;
+}
+
+/* Nota Post-it de Taller con Chincheta / Pin */
+.workshop-postit {
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  box-shadow: 2px 8px 18px rgba(0,0,0,0.07);
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.workshop-postit:hover {
+  transform: translateY(-4px) rotate(0deg) !important;
+  box-shadow: 4px 14px 24px rgba(0,0,0,0.12);
+}
+
+/* Animación de Trazos Dibujados a Mano (Hand-drawn SVG Stroke) */
+.draw-svg {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: drawStroke 1.8s ease-out forwards;
+}
+@keyframes drawStroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Vapor de Mate / Café Patagónico */
+@keyframes steamDrift {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-8px) scaleX(1.2);
+    opacity: 0.35;
+  }
+  100% {
+    transform: translateY(-16px) scaleX(1.4);
+    opacity: 0;
+  }
+}
+.steam-line-1 {
+  animation: steamDrift 2.2s infinite ease-out;
+}
+.steam-line-2 {
+  animation: steamDrift 2.2s infinite ease-out 0.7s;
+}
+.steam-line-3 {
+  animation: steamDrift 2.2s infinite ease-out 1.4s;
+}
+
+/* Pulso Cálido "Taller en Actividad" (Luz de Estufa Austral) */
+@keyframes hearthPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(235, 60, 70, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(235, 60, 70, 0);
+    transform: scale(1.05);
+  }
+}
+.hearth-pulse {
+  animation: hearthPulse 2.4s infinite;
+}
+
+/* Botón con micro-animación de saludo */
+.btn-saludo:hover .wave-hand {
+  display: inline-block;
+  animation: waveMotion 0.8s ease-in-out infinite;
+  transform-origin: 70% 70%;
+}
+@keyframes waveMotion {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(14deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(14deg); }
+  100% { transform: rotate(0deg); }
+}
+
