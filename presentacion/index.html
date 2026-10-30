@@ -7,12 +7,13 @@
   <title>Propuesta Técnica y Comercial — Magallanes Hecho por su Gente | Agencia PatagoniaCoach</title>
   <meta name="description" content="Presentación oficial de la propuesta técnica y comercial de Agencia PatagoniaCoach para el Centro de Negocios Sercotec Punta Arenas y satélites. Directorio digital bilingüe de empresas regionales."/>
 
-  <!-- Google Fonts: Poppins (Titulares) + Manrope (Lectura) -->
+  <!-- Google Fonts Homologadas: Poppins (Titulares) + Manrope (Lectura) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
 
+  <!-- Tailwind CSS Runtime con Tokens Homologados de Sercotec Web -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -20,23 +21,23 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              navy: '#0B0F19',
-              dark: '#111827',
-              card: '#161F30',
-              cardBorder: '#23324D',
-              blue: '#0F69B4',
-              blueLight: '#38BDF8',
-              accentRed: '#EB3C46',
-              accentCyan: '#79D9E8',
-              textMuted: '#94A3B8',
-              surfaceWarm: '#FAF7F2'
-            }
+            primary: '#0F69B4',
+            'primary-container': '#0D5AA0',
+            secondary: '#EB3C46',
+            'secondary-container': '#DB303C',
+            tertiary: '#103D68',
+            'tertiary-container': '#436996',
+            'surface-warm': '#FAF7F2',
+            'surface-pure': '#FFFFFF',
+            'text-editorial': '#20242A',
+            'structure-dark': '#58595B',
+            'card-border': '#E5E7EB',
+            'accent-soft': '#EAF3FB'
           },
           fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
-            manrope: ['Manrope', 'sans-serif'],
-            mono: ['JetBrains Mono', 'ui-monospace', 'monospace']
+            poppins: ['Poppins', '-apple-system', 'sans-serif'],
+            manrope: ['Manrope', '-apple-system', 'sans-serif'],
+            mono: ['SF Mono', 'SFMono-Regular', 'ui-monospace', 'Menlo', 'Monaco', 'Consolas', 'monospace']
           }
         }
       }
@@ -45,34 +46,38 @@
 
   <style>
     @layer base {
-      html { font-family: 'Manrope', sans-serif; color: #F1F5F9; background-color: #0B0F19; overflow-x: hidden; width: 100%; }
+      html { font-family: 'Manrope', -apple-system, sans-serif; color: #20242A; background-color: #FAF7F2; overflow-x: hidden; width: 100%; }
       body { overflow-x: hidden; width: 100%; position: relative; }
-      h1, h2, h3, h4, .font-heading { font-family: 'Poppins', sans-serif; }
+      h1, h2, h3, h4, .font-heading { font-family: 'Poppins', -apple-system, sans-serif; }
     }
     .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
-    .custom-scrollbar::-webkit-scrollbar-track { background: #0B0F19; }
-    .custom-scrollbar::-webkit-scrollbar-thumb { background: #23324D; border-radius: 3px; }
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #38BDF8; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #FAF7F2; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #0F69B4; }
   </style>
 </head>
 
-<body class="bg-brand-navy text-slate-100 antialiased selection:bg-brand-blue selection:text-white custom-scrollbar">
+<body class="bg-surface-warm font-manrope text-text-editorial antialiased custom-scrollbar">
 
   <!-- =======================================================================
-       TOPBAR INSTITUCIONAL & AVISO DE PROPUESTA
+       TOPBAR INSTITUCIONAL HOMOLOGADO (SERCOTEC & INACAP)
        ======================================================================= -->
-  <div class="w-full bg-[#070A11] border-b border-brand-cardBorder/60 py-2 px-4 sm:px-8 text-xs font-mono text-brand-textMuted flex items-center justify-between z-50 relative">
+  <div class="w-full bg-tertiary text-white py-1.5 px-4 sm:px-8 text-xs font-mono min-h-[30px] flex items-center justify-between z-50 relative border-b border-white/10">
     <div class="max-w-7xl mx-auto w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 sm:gap-2">
-      <div class="flex items-center gap-2">
-        <span class="w-2 h-2 rounded-full bg-brand-accentCyan animate-pulse shrink-0"></span>
-        <span class="text-white font-bold text-[11px] sm:text-xs">PROPUESTA TÉCNICA &amp; COMERCIAL</span>
-        <span class="text-slate-600 hidden sm:inline">|</span>
-        <span class="hidden sm:inline">Centro Sercotec Punta Arenas (INACAP)</span>
+      <div class="flex items-center gap-2 flex-wrap text-[11px]">
+        <span class="font-bold text-white tracking-wider">SERCOTEC</span>
+        <span class="text-white/40">|</span>
+        <span class="font-medium text-white/90">Centro de Negocios Punta Arenas</span>
+        <span class="text-white/40">·</span>
+        <span class="hidden sm:inline text-white/80">Operado por INACAP</span>
       </div>
-      <div class="flex items-center gap-3 text-[10px] sm:text-[11px]">
-        <span class="text-brand-accentCyan/90 font-medium">Oferta PC SER 2026 01</span>
-        <span class="text-slate-600 hidden md:inline">·</span>
-        <span class="text-slate-400 hidden md:inline">Punta Arenas, Octubre 2026</span>
+      <div class="flex items-center gap-3 text-[10px] sm:text-[11px] text-white/80">
+        <span class="inline-flex items-center gap-1.5 bg-white/10 px-2 py-0.5 rounded font-mono font-bold text-white">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          PROPUESTA TÉCNICA Y COMERCIAL
+        </span>
+        <span class="text-white/40 hidden md:inline">·</span>
+        <span class="text-white/70 hidden md:inline">Oferta PC SER 2026 01</span>
       </div>
     </div>
   </div>
@@ -80,66 +85,66 @@
   <!-- =======================================================================
        HEADER PRINCIPAL CON NAVEGACIÓN Y ACCIONES RÁPIDAS
        ======================================================================= -->
-  <header class="sticky top-0 z-40 bg-brand-navy/90 backdrop-blur-md border-b border-brand-cardBorder/80">
+  <header class="sticky top-0 z-40 bg-surface-pure/95 backdrop-blur-md border-b border-card-border shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-4">
       
-      <!-- Logos Oficiales: PatagoniaCoach + Magallanes Hecho por su Gente -->
-      <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+      <!-- Identidad Dual: PatagoniaCoach + Magallanes Hecho por su Gente -->
+      <div class="flex items-center gap-3 sm:gap-4 shrink-0">
         <a href="#portada" class="flex items-center gap-2.5 sm:gap-3 group">
-          <div class="bg-white/95 p-1 sm:p-1.5 rounded-lg shadow-sm border border-white/20 flex items-center justify-center shrink-0">
+          <div class="bg-white p-1 sm:p-1.5 rounded-lg border border-card-border shadow-sm flex items-center justify-center shrink-0">
             <img src="../assets/logos/logo-patagoniacoach.svg" alt="Logo Agencia PatagoniaCoach" class="h-5 sm:h-6 w-auto">
           </div>
           <div class="flex flex-col">
-            <span class="font-poppins font-black text-white text-[41px] sm:text-[17px] tracking-tight leading-tight group-hover:text-brand-accentCyan transition-colors">
+            <span class="font-poppins font-black text-text-editorial text-[14px] sm:text-[16px] tracking-tight leading-tight group-hover:text-primary transition-colors">
               PATAGONIACOACH
             </span>
-            <span class="font-mono text-[8px] sm:text-[9px] uppercase tracking-wider text-brand-textMuted">
+            <span class="font-mono text-[9px] uppercase tracking-wider text-structure-dark">
               Propuesta Sercotec
             </span>
           </div>
         </a>
       </div>
 
-      <!-- Menú de Navegación por Secciones Desktop -->
-      <nav class="hidden xl:flex items-center gap-5 text-[12px] font-poppins font-medium text-slate-300">
-        <a href="#antecedentes" class="hover:text-brand-accentCyan transition-colors">Propósito</a>
-        <a href="#directorio" class="hover:text-brand-accentCyan transition-colors">Directorio</a>
-        <a href="#alcance" class="hover:text-brand-accentCyan transition-colors">Alcance</a>
-        <a href="#administracion" class="hover:text-brand-accentCyan transition-colors">Gobernanza</a>
-        <a href="#cronograma" class="hover:text-brand-accentCyan transition-colors">Gantt</a>
-        <a href="#inversion" class="hover:text-brand-accentCyan transition-colors font-bold text-brand-blueLight">Inversión</a>
-        <a href="#recursos" class="hover:text-brand-accentCyan transition-colors">Recursos</a>
-        <a href="#privacidad" class="hover:text-brand-accentCyan transition-colors">Ley 21.719</a>
-        <a href="#contacto" class="hover:text-brand-accentCyan transition-colors">Contacto</a>
+      <!-- Menú de Navegación por Secciones Desktop (Poppins) -->
+      <nav class="hidden xl:flex items-center gap-5 text-[13px] font-poppins font-medium text-text-editorial/80">
+        <a href="#antecedentes" class="hover:text-primary transition-colors">Propósito</a>
+        <a href="#directorio" class="hover:text-primary transition-colors">Directorio</a>
+        <a href="#alcance" class="hover:text-primary transition-colors">Alcance</a>
+        <a href="#administracion" class="hover:text-primary transition-colors">Gobernanza</a>
+        <a href="#cronograma" class="hover:text-primary transition-colors">Gantt</a>
+        <a href="#inversion" class="hover:text-primary transition-colors font-bold text-primary">Inversión</a>
+        <a href="#recursos" class="hover:text-primary transition-colors">Recursos</a>
+        <a href="#privacidad" class="hover:text-primary transition-colors">Ley 21.719</a>
+        <a href="#contacto" class="hover:text-primary transition-colors">Contacto</a>
       </nav>
 
       <!-- Botones de Acción Primaria -->
-      <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
         <!-- Botón Demo -->
         <a 
           href="../index.html" 
           target="_blank" 
-          class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-lg bg-brand-blue hover:bg-brand-blue/90 text-white font-poppins text-xs font-semibold shadow-sm transition-all hover:scale-[1.02] active:scale-95"
+          class="inline-flex items-center gap-1 sm:gap-1.5 px-3 sm:px-4 py-2 rounded bg-primary hover:bg-primary-container text-white font-poppins text-xs font-semibold shadow-sm transition-all hover:scale-[1.02] active:scale-95"
         >
           <span>Abrir Demo</span>
-          <span class="material-symbols-outlined text-[41px] sm:text-[15px]">open_in_new</span>
+          <span class="material-symbols-outlined text-[14px] sm:text-[15px]">open_in_new</span>
         </a>
 
-        <!-- Botón PDF -->
+        <!-- Botón PDF 41p -->
         <a 
           href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf" 
           target="_blank" 
           download 
-          class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white border border-white/20 font-poppins text-xs font-semibold transition-all hover:scale-[1.02] active:scale-95"
+          class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded bg-white hover:bg-slate-50 text-text-editorial border border-card-border font-poppins text-xs font-semibold transition-all hover:scale-[1.02] active:scale-95 shadow-sm"
         >
-          <span class="material-symbols-outlined text-[15px] text-brand-accentCyan">download</span>
-          <span>PDF Oficial (41p)</span>
+          <span class="material-symbols-outlined text-[15px] text-secondary">download</span>
+          <span>PDF Oficial (41 págs)</span>
         </a>
 
         <!-- Botón Móvil Menú -->
         <button 
           id="btn-mobile-nav" 
-          class="xl:hidden p-2 text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-colors"
+          class="xl:hidden p-1.5 sm:p-2 text-text-editorial hover:text-primary rounded hover:bg-black/5 transition-colors"
           aria-label="Abrir menú"
         >
           <span class="material-symbols-outlined text-[24px]">menu</span>
@@ -149,22 +154,20 @@
     </div>
 
     <!-- Menú Desplegable Móvil -->
-    <div id="mobile-menu" class="hidden xl:hidden bg-brand-dark border-b border-brand-cardBorder px-6 py-4 space-y-3 font-poppins text-sm text-slate-200">
-      <a href="#antecedentes" class="block py-1 hover:text-brand-accentCyan">Propósito y Antecedentes</a>
-      <a href="#directorio" class="block py-1 hover:text-brand-accentCyan">Recorrido del Directorio</a>
-      <a href="#alcance" class="block py-1 hover:text-brand-accentCyan">Alcance del Servicio</a>
-      <a href="#administracion" class="block py-1 hover:text-brand-accentCyan">Administración y Calidad</a>
-      <a href="#cronograma" class="block py-1 hover:text-brand-accentCyan">Implementación y Gantt</a>
-      <a href="#inversion" class="block py-1 hover:text-brand-blueLight font-bold">Inversión ($2.600.000)</a>
-      <a href="#recursos" class="block py-1 hover:text-brand-accentCyan">Centro de Recursos</a>
-      <a href="#privacidad" class="block py-1 hover:text-brand-accentCyan">Protección de Datos</a>
-      <a href="#contacto" class="block py-1 hover:text-brand-accentCyan">Contacto y Cierre</a>
-      <div class="pt-2 border-t border-white/10 flex flex-col gap-2">
-        <a href="../index.html" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-brand-blue text-white font-bold text-xs">
-          Abrir Demo Funcional
-        </a>
-        <a href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf" target="_blank" download class="w-full text-center py-2.5 rounded-lg bg-white/10 text-white font-bold text-xs border border-white/20">
-          Descargar PDF Oficial
+    <div id="mobile-nav" class="hidden xl:hidden border-t border-card-border bg-surface-pure px-4 py-4 space-y-3 font-poppins text-sm text-text-editorial">
+      <a href="#antecedentes" class="block py-1 hover:text-primary">01 · Antecedentes y Propósito</a>
+      <a href="#directorio" class="block py-1 hover:text-primary">02 · Recorrido del Directorio (6 Vistas)</a>
+      <a href="#alcance" class="block py-1 hover:text-primary">03 · Alcance del Servicio Contratado</a>
+      <a href="#administracion" class="block py-1 hover:text-primary">04 · Gobernanza Editorial y Calidad</a>
+      <a href="#cronograma" class="block py-1 hover:text-primary">05 · Carta Gantt (30 Días + 12 Meses)</a>
+      <a href="#inversion" class="block py-1 hover:text-primary font-bold text-primary">06 · Inversión ($2.600.000 Exento IVA)</a>
+      <a href="#recursos" class="block py-1 hover:text-primary">07 · Centro de Recursos y Documentos</a>
+      <a href="#privacidad" class="block py-1 hover:text-primary">08 · Protección de Datos (Ley 21.719)</a>
+      <a href="#contacto" class="block py-1 hover:text-primary">09 · Cierre y Contacto Directo</a>
+      <div class="pt-2 border-t border-card-border flex flex-col gap-2">
+        <a href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf" target="_blank" download class="flex items-center justify-center gap-2 py-2 rounded bg-surface-warm border border-card-border text-xs font-semibold text-text-editorial">
+          <span class="material-symbols-outlined text-[16px] text-secondary">picture_as_pdf</span>
+          <span>Descargar PDF Oficial (41 págs)</span>
         </a>
       </div>
     </div>
@@ -173,35 +176,33 @@
   <!-- =======================================================================
        SECCIÓN A: PORTADA HERO (PRESENTACIÓN COMERCIAL & DEMO)
        ======================================================================= -->
-  <section id="portada" class="relative pt-12 pb-16 lg:pt-20 lg:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
-    <!-- Ambient Glow -->
-    <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[350px] sm:w-[800px] h-[350px] sm:h-[400px] bg-gradient-to-b from-brand-blue/20 via-brand-accentCyan/5 to-transparent blur-3xl pointer-events-none -z-10"></div>
-
-    <!-- Badge Institucional de Oferta -->
+  <section id="portada" class="relative pt-10 pb-16 lg:pt-16 lg:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
+    
+    <!-- Badge Institucional de Oferta Homologado -->
     <div class="text-center space-y-4 max-w-4xl mx-auto mb-8">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-cardBorder text-brand-accentCyan text-xs font-mono shadow-sm">
-        <span class="w-2 h-2 rounded-full bg-brand-accentCyan animate-pulse"></span>
-        <span>PROPUESTA TÉCNICA Y COMERCIAL</span>
-        <span class="text-slate-600">•</span>
-        <span class="text-slate-300">MAGALLANES 2026</span>
+      <div class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-white border border-card-border text-secondary text-[11px] sm:text-xs font-mono shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-secondary animate-pulse shrink-0"></span>
+        <span class="font-bold tracking-wide">PROPUESTA TÉCNICA Y COMERCIAL</span>
+        <span class="text-slate-300 hidden xs:inline">•</span>
+        <span class="text-structure-dark hidden xs:inline">MAGALLANES 2026</span>
       </div>
 
-      <h1 class="font-poppins font-black text-2xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.15] break-words">
+      <h1 class="font-poppins font-black text-3xl sm:text-5xl lg:text-6xl text-tertiary tracking-tight leading-[1.15] break-words">
         Magallanes Hecho por su Gente
-        <span class="block font-medium text-lg sm:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-brand-accentCyan to-brand-blueLight mt-2 leading-snug">
+        <span class="block font-semibold text-lg sm:text-2xl lg:text-3xl text-primary mt-2 leading-snug">
           Directorio Digital Bilingüe y Vitrina Comercial Territorial
         </span>
       </h1>
 
-      <p class="font-manrope text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed pt-2">
-        Propuesta integral preparada por <strong class="text-white font-semibold">Agencia PatagoniaCoach</strong> para el <strong class="text-white font-semibold">Centro de Negocios Sercotec Punta Arenas y satélites</strong> (operado por INACAP). Una vitrina moderna en español e inglés para impulsar la visibilidad y conexión comercial directa de las empresas regionales sin intermediación ni comisiones.
+      <p class="font-manrope text-base sm:text-lg text-structure-dark max-w-3xl mx-auto leading-relaxed pt-2">
+        Propuesta técnica y comercial elaborada por <strong class="text-text-editorial font-bold">Agencia PatagoniaCoach</strong> para el <strong class="text-text-editorial font-bold">Centro de Negocios Sercotec Punta Arenas y satélites</strong> (operado por INACAP). Una vitrina bilingüe moderna para impulsar la visibilidad y conexión comercial directa de las empresas regionales sin comisiones ni intermediación.
       </p>
 
       <!-- Ficha Rápida de Identificación -->
-      <div class="pt-2 flex flex-wrap items-center justify-center gap-3 text-xs font-mono text-slate-400">
-        <span class="px-2.5 py-1 bg-brand-card rounded border border-brand-cardBorder"><strong class="text-slate-200">Destinatario:</strong> Centro Sercotec Punta Arenas &amp; Satélites</span>
-        <span class="px-2.5 py-1 bg-brand-card rounded border border-brand-cardBorder"><strong class="text-slate-200">Operador:</strong> INACAP</span>
-        <span class="px-2.5 py-1 bg-brand-card rounded border border-brand-cardBorder"><strong class="text-slate-200">Inversión:</strong> $2.600.000 CLP (Exento IVA)</span>
+      <div class="pt-2 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs font-mono text-structure-dark">
+        <span class="px-3 py-1 bg-white rounded border border-card-border shadow-sm text-center w-full sm:w-auto"><strong class="text-text-editorial">Destinatario:</strong> Centro Sercotec Punta Arenas &amp; Satélites</span>
+        <span class="px-3 py-1 bg-white rounded border border-card-border shadow-sm text-center w-full sm:w-auto"><strong class="text-text-editorial">Operador:</strong> INACAP</span>
+        <span class="px-3 py-1 bg-white rounded border border-card-border shadow-sm text-center w-full sm:w-auto"><strong class="text-text-editorial">Inversión:</strong> $2.600.000 CLP (Exento IVA)</span>
       </div>
 
       <!-- Acciones Principales -->
@@ -209,7 +210,7 @@
         <a 
           href="../index.html" 
           target="_blank" 
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-brand-blue hover:bg-brand-blue/90 text-white font-poppins text-sm font-bold shadow-lg shadow-brand-blue/25 transition-all hover:scale-105 active:scale-95"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded bg-primary hover:bg-primary-container text-white font-poppins text-sm font-bold shadow-md transition-all hover:scale-[1.02] active:scale-95"
         >
           <span class="material-symbols-outlined text-[20px]">rocket_launch</span>
           <span>Explorar la Demo en Vivo</span>
@@ -220,15 +221,15 @@
           href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf" 
           target="_blank" 
           download 
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-brand-card hover:bg-brand-cardBorder text-white border border-brand-cardBorder font-poppins text-sm font-semibold transition-all hover:scale-105 active:scale-95"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded bg-white hover:bg-slate-50 text-text-editorial border border-card-border font-poppins text-sm font-semibold transition-all hover:scale-[1.02] active:scale-95 shadow-sm"
         >
-          <span class="material-symbols-outlined text-[20px] text-brand-accentCyan">picture_as_pdf</span>
+          <span class="material-symbols-outlined text-[20px] text-secondary">picture_as_pdf</span>
           <span>Descargar Propuesta PDF (41 págs)</span>
         </a>
 
         <a 
           href="#recursos" 
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-transparent hover:bg-white/5 text-slate-300 font-poppins text-sm font-medium border border-slate-700 transition-colors"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded bg-transparent hover:bg-white text-structure-dark hover:text-text-editorial font-poppins text-sm font-medium border border-card-border transition-colors"
         >
           <span class="material-symbols-outlined text-[18px]">folder_open</span>
           <span>Centro de Recursos</span>
@@ -236,114 +237,101 @@
       </div>
     </div>
 
-    <!-- Visual Hero: Captura Real de la Demo con Marco Editorial -->
+    <!-- Visual Hero: Captura Real de la Demo con Marco Mac Blanco Limpio -->
     <div class="relative max-w-5xl mx-auto mt-8 group">
-      <div class="relative rounded-2xl overflow-hidden border border-brand-cardBorder shadow-2xl bg-brand-card">
-        <!-- Barra de navegador simulada -->
-        <div class="bg-[#101726] px-4 py-2.5 border-b border-brand-cardBorder flex items-center justify-between">
+      <div class="relative rounded-xl overflow-hidden border border-card-border shadow-xl bg-white">
+        <!-- Barra de Ventana macOS -->
+        <div class="bg-[#F1F3F5] px-4 py-2.5 border-b border-card-border flex items-center justify-between text-xs font-mono text-structure-dark">
           <div class="flex items-center gap-2">
-            <span class="w-3 h-3 rounded-full bg-[#EF4444]/80"></span>
-            <span class="w-3 h-3 rounded-full bg-[#F59E0B]/80"></span>
-            <span class="w-3 h-3 rounded-full bg-[#10B981]/80"></span>
-            <span class="ml-2 font-mono text-[11px] text-slate-400 hidden sm:inline">directorio.sercotec.cl · Magallanes — Hecho por su gente</span>
+            <span class="w-3 h-3 rounded-full bg-[#EF4444]"></span>
+            <span class="w-3 h-3 rounded-full bg-[#F59E0B]"></span>
+            <span class="w-3 h-3 rounded-full bg-[#10B981]"></span>
+            <span class="ml-3 text-[11px] text-structure-dark hidden sm:inline">directorio.sercotec.cl · Magallanes — Hecho por su gente</span>
           </div>
-          <div class="flex items-center gap-2 text-xs font-mono text-brand-accentCyan">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>DEMO ACTIVA LOCAL</span>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="text-[11px] font-bold text-emerald-700 uppercase">DEMO ACTIVA LOCAL</span>
           </div>
         </div>
 
-        <!-- Imagen Real Optimizada (<100KB) -->
-        <a href="../index.html" target="_blank" class="block relative overflow-hidden group">
+        <!-- Imagen de la Demo -->
+        <div class="overflow-hidden bg-slate-50">
           <img 
             src="assets/img/screen_home.webp" 
-            alt="Captura real de la portada de la demo Magallanes Hecho por su Gente" 
-            class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.01]"
-          >
-          <div class="absolute inset-0 bg-brand-blue/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span class="bg-brand-navy/90 text-white font-poppins text-xs font-bold px-4 py-2 rounded-lg border border-brand-cardBorder shadow-lg flex items-center gap-1.5">
-              <span>Clic para abrir la demo en vivo</span>
-              <span class="material-symbols-outlined text-[16px]">open_in_new</span>
-            </span>
-          </div>
-        </a>
+            alt="Captura real de la Home del Directorio Magallanes Hecho por su Gente" 
+            class="w-full h-auto object-cover object-top transition-transform duration-700 group-hover:scale-[1.01]"
+            loading="eager"
+          />
+        </div>
       </div>
-
-      <!-- Disclaimer Formal Prominente -->
-      <div class="mt-4 p-4 rounded-xl bg-brand-card/70 border border-brand-cardBorder/80 text-center">
-        <p class="font-mono text-[11px] text-slate-400 leading-relaxed">
-          <strong class="text-white font-semibold">Carácter de la presentación:</strong> Esta landing y la demo asociada corresponden a la propuesta técnica y comercial presentada por Agencia PatagoniaCoach. No constituyen adjudicación definitiva ni aprobación institucional por parte de Sercotec o INACAP. Toda la solución se encuentra sujeta a formalización de contrato u orden de compra.
-        </p>
-      </div>
+      
+      <p class="text-center text-xs font-mono text-structure-dark mt-3">
+        * Carácter de la presentación: Esta landing y la demo activa corresponden a la propuesta técnica y comercial presentada por Agencia PatagoniaCoach. No constituyen adjudicación definitiva ni aprobación institucional por parte de Sercotec o INACAP. Toda la solución se encuentra sujeta a formalización de contrato u orden de compra.
+      </p>
     </div>
+
   </section>
 
   <!-- =======================================================================
-       SECCIÓN B: ANTECEDENTES Y PROPÓSITO
+       SECCIÓN B: ANTECEDENTES Y PROPÓSITO REGIONAL
        ======================================================================= -->
-  <section id="antecedentes" class="py-16 bg-brand-dark/70 border-y border-brand-cardBorder/60 px-4 sm:px-6 lg:px-8">
+  <section id="antecedentes" class="py-16 bg-white border-y border-card-border px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       
       <div class="max-w-3xl mb-12">
-        <div class="inline-flex items-center gap-2 font-mono text-xs text-brand-accentCyan uppercase tracking-widest mb-2">
-          <span class="material-symbols-outlined text-[16px]">info</span>
+        <div class="inline-flex items-center gap-2 font-mono text-xs text-secondary uppercase tracking-widest mb-2 font-bold">
+          <span class="material-symbols-outlined text-[16px]">corporate_fare</span>
           <span>01 · CONTEXTO INSTITUCIONAL Y PROPÓSITO</span>
         </div>
-        <h2 class="font-poppins font-black text-2xl sm:text-4xl text-white tracking-tight">
+        <h2 class="font-poppins font-black text-2xl sm:text-4xl text-tertiary tracking-tight">
           Arraigo Territorial y Conexión Comercial Directa
         </h2>
-        <p class="font-manrope text-base text-brand-textMuted mt-3 leading-relaxed">
+        <p class="font-manrope text-base text-structure-dark mt-3 leading-relaxed">
           Una propuesta diseñada desde la Región de Magallanes para resolver las asimetrías de visibilidad de los pequeños negocios, conectando la oferta local con consumidores regionales, turistas y grandes compradores industriales.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <!-- Tarjeta 1: Quién es PatagoniaCoach -->
-        <div class="bg-brand-card p-6 sm:p-8 rounded-2xl border border-brand-cardBorder space-y-4">
-          <div class="w-12 h-12 rounded-xl bg-brand-blue/20 border border-brand-blue/40 flex items-center justify-center text-brand-blueLight">
-            <span class="material-symbols-outlined text-[26px]">apartment</span>
+        <!-- Tarjeta 1: PatagoniaCoach -->
+        <div class="p-6 rounded-xl bg-surface-warm border border-card-border space-y-3">
+          <div class="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-[26px]">domain</span>
           </div>
-          <h3 class="font-poppins font-bold text-lg text-white">
-            Agencia PatagoniaCoach
-          </h3>
-          <p class="font-manrope text-sm text-slate-300 leading-relaxed">
-            Agencia y consultora regional radicada en <strong class="text-white">Punta Arenas</strong> (Av. Manuel Bulnes 215). Conocemos de primera mano la geografía, el clima y los desafíos logísticos de las 4 provincias de Magallanes y la Antártica Chilena.
+          <h3 class="font-poppins font-bold text-lg text-tertiary">Agencia PatagoniaCoach</h3>
+          <p class="text-sm text-structure-dark leading-relaxed">
+            Agencia y consultora regional radicada en <strong class="text-text-editorial">Punta Arenas</strong> (Av. Manuel Bulnes 215). Conocemos de primera mano la geografía, el clima y los desafíos logísticos de las 4 provincias de Magallanes y la Antártica Chilena.
           </p>
-          <div class="pt-2 font-mono text-xs text-brand-accentCyan">
-            <span>Representante: Franco Gallardo S.</span>
+          <div class="pt-2 text-xs font-mono text-primary font-semibold">
+            Representante: Franco Gallardo S.
           </div>
         </div>
 
-        <!-- Tarjeta 2: El Desafío Territorial -->
-        <div class="bg-brand-card p-6 sm:p-8 rounded-2xl border border-brand-cardBorder space-y-4">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400">
+        <!-- Tarjeta 2: El Desafío Regional -->
+        <div class="p-6 rounded-xl bg-surface-warm border border-card-border space-y-3">
+          <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600">
             <span class="material-symbols-outlined text-[26px]">explore</span>
           </div>
-          <h3 class="font-poppins font-bold text-lg text-white">
-            El Desafío Regional
-          </h3>
-          <p class="font-manrope text-sm text-slate-300 leading-relaxed">
+          <h3 class="font-poppins font-bold text-lg text-tertiary">El Desafío Regional</h3>
+          <p class="text-sm text-structure-dark leading-relaxed">
             Los pequeños artesanos y proveedores locales enfrentan dispersión de canales, falta de tracción digital y altos costos de intermediación. Los portales convencionales suelen ser fríos, impersonales y desvinculados de la realidad del productor.
           </p>
-          <div class="pt-2 font-mono text-xs text-amber-400/90">
-            <span>4 Provincias: Magallanes, Natales, Porvenir, Williams</span>
+          <div class="pt-2 text-xs font-mono text-amber-700 font-semibold">
+            4 Provincias: Magallanes, Natales, Porvenir, Williams
           </div>
         </div>
 
-        <!-- Tarjeta 3: La Solución Estratégica -->
-        <div class="bg-brand-card p-6 sm:p-8 rounded-2xl border border-brand-cardBorder space-y-4">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
-            <span class="material-symbols-outlined text-[26px]">chat_bubble</span>
+        <!-- Tarjeta 3: El Propósito Comercial -->
+        <div class="p-6 rounded-xl bg-surface-warm border border-card-border space-y-3">
+          <div class="w-12 h-12 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-600">
+            <span class="material-symbols-outlined text-[26px]">hub</span>
           </div>
-          <h3 class="font-poppins font-bold text-lg text-white">
-            Objetivo: Vinculación Sin Comisiones
-          </h3>
-          <p class="font-manrope text-sm text-slate-300 leading-relaxed">
-            La plataforma funciona como una <strong class="text-white">vitrina de difusión y contacto directo por WhatsApp Business</strong>, teléfono y ubicación. Cero cobros por venta, cero carritos de compra ni pasarelas complejas: todo el valor queda en manos del emprendedor.
+          <h3 class="font-poppins font-bold text-lg text-tertiary">Objetivo: Vinculación Sin Comisiones</h3>
+          <p class="text-sm text-structure-dark leading-relaxed">
+            La plataforma funciona como una <strong class="text-text-editorial">vitrina de difusión y contacto directo por WhatsApp Business</strong>, teléfono y ubicación. Cero cobros por venta, cero carros de compra ni pasarelas complejas: todo el valor queda en manos del emprendedor.
           </p>
-          <div class="pt-2 font-mono text-xs text-emerald-400/90">
-            <span>Públicos B2C (personas) y B2B (empresas)</span>
+          <div class="pt-2 text-xs font-mono text-emerald-700 font-semibold">
+            Públicos B2C (personas) y B2B (empresas)
           </div>
         </div>
 
@@ -353,211 +341,157 @@
   </section>
 
   <!-- =======================================================================
-       SECCIÓN C: CONOCER EL DIRECTORIO (RECORRIDO INTERACTIVO POR LAS 6 VISTAS)
+       SECCIÓN C: CONOCER EL DIRECTORIO (6 VISTAS REALES)
        ======================================================================= -->
   <section id="directorio" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     
     <div class="max-w-3xl mb-12">
-      <div class="inline-flex items-center gap-2 font-mono text-xs text-brand-accentCyan uppercase tracking-widest mb-2">
-        <span class="material-symbols-outlined text-[16px]">visibility</span>
+      <div class="inline-flex items-center gap-2 font-mono text-xs text-primary uppercase tracking-widest mb-2 font-bold">
+        <span class="material-symbols-outlined text-[16px]">web</span>
         <span>02 · RECORRIDO DE LA SOLUCIÓN</span>
       </div>
-      <h2 class="font-poppins font-black text-2xl sm:text-4xl text-white tracking-tight">
+      <h2 class="font-poppins font-black text-2xl sm:text-4xl text-tertiary tracking-tight">
         Conoce el Directorio: 6 Vistas Implementadas
       </h2>
-      <p class="font-manrope text-base text-brand-textMuted mt-3 leading-relaxed">
+      <p class="font-manrope text-base text-structure-dark mt-3 leading-relaxed">
         Explora las vistas funcionales de la plataforma demostrativa. Cada módulo fue concebido para equilibrar calidez humana, agilidad técnica y rigurosidad editorial institucional.
       </p>
     </div>
 
-    <!-- Grid de las 6 Vistas Reales con Capturas Optimizadas -->
+    <!-- Grilla de las 6 Pantallas Clave con Capturas Reales -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <!-- Vista 1: Home / Portada -->
-      <div class="bg-brand-card rounded-2xl overflow-hidden border border-brand-cardBorder flex flex-col justify-between group">
-        <div>
-          <div class="relative aspect-[16/10] overflow-hidden bg-slate-900 border-b border-brand-cardBorder">
-            <img src="assets/img/screen_home.webp" alt="Portada Home Magallanes Hecho por su Gente" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-3 left-3 bg-brand-navy/90 border border-brand-cardBorder text-brand-accentCyan font-mono text-[10px] font-bold px-2 py-0.5 rounded">
-              01 · PORTADA
-            </span>
-            <span class="absolute top-3 right-3 bg-emerald-500/20 border border-emerald-500/50 text-emerald-400 font-mono text-[9px] font-bold px-2 py-0.5 rounded">
-              DEMO ACTIVA
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="font-poppins font-bold text-base text-white">
-              Home y Buscador Territorial
-            </h3>
-            <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-              Titular de alto impacto, buscador predictivo por palabras clave, selector de comunas, chips de rubros rápidos, marquesina infinita y módulo B2B.
-            </p>
-          </div>
+      <!-- 01. Home y Buscador -->
+      <div class="bg-white rounded-xl border border-card-border overflow-hidden shadow-sm hover:shadow-md transition-all group">
+        <div class="aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-card-border">
+          <img src="assets/img/screen_home.webp" alt="Home y Buscador Territorial" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+          <span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-tertiary text-white font-mono text-[10px] font-bold shadow">01 · PORTADA</span>
         </div>
-        <div class="p-5 pt-0">
-          <a href="../index.html" target="_blank" class="w-full inline-flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-brand-blueLight border border-brand-cardBorder font-poppins text-xs font-semibold transition-colors">
-            <span>Explorar Portada</span>
-            <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
-          </a>
+        <div class="p-5 space-y-2">
+          <h3 class="font-poppins font-bold text-base text-tertiary">Home y Buscador Territorial</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Titular de alto impacto, buscador predictivo por palabra clave, selector de comunas, chips de rubros rápidos, marquesina infinita y módulos B2B.
+          </p>
+          <div class="pt-3 flex items-center justify-between border-t border-card-border text-xs font-poppins">
+            <a href="../index.html" target="_blank" class="text-primary font-bold hover:underline inline-flex items-center gap-1">
+              <span>Explorar Portada</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Vista 2: Directorio con Filtros -->
-      <div class="bg-brand-card rounded-2xl overflow-hidden border border-brand-cardBorder flex flex-col justify-between group">
-        <div>
-          <div class="relative aspect-[16/10] overflow-hidden bg-slate-900 border-b border-brand-cardBorder">
-            <img src="assets/img/screen_directorio.webp" alt="Directorio de negocios con filtros" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-3 left-3 bg-brand-navy/90 border border-brand-cardBorder text-brand-accentCyan font-mono text-[10px] font-bold px-2 py-0.5 rounded">
-              02 · DIRECTORIO
-            </span>
-            <span class="absolute top-3 right-3 bg-emerald-500/20 border border-emerald-500/50 text-emerald-400 font-mono text-[9px] font-bold px-2 py-0.5 rounded">
-              DEMO ACTIVA
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="font-poppins font-bold text-base text-white">
-              Catálogo Comercial con Filtros
-            </h3>
-            <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-              Grilla interactiva de empresas con filtros simultáneos de rubro, comuna y modalidad mayorista/minorista. Enlaces directos a WhatsApp en cada tarjeta.
-            </p>
-          </div>
+      <!-- 02. Directorio y Filtros -->
+      <div class="bg-white rounded-xl border border-card-border overflow-hidden shadow-sm hover:shadow-md transition-all group">
+        <div class="aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-card-border">
+          <img src="assets/img/screen_directorio.webp" alt="Directorio con Búsqueda y Filtros" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+          <span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-tertiary text-white font-mono text-[10px] font-bold shadow">02 · CATÁLOGO</span>
         </div>
-        <div class="p-5 pt-0">
-          <a href="../directorio_de_negocios_de_magallanes_desktop/code.html" target="_blank" class="w-full inline-flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-brand-blueLight border border-brand-cardBorder font-poppins text-xs font-semibold transition-colors">
-            <span>Explorar Directorio</span>
-            <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
-          </a>
+        <div class="p-5 space-y-2">
+          <h3 class="font-poppins font-bold text-base text-tertiary">Catálogo Comercial con Filtros</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Grilla interactiva de empresas con filtros simultáneos de rubro, comuna y modalidad; badges de procedencia, enlaces directos a WhatsApp en cada tarjeta.
+          </p>
+          <div class="pt-3 flex items-center justify-between border-t border-card-border text-xs font-poppins">
+            <a href="../directorio_de_negocios_de_magallanes_desktop/code.html" target="_blank" class="text-primary font-bold hover:underline inline-flex items-center gap-1">
+              <span>Explorar Directorio</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Vista 3: Ficha Individual Lookbook -->
-      <div class="bg-brand-card rounded-2xl overflow-hidden border border-brand-cardBorder flex flex-col justify-between group">
-        <div>
-          <div class="relative aspect-[16/10] overflow-hidden bg-slate-900 border-b border-brand-cardBorder">
-            <img src="assets/img/screen_ficha.webp" alt="Ficha individual de negocio Artesanías El Calafate" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-3 left-3 bg-brand-navy/90 border border-brand-cardBorder text-brand-accentCyan font-mono text-[10px] font-bold px-2 py-0.5 rounded">
-              03 · FICHA DE NEGOCIO
-            </span>
-            <span class="absolute top-3 right-3 bg-emerald-500/20 border border-emerald-500/50 text-emerald-400 font-mono text-[9px] font-bold px-2 py-0.5 rounded">
-              DEMO ACTIVA
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="font-poppins font-bold text-base text-white">
-              Ficha Lookbook y Conexión
-            </h3>
-            <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-              Diseño tipo revista editorial: historia del artesano, galería de taller, atributos B2B/B2C, geolocalización online/offline y botón de cotización directa.
-            </p>
-          </div>
+      <!-- 03. Ficha Lookbook -->
+      <div class="bg-white rounded-xl border border-card-border overflow-hidden shadow-sm hover:shadow-md transition-all group">
+        <div class="aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-card-border">
+          <img src="assets/img/screen_ficha.webp" alt="Ficha Individual Lookbook" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+          <span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-tertiary text-white font-mono text-[10px] font-bold shadow">03 · FICHA DE NEGOCIO</span>
         </div>
-        <div class="p-5 pt-0">
-          <a href="../ficha_individual_de_negocio_artesan_as_el_calafate_desktop/code.html" target="_blank" class="w-full inline-flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-brand-blueLight border border-brand-cardBorder font-poppins text-xs font-semibold transition-colors">
-            <span>Explorar Ficha</span>
-            <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
-          </a>
+        <div class="p-5 space-y-2">
+          <h3 class="font-poppins font-bold text-base text-tertiary">Ficha Lookbook y Conexión</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Diseño tipo revista editorial, historia del artesano, galería de taller, atributos B2B/B2C, geolocalización online/offline y botón de cotización directa.
+          </p>
+          <div class="pt-3 flex items-center justify-between border-t border-card-border text-xs font-poppins">
+            <a href="../ficha_individual_de_negocio_artesan_as_el_calafate_desktop/code.html" target="_blank" class="text-primary font-bold hover:underline inline-flex items-center gap-1">
+              <span>Explorar Ficha</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Vista 4: Tu Historia Me Inspira -->
-      <div class="bg-brand-card rounded-2xl overflow-hidden border border-brand-cardBorder flex flex-col justify-between group">
-        <div>
-          <div class="relative aspect-[16/10] overflow-hidden bg-slate-900 border-b border-brand-cardBorder">
-            <img src="assets/img/screen_historias.webp" alt="Crónicas regionales Tu historia me inspira" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-3 left-3 bg-brand-navy/90 border border-brand-cardBorder text-brand-accentCyan font-mono text-[10px] font-bold px-2 py-0.5 rounded">
-              04 · CRÓNICAS
-            </span>
-            <span class="absolute top-3 right-3 bg-emerald-500/20 border border-emerald-500/50 text-emerald-400 font-mono text-[9px] font-bold px-2 py-0.5 rounded">
-              DEMO ACTIVA
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="font-poppins font-bold text-base text-white">
-              Tu Historia Me Inspira
-            </h3>
-            <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-              Crónicas documentales de oficio, apuntes manuscritos de taller, washi tape y muro comunitario con momentos en terreno de redes sociales (#HechoEnMagallanes).
-            </p>
-          </div>
+      <!-- 04. Tu Historia Me Inspira -->
+      <div class="bg-white rounded-xl border border-card-border overflow-hidden shadow-sm hover:shadow-md transition-all group">
+        <div class="aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-card-border">
+          <img src="assets/img/screen_historias.webp" alt="Tu Historia Me Inspira" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+          <span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-tertiary text-white font-mono text-[10px] font-bold shadow">04 · HISTORIAS</span>
         </div>
-        <div class="p-5 pt-0">
-          <a href="../tu_historia_me_inspira_cr_nicas_regionales/code.html" target="_blank" class="w-full inline-flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-brand-blueLight border border-brand-cardBorder font-poppins text-xs font-semibold transition-colors">
-            <span>Explorar Crónicas</span>
-            <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
-          </a>
+        <div class="p-5 space-y-2">
+          <h3 class="font-poppins font-bold text-base text-tertiary">Tu Historia Me Inspira</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Crónicas documentales de oficio, apuntes manuscritos de taller, audio tape y muro comunitario con historias en primera persona de las 4 provincias.
+          </p>
+          <div class="pt-3 flex items-center justify-between border-t border-card-border text-xs font-poppins">
+            <a href="../tu_historia_me_inspira_cr_nicas_regionales/code.html" target="_blank" class="text-primary font-bold hover:underline inline-flex items-center gap-1">
+              <span>Explorar Crónicas</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Vista 5: Aprende a Emprender -->
-      <div class="bg-brand-card rounded-2xl overflow-hidden border border-brand-cardBorder flex flex-col justify-between group">
-        <div>
-          <div class="relative aspect-[16/10] overflow-hidden bg-slate-900 border-b border-brand-cardBorder">
-            <img src="assets/img/screen_blog.webp" alt="Blog formativo Aprende a Emprender" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-3 left-3 bg-brand-navy/90 border border-brand-cardBorder text-brand-accentCyan font-mono text-[10px] font-bold px-2 py-0.5 rounded">
-              05 · BLOG EDUCATIVO
-            </span>
-            <span class="absolute top-3 right-3 bg-emerald-500/20 border border-emerald-500/50 text-emerald-400 font-mono text-[9px] font-bold px-2 py-0.5 rounded">
-              DEMO ACTIVA
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="font-poppins font-bold text-base text-white">
-              Aprende a Emprender
-            </h3>
-            <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-              Módulo editorial de transferencia metodológica: guías de costeo, formalización ante el SII, fotografía con smartphone y logística de fletes desde Magallanes.
-            </p>
-          </div>
+      <!-- 05. Aprende a Emprender -->
+      <div class="bg-white rounded-xl border border-card-border overflow-hidden shadow-sm hover:shadow-md transition-all group">
+        <div class="aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-card-border">
+          <img src="assets/img/screen_blog.webp" alt="Aprende a Emprender Blog" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+          <span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-tertiary text-white font-mono text-[10px] font-bold shadow">05 · BLOG EDUCATIVO</span>
         </div>
-        <div class="p-5 pt-0">
-          <a href="../aprende_a_emprender_blog_de_contenidos/code.html" target="_blank" class="w-full inline-flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-brand-blueLight border border-brand-cardBorder font-poppins text-xs font-semibold transition-colors">
-            <span>Explorar Blog</span>
-            <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
-          </a>
+        <div class="p-5 space-y-2">
+          <h3 class="font-poppins font-bold text-base text-tertiary">Aprende a Emprender</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Módulo editorial de transferencia metodológica: guías de costeo, formalización ante el SII, fotografía con smartphone y logística de fletes desde Magallanes.
+          </p>
+          <div class="pt-3 flex items-center justify-between border-t border-card-border text-xs font-poppins">
+            <a href="../aprende_a_emprender_blog_de_contenidos/code.html" target="_blank" class="text-primary font-bold hover:underline inline-flex items-center gap-1">
+              <span>Explorar Blog</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Vista 6: Agenda del Centro de Negocios -->
-      <div class="bg-brand-card rounded-2xl overflow-hidden border border-brand-cardBorder flex flex-col justify-between group">
-        <div>
-          <div class="relative aspect-[16/10] overflow-hidden bg-slate-900 border-b border-brand-cardBorder">
-            <img src="assets/img/screen_agenda.webp" alt="Agenda de talleres y capacitaciones INACAP Sercotec" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-3 left-3 bg-brand-navy/90 border border-brand-cardBorder text-brand-accentCyan font-mono text-[10px] font-bold px-2 py-0.5 rounded">
-              06 · AGENDA
-            </span>
-            <span class="absolute top-3 right-3 bg-emerald-500/20 border border-emerald-500/50 text-emerald-400 font-mono text-[9px] font-bold px-2 py-0.5 rounded">
-              DEMO ACTIVA
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="font-poppins font-bold text-base text-white">
-              Agenda y Capacitaciones
-            </h3>
-            <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-              Calendario dinámico de actividades y talleres presenciales/remotos del Centro Punta Arenas (INACAP), con fechas, relatores e inscripción directa.
-            </p>
-          </div>
+      <!-- 06. Agenda del Centro de Negocios -->
+      <div class="bg-white rounded-xl border border-card-border overflow-hidden shadow-sm hover:shadow-md transition-all group">
+        <div class="aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-card-border">
+          <img src="assets/img/screen_agenda.webp" alt="Agenda de Talleres y Actividades" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+          <span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-tertiary text-white font-mono text-[10px] font-bold shadow">06 · AGENDA SERCOTEC</span>
         </div>
-        <div class="p-5 pt-0">
-          <a href="../agenda_del_centro_de_negocios_talleres_y_actividades/code.html" target="_blank" class="w-full inline-flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-brand-blueLight border border-brand-cardBorder font-poppins text-xs font-semibold transition-colors">
-            <span>Explorar Agenda</span>
-            <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
-          </a>
+        <div class="p-5 space-y-2">
+          <h3 class="font-poppins font-bold text-base text-tertiary">Agenda y Capacitaciones</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Calendario dinámico de actividades y talleres presenciales/remotos del Centro Punta Arenas e INACAP, con fechas, relatores e inscripción directa.
+          </p>
+          <div class="pt-3 flex items-center justify-between border-t border-card-border text-xs font-poppins">
+            <a href="../agenda_del_centro_de_negocios_talleres_y_actividades/code.html" target="_blank" class="text-primary font-bold hover:underline inline-flex items-center gap-1">
+              <span>Explorar Agenda</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </a>
+          </div>
         </div>
       </div>
 
     </div>
 
-    <!-- Cuadro de Distinción de Estados: Evidencia Actual vs. Compromiso Futuro -->
-    <div class="mt-12 p-6 rounded-2xl bg-brand-dark border border-brand-cardBorder grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Cuadro Diferenciador: Demostrable Hoy vs Compromisos Ofertados -->
+    <div class="mt-12 p-6 rounded-xl bg-white border border-card-border grid grid-cols-1 md:grid-cols-2 gap-6 text-xs font-manrope shadow-sm">
       <div class="space-y-2">
-        <span class="inline-flex items-center gap-1.5 font-mono text-xs font-bold text-emerald-400">
-          <span class="material-symbols-outlined text-[16px]">check_circle</span>
+        <div class="flex items-center gap-2 font-poppins font-bold text-sm text-emerald-700">
+          <span class="material-symbols-outlined text-[18px]">check_circle</span>
           <span>Funcionalidades Demostrables Hoy (Estado Demo):</span>
-        </span>
-        <ul class="text-xs text-slate-300 space-y-1.5 pl-6 list-disc">
-          <li>Navegación completa responsive en 390, 768 y 1440 px.</li>
+        </div>
+        <ul class="space-y-1.5 text-structure-dark pl-6 list-disc">
+          <li>Navegación completa responsiva en 390, 768 y 1440 px.</li>
           <li>Búsqueda por texto y filtros funcionales por comuna y rubro.</li>
           <li>Ficha interactiva con derivación dinámica hacia WhatsApp Business.</li>
           <li>Arquitectura tipográfica oficial Poppins + Manrope homologada.</li>
@@ -565,11 +499,11 @@
       </div>
 
       <div class="space-y-2">
-        <span class="inline-flex items-center gap-1.5 font-mono text-xs font-bold text-brand-blueLight">
-          <span class="material-symbols-outlined text-[16px]">pending_actions</span>
-          <span>Compromisos de Implementación (30 días hábiles):</span>
-        </span>
-        <ul class="text-xs text-slate-300 space-y-1.5 pl-6 list-disc">
+        <div class="flex items-center gap-2 font-poppins font-bold text-sm text-primary">
+          <span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+          <span>Compromisos de Implementación (30 Días hábiles):</span>
+        </div>
+        <ul class="space-y-1.5 text-structure-dark pl-6 list-disc">
           <li>Carga y normalización de hasta 100 empresas reales según catastro oficial.</li>
           <li>Traducción completa bilingüe (español/inglés) validada con el Centro.</li>
           <li>Habilitación del panel autoadministrable protegido con perfiles de acceso.</li>
@@ -581,88 +515,88 @@
   </section>
 
   <!-- =======================================================================
-       SECCIÓN D: ALCANCE DEL SERVICIO (RESUMEN FIEL DEL PDF VIGENTE)
+       SECCIÓN D: ALCANCE DEL SERVICIO CONTRATADO (12 MESES)
        ======================================================================= -->
-  <section id="alcance" class="py-16 bg-brand-dark/70 border-y border-brand-cardBorder/60 px-4 sm:px-6 lg:px-8">
+  <section id="alcance" class="py-16 bg-white border-y border-card-border px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       
       <div class="max-w-3xl mb-12">
-        <div class="inline-flex items-center gap-2 font-mono text-xs text-brand-accentCyan uppercase tracking-widest mb-2">
-          <span class="material-symbols-outlined text-[16px]">fact_check</span>
+        <div class="inline-flex items-center gap-2 font-mono text-xs text-secondary uppercase tracking-widest mb-2 font-bold">
+          <span class="material-symbols-outlined text-[16px]">contract</span>
           <span>03 · ESPECIFICACIÓN DE COBERTURA</span>
         </div>
-        <h2 class="font-poppins font-black text-2xl sm:text-4xl text-white tracking-tight">
+        <h2 class="font-poppins font-black text-2xl sm:text-4xl text-tertiary tracking-tight">
           Alcance del Servicio Contratado (12 Meses)
         </h2>
-        <p class="font-manrope text-base text-brand-textMuted mt-3 leading-relaxed">
+        <p class="font-manrope text-base text-structure-dark mt-3 leading-relaxed">
           Resumen taxativo de los compromisos técnicos, editoriales y publicitarios estipulados en la propuesta comercial, sin costos ocultos ni mensualidades adicionales.
         </p>
       </div>
 
-      <!-- Matriz de 8 Bloques de Alcance -->
+      <!-- 8 Bloques de Alcance Contractual -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-          <div class="font-mono text-xs text-brand-accentCyan font-bold">01 · BILINGÜISMO</div>
-          <h4 class="font-poppins font-bold text-white text-base">Plataforma Español e Inglés</h4>
-          <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border space-y-2">
+          <span class="font-mono text-xs text-primary font-bold">01 · BILINGÜISMO</span>
+          <h3 class="font-poppins font-bold text-sm text-tertiary">Plataforma Español e Inglés</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
             Navegación, interfaz general y descripciones comerciales de cada ficha traducidas profesionalmente para turismo internacional y científico.
           </p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-          <div class="font-mono text-xs text-brand-accentCyan font-bold">02 · CARGA INICIAL</div>
-          <h4 class="font-poppins font-bold text-white text-base">Hasta 100 Empresas Iniciales</h4>
-          <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border space-y-2">
+          <span class="font-mono text-xs text-primary font-bold">02 · CARGA INICIAL</span>
+          <h3 class="font-poppins font-bold text-sm text-tertiary">Hasta 100 Empresas Iniciales</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
             Formulario normado, guía fotográfica, planilla Excel maestra, normalización de datos y carga por lotes según empresas seleccionadas por el Centro.
           </p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-          <div class="font-mono text-xs text-brand-accentCyan font-bold">03 · INCORPORACIONES</div>
-          <h4 class="font-poppins font-bold text-white text-base">Hasta 60 Fichas Anuales</h4>
-          <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border space-y-2">
+          <span class="font-mono text-xs text-primary font-bold">03 · INCORPORACIONES</span>
+          <h3 class="font-poppins font-bold text-sm text-tertiary">Hasta 60 Fichas Anuales</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
             Administración mensual por PatagoniaCoach: hasta 5 nuevas empresas al mes adicionales a la carga inicial, con preparación de fotos y traducción.
           </p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-          <div class="font-mono text-xs text-brand-accentCyan font-bold">04 · INFRAESTRUCTURA</div>
-          <h4 class="font-poppins font-bold text-white text-base">Hosting, Dominio y 5 Correos</h4>
-          <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border space-y-2">
+          <span class="font-mono text-xs text-primary font-bold">04 · INFRAESTRUCTURA</span>
+          <h3 class="font-poppins font-bold text-sm text-tertiary">Hosting, Dominio y 5 Correos</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
             Alojamiento web, dominio .cl registrado, base de datos, certificado SSL HTTPS y hasta 5 cuentas de correo corporativo durante 12 meses.
           </p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-          <div class="font-mono text-xs text-brand-accentCyan font-bold">05 · SOPORTE</div>
-          <h4 class="font-poppins font-bold text-white text-base">Mantenimiento y Respaldos</h4>
-          <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border space-y-2">
+          <span class="font-mono text-xs text-primary font-bold">05 · SOPORTE</span>
+          <h3 class="font-poppins font-bold text-sm text-tertiary">Mantenimiento y Respaldos</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
             Soporte técnico preferente de lunes a viernes (09:00 a 18:00 hrs), respaldos diarios de datos con retención mínima de 30 días y corrección de incidencias.
           </p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-          <div class="font-mono text-xs text-brand-accentCyan font-bold">06 · PUBLICIDAD META</div>
-          <h4 class="font-poppins font-bold text-white text-base">4 Campañas con Pauta Incluida</h4>
-          <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-            Una campaña trimestral (4 Reels + 4 gráficas) con <strong class="text-white">$50.000 de pauta pagada por campaña ($200.000 total)</strong> financiada dentro del precio total.
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border space-y-2">
+          <span class="font-mono text-xs text-secondary font-bold">06 · PUBLICIDAD META</span>
+          <h3 class="font-poppins font-bold text-sm text-tertiary">4 Campañas con Pauta Incluida</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Una campaña trimestral (4 Reels + 4 gráficas) con <strong class="text-text-editorial">.000 de pauta pagada por campaña (.000 total)</strong> financiada dentro del precio total.
           </p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-          <div class="font-mono text-xs text-brand-accentCyan font-bold">07 · VALOR AGREGADO</div>
-          <h4 class="font-poppins font-bold text-white text-base">4 Talleres Prácticos ($0 Costo)</h4>
-          <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-            Capacitaciones de 90 min para las empresas del Centro: Ficha comercial, Fotografía con smartphone, Reels/WhatsApp y Vinculación B2B.
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border space-y-2">
+          <span class="font-mono text-xs text-emerald-700 font-bold">07 · VALOR AGREGADO</span>
+          <h3 class="font-poppins font-bold text-sm text-tertiary">4 Talleres Prácticos (zsh Costo)</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Capacitaciones de 90 min para las empresas del Centro: Ficha comercial, Fotografía con Smartphone, Redes/WhatsApp y Vinculación B2B.
           </p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-          <div class="font-mono text-xs text-brand-accentCyan font-bold">08 · AUTONOMÍA</div>
-          <h4 class="font-poppins font-bold text-white text-base">Transferencia y Cesión Final</h4>
-          <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-            Capacitación de 2 horas al equipo del Centro, entrega de manuales, cesión del dominio NIC y respaldo integral del código y datos al cierre.
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border space-y-2">
+          <span class="font-mono text-xs text-primary font-bold">08 · AUTONOMÍA</span>
+          <h3 class="font-poppins font-bold text-sm text-tertiary">Transferencia y Cesión Final</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Capacitación de 2 horas al equipo del Centro, entrega de manuales, cesión del dominio NIC y traspaso integral del código y datos al cierre.
           </p>
         </div>
 
@@ -672,93 +606,101 @@
   </section>
 
   <!-- =======================================================================
-       SECCIÓN E: ADMINISTRACIÓN Y CALIDAD DE CONTENIDOS
+       SECCIÓN E: GOBERNANZA EDITORIAL Y CALIDAD DE CONTENIDOS
        ======================================================================= -->
   <section id="administracion" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     
     <div class="max-w-3xl mb-12">
-      <div class="inline-flex items-center gap-2 font-mono text-xs text-brand-accentCyan uppercase tracking-widest mb-2">
-        <span class="material-symbols-outlined text-[16px]">tune</span>
+      <div class="inline-flex items-center gap-2 font-mono text-xs text-primary uppercase tracking-widest mb-2 font-bold">
+        <span class="material-symbols-outlined text-[16px]">policy</span>
         <span>04 · GOBERNANZA EDITORIAL Y CONTROL DE CALIDAD</span>
       </div>
-      <h2 class="font-poppins font-black text-2xl sm:text-4xl text-white tracking-tight">
+      <h2 class="font-poppins font-black text-2xl sm:text-4xl text-tertiary tracking-tight">
         Flujo de Publicación Centralizado y Sin Sesgos
       </h2>
-      <p class="font-manrope text-base text-brand-textMuted mt-3 leading-relaxed">
+      <p class="font-manrope text-base text-structure-dark mt-3 leading-relaxed">
         PatagoniaCoach centralizará la normalización y publicación técnica durante todo el contrato, asegurando coherencia visual, optimización de velocidad y equidad editorial para todos los participantes.
       </p>
     </div>
 
-    <!-- Diagrama del Flujo Editorial -->
+    <!-- Flujo en 3 Pasos -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
       
-      <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder relative">
-        <span class="font-mono text-2xl font-black text-brand-blueLight/30 block mb-2">PASO 01</span>
-        <h4 class="font-poppins font-bold text-white text-base mb-1">Empresas Participantes</h4>
-        <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-          Las empresas entregan sus antecedentes mediante la planilla y guía fotográfica provista por PatagoniaCoach, con autorizaciones de publicación firmadas.
+      <div class="p-6 rounded-xl bg-white border border-card-border relative shadow-sm">
+        <span class="font-mono text-xs text-primary font-bold">PASO 01</span>
+        <h3 class="font-poppins font-bold text-base text-tertiary mt-1">Empresas Participantes</h3>
+        <p class="text-xs text-structure-dark mt-2 leading-relaxed">
+          Las empresas entregan sus antecedentes mediante la plantilla y guía fotográfica provista por PatagoniaCoach, con autorizaciones de publicación firmadas.
         </p>
       </div>
 
-      <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder relative">
-        <span class="font-mono text-2xl font-black text-brand-blueLight/30 block mb-2">PASO 02</span>
-        <h4 class="font-poppins font-bold text-white text-base mb-1">Validación del Centro</h4>
-        <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-          El Centro de Negocios valida la pertinencia de las empresas, aprueba la categorización asignada y confirma el cumplimiento de los criterios institucionales.
+      <div class="p-6 rounded-xl bg-white border border-card-border relative shadow-sm">
+        <span class="font-mono text-xs text-secondary font-bold">PASO 02</span>
+        <h3 class="font-poppins font-bold text-base text-tertiary mt-1">Validación del Centro</h3>
+        <p class="text-xs text-structure-dark mt-2 leading-relaxed">
+          El Centro de Negocios valida la pertenencia de las empresas, aprueba la categorización asignada y confirma el cumplimiento de los criterios institucionales.
         </p>
       </div>
 
-      <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder relative">
-        <span class="font-mono text-2xl font-black text-brand-blueLight/30 block mb-2">PASO 03</span>
-        <h4 class="font-poppins font-bold text-white text-base mb-1">Normalización &amp; Publicación</h4>
-        <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+      <div class="p-6 rounded-xl bg-white border border-card-border relative shadow-sm">
+        <span class="font-mono text-xs text-emerald-700 font-bold">PASO 03</span>
+        <h3 class="font-poppins font-bold text-base text-tertiary mt-1">Normalización &amp; Publicación</h3>
+        <p class="text-xs text-structure-dark mt-2 leading-relaxed">
           PatagoniaCoach normaliza datos, optimiza imágenes a &lt;100 KB, redacta la versión en inglés, prueba el enlace a WhatsApp y publica la ficha definitiva.
         </p>
       </div>
 
     </div>
 
-    <!-- 4 Reglas Críticas de Calidad Editorial -->
+    <!-- 4 Pilares de Calidad Técnica y Editorial -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       
-      <div class="p-6 rounded-2xl bg-brand-dark border border-brand-cardBorder space-y-2">
-        <div class="flex items-center gap-2 text-white font-poppins font-bold text-sm">
-          <span class="material-symbols-outlined text-brand-accentCyan text-[20px]">compress</span>
-          <span>Control de Peso y Velocidad Web (&lt;100 KB)</span>
+      <div class="p-6 rounded-xl bg-white border border-card-border flex items-start gap-4 shadow-sm">
+        <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-[22px]">speed</span>
         </div>
-        <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-          Las conexiones móviles en zonas aisladas de Magallanes (Puerto Williams, Porvenir) exigen páginas ligeras. Todas las fotografías se procesan a formatos modernos (WebP) con un techo estricto de 100 KB por imagen, logrando cargas en menos de 1 segundo.
-        </p>
+        <div class="space-y-1.5">
+          <h3 class="font-poppins font-bold text-sm text-tertiary">Control de Peso y Velocidad Web (&lt;100 KB)</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Las conexiones móviles en zonas aisladas de Magallanes (Puerto Williams, Porvenir) exigen páginas ligeras. Todas las fotografías se procesan a formatos modernos (WebP) con un techo estricto de 100 KB por imagen, logrando cargas en menos de 1 segundo.
+          </p>
+        </div>
       </div>
 
-      <div class="p-6 rounded-2xl bg-brand-dark border border-brand-cardBorder space-y-2">
-        <div class="flex items-center gap-2 text-white font-poppins font-bold text-sm">
-          <span class="material-symbols-outlined text-amber-400 text-[20px]">shuffle</span>
-          <span>Equidad y Cero Prioridad Comprada</span>
+      <div class="p-6 rounded-xl bg-white border border-card-border flex items-start gap-4 shadow-sm">
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-[22px]">balance</span>
         </div>
-        <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-          En cumplimiento con los Términos de Referencia, el directorio opera sin algoritmos de subasta, sin rankings comprados ni calificaciones que perjudiquen a productores nuevos. La exposición en portada rota democráticamente con criterios objetivos aprobados por el Centro.
-        </p>
+        <div class="space-y-1.5">
+          <h3 class="font-poppins font-bold text-sm text-tertiary">Equidad y Cero Prioridad Comprada</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            En cumplimiento con los Términos de Referencia, el directorio opera sin algoritmos de subasta, sin rankings comprados ni calificaciones que perjudiquen a productores nuevos. La exposición en portada rota democráticamente con criterios objetivos aprobados por el Centro.
+          </p>
+        </div>
       </div>
 
-      <div class="p-6 rounded-2xl bg-brand-dark border border-brand-cardBorder space-y-2">
-        <div class="flex items-center gap-2 text-white font-poppins font-bold text-sm">
-          <span class="material-symbols-outlined text-brand-blueLight text-[20px]">translate</span>
-          <span>Coherencia Lingüística Español / Inglés</span>
+      <div class="p-6 rounded-xl bg-white border border-card-border flex items-start gap-4 shadow-sm">
+        <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-600 flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-[22px]">translate</span>
         </div>
-        <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-          Los nombres de fantasía y razones sociales se preservan intactos, mientras que las descripciones comerciales y categorías se adaptan fielmente al inglés para el público angloparlante de cruceros y turismo antártico.
-        </p>
+        <div class="space-y-1.5">
+          <h3 class="font-poppins font-bold text-sm text-tertiary">Coherencia Lingüística Español / Inglés</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Los nombres de fantasía y razones sociales se preservan intactos, mientras que las descripciones comerciales y categorías se adaptan fielmente al inglés para el público de cruceros y turismo antártico.
+          </p>
+        </div>
       </div>
 
-      <div class="p-6 rounded-2xl bg-brand-dark border border-brand-cardBorder space-y-2">
-        <div class="flex items-center gap-2 text-white font-poppins font-bold text-sm">
-          <span class="material-symbols-outlined text-emerald-400 text-[20px]">lock_reset</span>
-          <span>Trazabilidad y Capacidad de Traspaso Futuro</span>
+      <div class="p-6 rounded-xl bg-white border border-card-border flex items-start gap-4 shadow-sm">
+        <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-[22px]">folder_shared</span>
         </div>
-        <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-          Todo el catálogo se almacena en estructuras de datos abiertas y estandarizadas (SQL/JSON/Excel). Al término de los 12 meses, el Centro recibe la base de datos íntegra, el código fuente y las credenciales del dominio para operar con total autonomía.
-        </p>
+        <div class="space-y-1.5">
+          <h3 class="font-poppins font-bold text-sm text-tertiary">Trazabilidad y Capacidad de Traspaso Futuro</h3>
+          <p class="text-xs text-structure-dark leading-relaxed">
+            Todo el catálogo se almacena en estructuras de datos abiertas y estandarizadas (SQL/JSON/Excel). Al término de los 12 meses, el Centro recibe la base de datos íntegra, el código fuente y las credenciales del dominio para operar con total autonomía.
+          </p>
+        </div>
       </div>
 
     </div>
@@ -766,61 +708,45 @@
   </section>
 
   <!-- =======================================================================
-       SECCIÓN F: IMPLEMENTACIÓN, CRONOGRAMA Y GANTT VISUAL
+       SECCIÓN F: IMPLEMENTACIÓN Y CARTA GANTT (30 DÍAS + 12 MESES)
        ======================================================================= -->
-  <section id="cronograma" class="py-16 bg-brand-dark/70 border-y border-brand-cardBorder/60 px-4 sm:px-6 lg:px-8">
+  <section id="cronograma" class="py-16 bg-white border-y border-card-border px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       
       <div class="max-w-3xl mb-12">
-        <div class="inline-flex items-center gap-2 font-mono text-xs text-brand-accentCyan uppercase tracking-widest mb-2">
+        <div class="inline-flex items-center gap-2 font-mono text-xs text-secondary uppercase tracking-widest mb-2 font-bold">
           <span class="material-symbols-outlined text-[16px]">calendar_month</span>
           <span>05 · PLAN DE TRABAJO Y CARTA GANTT</span>
         </div>
-        <h2 class="font-poppins font-black text-2xl sm:text-4xl text-white tracking-tight">
+        <h2 class="font-poppins font-black text-2xl sm:text-4xl text-tertiary tracking-tight">
           Implementación en 30 Días Hábiles + 12 Meses Operativos
         </h2>
-        <p class="font-manrope text-base text-brand-textMuted mt-3 leading-relaxed">
+        <p class="font-manrope text-base text-structure-dark mt-3 leading-relaxed">
           Cronograma estructurado en 6 semanas para la puesta en marcha técnica, seguido por 1 año de operación continua con 4 campañas y 4 talleres formativos.
         </p>
       </div>
 
-      <!-- Carta Gantt Visual Responsiva -->
-      <div class="bg-brand-card rounded-2xl border border-brand-cardBorder p-6 sm:p-8 overflow-x-auto">
+      <!-- Carta Gantt Visual Responsiva Homologada -->
+      <div class="bg-surface-warm rounded-xl border border-card-border p-6 sm:p-8 overflow-x-auto shadow-sm">
         <div class="min-w-[680px]">
           
           <!-- Encabezado Semanas -->
-          <div class="grid grid-cols-12 gap-2 pb-4 border-b border-brand-cardBorder font-mono text-[11px] text-slate-400 font-bold uppercase">
-            <div class="col-span-5 text-left text-white">Etapa / Entregable</div>
+          <div class="grid grid-cols-12 gap-2 pb-4 border-b border-card-border font-mono text-[11px] text-structure-dark font-bold uppercase">
+            <div class="col-span-5 text-left text-text-editorial">Etapa / Entregable</div>
             <div class="col-span-1 text-center">Sem 1</div>
             <div class="col-span-1 text-center">Sem 2</div>
             <div class="col-span-1 text-center">Sem 3</div>
             <div class="col-span-1 text-center">Sem 4</div>
             <div class="col-span-1 text-center">Sem 5</div>
             <div class="col-span-1 text-center">Sem 6</div>
-            <div class="col-span-1 text-center text-brand-accentCyan">Mes 1-12</div>
+            <div class="col-span-1 text-center text-primary font-bold">Mes 1-12</div>
           </div>
 
-          <!-- Fila 1: Inicio -->
-          <div class="grid grid-cols-12 gap-2 py-3 border-b border-brand-cardBorder/40 items-center text-xs">
-            <div class="col-span-5 font-poppins font-medium text-white">
-              1. Inicio, Coordinación y Dominio
-            </div>
-            <div class="col-span-1"><div class="h-5 bg-brand-blue rounded"></div></div>
+          <!-- Fila 1: Inicio y Dominio -->
+          <div class="grid grid-cols-12 gap-2 py-3 border-b border-card-border/60 items-center text-xs">
+            <div class="col-span-5 font-poppins font-medium text-text-editorial">1. Inicio, Coordinación y Dominio</div>
+            <div class="col-span-1 flex justify-center"><div class="w-full h-3 rounded bg-primary"></div></div>
             <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-          </div>
-
-          <!-- Fila 2: Validación Diseño -->
-          <div class="grid grid-cols-12 gap-2 py-3 border-b border-brand-cardBorder/40 items-center text-xs">
-            <div class="col-span-5 font-poppins font-medium text-white">
-              2. Validación de Diseño &amp; Identidad
-            </div>
-            <div class="col-span-1"><div class="h-5 bg-brand-blue rounded-l"></div></div>
-            <div class="col-span-1"><div class="h-5 bg-brand-blue rounded-r"></div></div>
             <div class="col-span-1"></div>
             <div class="col-span-1"></div>
             <div class="col-span-1"></div>
@@ -828,66 +754,55 @@
             <div class="col-span-1"></div>
           </div>
 
-          <!-- Fila 3: Desarrollo -->
-          <div class="grid grid-cols-12 gap-2 py-3 border-b border-brand-cardBorder/40 items-center text-xs">
-            <div class="col-span-5 font-poppins font-medium text-white">
-              3. Desarrollo Panel, Filtros y Fichas
-            </div>
+          <!-- Fila 2: Diseño & Identidad -->
+          <div class="grid grid-cols-12 gap-2 py-3 border-b border-card-border/60 items-center text-xs">
+            <div class="col-span-5 font-poppins font-medium text-text-editorial">2. Validación de Diseño &amp; Identidad</div>
+            <div class="col-span-2 flex justify-center"><div class="w-full h-3 rounded bg-primary/80"></div></div>
             <div class="col-span-1"></div>
-            <div class="col-span-1"><div class="h-5 bg-brand-blue rounded-l"></div></div>
-            <div class="col-span-1"><div class="h-5 bg-brand-blue"></div></div>
-            <div class="col-span-1"><div class="h-5 bg-brand-blue rounded-r"></div></div>
+            <div class="col-span-1"></div>
             <div class="col-span-1"></div>
             <div class="col-span-1"></div>
             <div class="col-span-1"></div>
           </div>
 
-          <!-- Fila 4: Carga Inicial y Traducción -->
-          <div class="grid grid-cols-12 gap-2 py-3 border-b border-brand-cardBorder/40 items-center text-xs">
-            <div class="col-span-5 font-poppins font-medium text-white">
-              4. Carga 100 Empresas y Traducción Inglés
-            </div>
+          <!-- Fila 3: Desarrollo Panel y Fichas -->
+          <div class="grid grid-cols-12 gap-2 py-3 border-b border-card-border/60 items-center text-xs">
+            <div class="col-span-5 font-poppins font-medium text-text-editorial">3. Desarrollo Panel, Filtros y Fichas</div>
             <div class="col-span-1"></div>
+            <div class="col-span-3 flex justify-center"><div class="w-full h-3 rounded bg-primary"></div></div>
             <div class="col-span-1"></div>
-            <div class="col-span-1"><div class="h-5 bg-brand-accentCyan/80 rounded-l"></div></div>
-            <div class="col-span-1"><div class="h-5 bg-brand-accentCyan/80"></div></div>
-            <div class="col-span-1"><div class="h-5 bg-brand-accentCyan/80 rounded-r"></div></div>
             <div class="col-span-1"></div>
             <div class="col-span-1"></div>
           </div>
 
-          <!-- Fila 5: Puesta en Marcha -->
-          <div class="grid grid-cols-12 gap-2 py-3 border-b border-brand-cardBorder/40 items-center text-xs">
-            <div class="col-span-5 font-poppins font-medium text-white">
-              5. Capacitación, Pruebas y Lanzamiento
-            </div>
+          <!-- Fila 4: Carga 100 Empresas y Traducción -->
+          <div class="grid grid-cols-12 gap-2 py-3 border-b border-card-border/60 items-center text-xs">
+            <div class="col-span-5 font-poppins font-medium text-text-editorial">4. Carga 100 Empresas y Traducción Inglés</div>
+            <div class="col-span-2"></div>
+            <div class="col-span-3 flex justify-center"><div class="w-full h-3 rounded bg-primary/70"></div></div>
             <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"><div class="h-5 bg-emerald-500 rounded"></div></div>
             <div class="col-span-1"></div>
           </div>
 
-          <!-- Fila 6: Operación Anual -->
+          <!-- Fila 5: Capacitación y Lanzamiento -->
+          <div class="grid grid-cols-12 gap-2 py-3 border-b border-card-border/60 items-center text-xs">
+            <div class="col-span-5 font-poppins font-medium text-text-editorial">5. Capacitación, Pruebas y Lanzamiento</div>
+            <div class="col-span-5"></div>
+            <div class="col-span-1 flex justify-center"><div class="w-full h-3 rounded bg-emerald-600"></div></div>
+            <div class="col-span-1"></div>
+          </div>
+
+          <!-- Fila 6: Operación 12 Meses -->
           <div class="grid grid-cols-12 gap-2 py-3 items-center text-xs">
-            <div class="col-span-5 font-poppins font-medium text-white">
-              6. Operación (Altas + 4 Campañas + 4 Talleres)
-            </div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1"><div class="h-5 bg-purple-500 rounded flex items-center justify-center font-mono text-[9px] text-white font-bold">12M</div></div>
+            <div class="col-span-5 font-poppins font-medium text-text-editorial">6. Operación (Altas + 4 Campañas + 4 Talleres)</div>
+            <div class="col-span-6"></div>
+            <div class="col-span-1 flex justify-center"><div class="w-full h-3 rounded bg-secondary"></div></div>
           </div>
 
         </div>
       </div>
 
-      <p class="font-mono text-xs text-slate-400 mt-4 text-center">
+      <p class="text-xs font-mono text-structure-dark mt-4 text-center">
         * Nota: Los plazos y el calendario definitivo de entregas y pagos se formalizarán en conjunto con el Centro de Negocios en la reunión de inicio.
       </p>
 
@@ -895,112 +810,104 @@
   </section>
 
   <!-- =======================================================================
-       SECCIÓN G: INVERSIÓN Y CONDICIONES COMERCIALES
+       SECCIÓN G: INVERSIÓN TOTAL Y CONDICIONES TRANSPARENTES
        ======================================================================= -->
   <section id="inversion" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     
     <div class="max-w-3xl mb-12">
-      <div class="inline-flex items-center gap-2 font-mono text-xs text-brand-blueLight uppercase tracking-widest mb-2">
+      <div class="inline-flex items-center gap-2 font-mono text-xs text-primary uppercase tracking-widest mb-2 font-bold">
         <span class="material-symbols-outlined text-[16px]">payments</span>
         <span>06 · PRESUPUESTO Y FORMA DE PAGO</span>
       </div>
-      <h2 class="font-poppins font-black text-2xl sm:text-4xl text-white tracking-tight">
+      <h2 class="font-poppins font-black text-2xl sm:text-4xl text-tertiary tracking-tight">
         Inversión Total y Condiciones Transparentes
       </h2>
-      <p class="font-manrope text-base text-brand-textMuted mt-3 leading-relaxed">
+      <p class="font-manrope text-base text-structure-dark mt-3 leading-relaxed">
         Precio único a suma alzada conforme a las bases. Incluye desarrollo completo, carga inicial, 12 meses de operación, soporte técnico, pauta publicitaria en Meta y los cuatro talleres formativos.
       </p>
     </div>
 
-    <!-- Caja Monumental de Precio Oficial -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
       
-      <!-- Bloque Destacado de Precio (5 cols) -->
-      <div class="lg:col-span-5 bg-gradient-to-br from-brand-card via-[#1A253A] to-brand-card p-8 rounded-3xl border-2 border-brand-blue flex flex-col justify-between shadow-2xl relative">
-        <span class="inline-block px-3 py-1 rounded-full bg-brand-blue text-white font-mono text-xs font-bold uppercase tracking-wider self-start">
-          PRECIO TOTAL OFERTADO
-        </span>
-
-        <div class="my-6">
-          <div class="font-poppins font-black text-4xl sm:text-5xl text-white tracking-tight">
-            $2.600.000 <span class="text-xl sm:text-2xl font-semibold text-brand-blueLight">CLP</span>
+      <!-- Bloque Destacado de Precio Total (5 cols) -->
+      <div class="lg:col-span-5 bg-tertiary text-white p-8 rounded-xl shadow-lg flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="px-2.5 py-1 rounded bg-white/10 text-white font-mono text-[11px] font-bold tracking-wider uppercase">
+            PRECIO TOTAL OFERTADO
+          </span>
+          <div class="pt-2">
+            <div class="font-poppins font-black text-4xl sm:text-5xl text-white tracking-tight">
+              $2.600.000 <span class="text-lg font-mono font-normal text-white/70">CLP</span>
+            </div>
+            <div class="font-mono text-xs text-white/80 mt-1.5 flex items-center gap-2">
+              <span class="material-symbols-outlined text-emerald-400 text-[18px]">verified</span>
+              <span>Total final, impuestos incluidos. <strong class="text-white underline decoration-white/40">Servicio exento de IVA</strong></span>
+            </div>
           </div>
-          <p class="font-mono text-sm text-emerald-400 font-semibold mt-2">
-            Total final, impuestos incluidos. Servicio exento de IVA.
-          </p>
-          <p class="font-manrope text-xs text-slate-300 mt-3 leading-relaxed">
-            Sin cobros mensuales adicionales por el alcance contratado. La inversión de $200.000 en pauta publicitaria forma parte del precio global.
+          <p class="text-xs text-white/70 font-manrope leading-relaxed pt-2 border-t border-white/10">
+            Sin cobros mensuales adicionales por el alcance contratado. La inversión de .000 en pauta publicitaria forma parte del precio global.
           </p>
         </div>
 
-        <div class="pt-6 border-t border-brand-cardBorder space-y-2 font-mono text-xs text-slate-300">
-          <div class="flex justify-between">
-            <span>Vigencia de la oferta:</span>
-            <strong class="text-white">30 días corridos</strong>
-          </div>
-          <div class="flex justify-between">
-            <span>Período de cobertura:</span>
-            <strong class="text-white">12 meses de operación</strong>
-          </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-white/70">
+          <span>Vigencia de la oferta:</span>
+          <strong class="text-white">30 días corridos</strong>
         </div>
       </div>
 
-      <!-- Desglose y Modalidad de Pago (7 cols) -->
-      <div class="lg:col-span-7 bg-brand-card p-6 sm:p-8 rounded-3xl border border-brand-cardBorder space-y-6 flex flex-col justify-between">
-        
-        <!-- Desglose por Componente -->
+      <!-- Desglose Estructurado y Modalidad de Pago (7 cols) -->
+      <div class="lg:col-span-7 bg-white p-8 rounded-xl border border-card-border shadow-sm flex flex-col justify-between space-y-6">
         <div>
-          <h4 class="font-poppins font-bold text-white text-base mb-3">
+          <h3 class="font-poppins font-bold text-base text-tertiary mb-4">
             Desglose Estructurado del Servicio
-          </h4>
-          <div class="space-y-2 text-xs font-manrope">
-            <div class="flex justify-between py-1.5 border-b border-brand-cardBorder/60">
-              <span class="text-slate-300">Diseño, desarrollo bilingüe, panel y carga de hasta 100 empresas</span>
-              <strong class="font-mono text-white">$1.100.000</strong>
+          </h3>
+          <div class="space-y-3 text-xs font-manrope">
+            <div class="flex items-center justify-between py-2 border-b border-card-border">
+              <span class="text-text-editorial">Diseño, desarrollo bilingüe, panel y carga de hasta 100 empresas</span>
+              <span class="font-mono font-bold text-text-editorial">.300.000</span>
             </div>
-            <div class="flex justify-between py-1.5 border-b border-brand-cardBorder/60">
-              <span class="text-slate-300">Hosting, dominio .cl, hasta 5 correos y respaldos por 12 meses</span>
-              <strong class="font-mono text-white">$240.000</strong>
+            <div class="flex items-center justify-between py-2 border-b border-card-border">
+              <span class="text-text-editorial">Hosting, dominio, hasta 5 correos y respaldos por 12 meses</span>
+              <span class="font-mono font-bold text-text-editorial">.000</span>
             </div>
-            <div class="flex justify-between py-1.5 border-b border-brand-cardBorder/60">
-              <span class="text-slate-300">Administración básica, hasta 60 altas anuales y soporte</span>
-              <strong class="font-mono text-white">$300.000</strong>
+            <div class="flex items-center justify-between py-2 border-b border-card-border">
+              <span class="text-text-editorial">Administración básica: hasta 60 altas anuales y soporte</span>
+              <span class="font-mono font-bold text-text-editorial">.000</span>
             </div>
-            <div class="flex justify-between py-1.5 border-b border-brand-cardBorder/60">
-              <span class="text-slate-300">Producción y gestión de 4 campañas trimestrales de difusión</span>
-              <strong class="font-mono text-white">$344.874</strong>
+            <div class="flex items-center justify-between py-2 border-b border-card-border">
+              <span class="text-text-editorial">Producción y gestión de 4 campañas trimestrales de difusión</span>
+              <span class="font-mono font-bold text-text-editorial">.000</span>
             </div>
-            <div class="flex justify-between py-1.5 border-b border-brand-cardBorder/60">
-              <span class="text-slate-300">Inversión en pauta de Meta (4 campañas de $50.000)</span>
-              <strong class="font-mono text-white">$200.000</strong>
+            <div class="flex items-center justify-between py-2 border-b border-card-border">
+              <span class="text-text-editorial">Inversión en pauta de Meta (4 campañas de .000)</span>
+              <span class="font-mono font-bold text-secondary">.000</span>
             </div>
-            <div class="flex justify-between py-1.5 border-b border-brand-cardBorder/60">
-              <span class="text-brand-accentCyan font-bold">Cuatro talleres prácticos de valor agregado</span>
-              <strong class="font-mono text-brand-accentCyan font-bold">Sin costo adicional ($0)</strong>
+            <div class="flex items-center justify-between py-2 text-emerald-700 font-semibold">
+              <span>Cuatro talleres prácticos de valor agregado</span>
+              <span class="font-mono">Sin costo adicional (zsh)</span>
             </div>
           </div>
         </div>
 
-        <!-- Hitos de Pago Propuestos -->
-        <div class="pt-4 border-t border-brand-cardBorder">
-          <h4 class="font-poppins font-bold text-white text-base mb-2">
+        <div class="pt-4 border-t border-card-border">
+          <h4 class="font-poppins font-bold text-xs uppercase text-structure-dark tracking-wider mb-3">
             Hitos de Pago Propuestos
           </h4>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
-            <div class="p-3 bg-brand-dark rounded-xl border border-brand-cardBorder">
-              <span class="font-mono text-[10px] text-slate-400 block uppercase">Inicio Formal</span>
-              <strong class="font-poppins text-sm text-white block mt-0.5">40% ($1.040.000)</strong>
-              <span class="font-manrope text-[10px] text-slate-400">Firma y arranque</span>
+            <div class="p-3 rounded-lg bg-surface-warm border border-card-border">
+              <span class="block font-mono text-[10px] text-structure-dark">INICIO (40%)</span>
+              <strong class="block font-poppins text-sm text-tertiary">.040.000</strong>
+              <span class="text-[10px] text-structure-dark">Firma de encargo</span>
             </div>
-            <div class="p-3 bg-brand-dark rounded-xl border border-brand-cardBorder">
-              <span class="font-mono text-[10px] text-slate-400 block uppercase">Lanzamiento</span>
-              <strong class="font-poppins text-sm text-white block mt-0.5">40% ($1.040.000)</strong>
-              <span class="font-manrope text-[10px] text-slate-400">Recepción conforme</span>
+            <div class="p-3 rounded-lg bg-surface-warm border border-card-border">
+              <span class="block font-mono text-[10px] text-structure-dark">ENTREGA (40%)</span>
+              <strong class="block font-poppins text-sm text-tertiary">.040.000</strong>
+              <span class="text-[10px] text-structure-dark">Recepción conforme</span>
             </div>
-            <div class="p-3 bg-brand-dark rounded-xl border border-brand-cardBorder">
-              <span class="font-mono text-[10px] text-slate-400 block uppercase">Operación Anual</span>
-              <strong class="font-poppins text-sm text-white block mt-0.5">20% ($520.000)</strong>
-              <span class="font-manrope text-[10px] text-slate-400">4 cuotas trimestrales de $130.000</span>
+            <div class="p-3 rounded-lg bg-surface-warm border border-card-border">
+              <span class="block font-mono text-[10px] text-structure-dark">OPERACIÓN ANUAL</span>
+              <strong class="block font-poppins text-sm text-tertiary">20% (.000)</strong>
+              <span class="text-[10px] text-structure-dark">4 cuotas trimestrales de .000</span>
             </div>
           </div>
         </div>
@@ -1012,106 +919,109 @@
   </section>
 
   <!-- =======================================================================
-       SECCIÓN H: CENTRO DE RECURSOS OFICIALES
+       SECCIÓN H: CENTRO DE RECURSOS DEL PROYECTO
        ======================================================================= -->
-  <section id="recursos" class="py-16 bg-brand-dark/70 border-y border-brand-cardBorder/60 px-4 sm:px-6 lg:px-8">
+  <section id="recursos" class="py-16 bg-white border-y border-card-border px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       
       <div class="max-w-3xl mb-12">
-        <div class="inline-flex items-center gap-2 font-mono text-xs text-brand-accentCyan uppercase tracking-widest mb-2">
-          <span class="material-symbols-outlined text-[16px]">folder_special</span>
+        <div class="inline-flex items-center gap-2 font-mono text-xs text-primary uppercase tracking-widest mb-2 font-bold">
+          <span class="material-symbols-outlined text-[16px]">folder</span>
           <span>07 · CENTRO DE RECURSOS DEL PROYECTO</span>
         </div>
-        <h2 class="font-poppins font-black text-2xl sm:text-4xl text-white tracking-tight">
+        <h2 class="font-poppins font-black text-2xl sm:text-4xl text-tertiary tracking-tight">
           Documentos, Anexos y Respaldos Oficiales
         </h2>
-        <p class="font-manrope text-base text-brand-textMuted mt-3 leading-relaxed">
+        <p class="font-manrope text-base text-structure-dark mt-3 leading-relaxed">
           Accede al documento maestro de la propuesta y a las referencias técnicas integradas. Todo el material ha sido consolidado para facilitar la revisión del comité evaluador de Sercotec e INACAP.
         </p>
       </div>
 
-      <!-- Grid de Recursos Reales -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <!-- Recurso 1: Propuesta Completa PDF -->
-        <a 
-          href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf" 
-          target="_blank" 
-          download 
-          class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder hover:border-brand-blue transition-all flex flex-col justify-between group shadow-sm hover:scale-[1.02]"
-        >
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-red-500/20 text-red-400 flex items-center justify-center">
-              <span class="material-symbols-outlined text-[24px]">description</span>
+        <!-- Documento 1: PDF Completo -->
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border flex flex-col justify-between space-y-4 hover:border-primary transition-colors">
+          <div class="space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
             </div>
-            <h4 class="font-poppins font-bold text-white text-base group-hover:text-brand-accentCyan transition-colors">
-              Propuesta Técnica Completa
-            </h4>
-            <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+            <h3 class="font-poppins font-bold text-sm text-tertiary">Propuesta Técnica Completa</h3>
+            <p class="text-xs text-structure-dark leading-relaxed">
               Documento maestro de 41 páginas presentado el 30 de octubre de 2026. Incluye metodología, alcance, cronograma y presupuesto.
             </p>
           </div>
-          <div class="pt-4 border-t border-brand-cardBorder flex items-center justify-between text-xs font-mono text-slate-400">
-            <span>PDF (351 KB)</span>
-            <span class="material-symbols-outlined text-[16px] text-brand-accentCyan">download</span>
-          </div>
-        </a>
+          <a 
+            href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf" 
+            target="_blank" 
+            download 
+            class="inline-flex items-center justify-between text-xs font-mono font-bold text-primary hover:underline pt-2 border-t border-card-border"
+          >
+            <span>PDF (41 Págs)</span>
+            <span class="material-symbols-outlined text-[16px]">download</span>
+          </a>
+        </div>
 
-        <!-- Recurso 2: Términos de Referencia & Matriz -->
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center">
+        <!-- Documento 2: Correspondencia con Bases -->
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border flex flex-col justify-between space-y-4 hover:border-primary transition-colors">
+          <div class="space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
               <span class="material-symbols-outlined text-[24px]">checklist</span>
             </div>
-            <h4 class="font-poppins font-bold text-white text-base">
-              Correspondencia con Bases
-            </h4>
-            <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+            <h3 class="font-poppins font-bold text-sm text-tertiary">Correspondencia con Bases</h3>
+            <p class="text-xs text-structure-dark leading-relaxed">
               Matriz comparativa punto por punto entre los Términos de Referencia de Sercotec y los compromisos de la oferta (Páginas 13 y 14 del PDF).
             </p>
           </div>
-          <div class="pt-4 border-t border-brand-cardBorder flex items-center justify-between text-xs font-mono text-slate-400">
+          <a 
+            href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf#page=13" 
+            target="_blank" 
+            class="inline-flex items-center justify-between text-xs font-mono font-bold text-primary hover:underline pt-2 border-t border-card-border"
+          >
             <span>Págs 13-14 del PDF</span>
-            <a href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf#page=13" target="_blank" class="text-brand-accentCyan hover:underline">Ver</a>
-          </div>
+            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+          </a>
         </div>
 
-        <!-- Recurso 3: Plan de Difusión y Campañas -->
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center">
+        <!-- Documento 3: Plan Meta Ads -->
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border flex flex-col justify-between space-y-4 hover:border-primary transition-colors">
+          <div class="space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-600 flex items-center justify-center">
               <span class="material-symbols-outlined text-[24px]">campaign</span>
             </div>
-            <h4 class="font-poppins font-bold text-white text-base">
-              Plan de Difusión Meta
-            </h4>
-            <p class="font-manrope text-xs text-slate-300 leading-relaxed">
-              Especificación de las 4 campañas trimestrales, formatos de Reels y piezas gráficas, con los $200.000 de pauta incluida (Página 8 del PDF).
+            <h3 class="font-poppins font-bold text-sm text-tertiary">Plan de Difusión Meta</h3>
+            <p class="text-xs text-structure-dark leading-relaxed">
+              Especificación de las 4 campañas trimestrales, formatos de Reels y piezas gráficas, con los .000 de pauta incluida (Página 8 del PDF).
             </p>
           </div>
-          <div class="pt-4 border-t border-brand-cardBorder flex items-center justify-between text-xs font-mono text-slate-400">
+          <a 
+            href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf#page=8" 
+            target="_blank" 
+            class="inline-flex items-center justify-between text-xs font-mono font-bold text-primary hover:underline pt-2 border-t border-card-border"
+          >
             <span>Página 8 del PDF</span>
-            <a href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf#page=8" target="_blank" class="text-brand-accentCyan hover:underline">Ver</a>
-          </div>
+            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+          </a>
         </div>
 
-        <!-- Recurso 4: Modelo de Talleres de Valor Agregado -->
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+        <!-- Documento 4: Programa 4 Talleres -->
+        <div class="p-5 rounded-xl bg-surface-warm border border-card-border flex flex-col justify-between space-y-4 hover:border-primary transition-colors">
+          <div class="space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center">
               <span class="material-symbols-outlined text-[24px]">school</span>
             </div>
-            <h4 class="font-poppins font-bold text-white text-base">
-              Programa de 4 Talleres
-            </h4>
-            <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+            <h3 class="font-poppins font-bold text-sm text-tertiary">Programa de 4 Talleres</h3>
+            <p class="text-xs text-structure-dark leading-relaxed">
               Detalle temático de las 4 sesiones prácticas de 90 min para los emprendedores asesorados por el Centro (Página 9 del PDF).
             </p>
           </div>
-          <div class="pt-4 border-t border-brand-cardBorder flex items-center justify-between text-xs font-mono text-slate-400">
+          <a 
+            href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf#page=9" 
+            target="_blank" 
+            class="inline-flex items-center justify-between text-xs font-mono font-bold text-primary hover:underline pt-2 border-t border-card-border"
+          >
             <span>Página 9 del PDF</span>
-            <a href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf#page=9" target="_blank" class="text-brand-accentCyan hover:underline">Ver</a>
-          </div>
+            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+          </a>
         </div>
 
       </div>
@@ -1120,51 +1030,51 @@
   </section>
 
   <!-- =======================================================================
-       SECCIÓN I: PROTECCIÓN DE DATOS Y PRIVACIDAD (LEY 21.719)
+       SECCIÓN I: PROTECCIÓN DE DATOS PERSONALES (LEY 21.719)
        ======================================================================= -->
   <section id="privacidad" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     
     <div class="max-w-3xl mb-12">
-      <div class="inline-flex items-center gap-2 font-mono text-xs text-brand-accentCyan uppercase tracking-widest mb-2">
-        <span class="material-symbols-outlined text-[16px]">security</span>
+      <div class="inline-flex items-center gap-2 font-mono text-xs text-secondary uppercase tracking-widest mb-2 font-bold">
+        <span class="material-symbols-outlined text-[16px]">shield</span>
         <span>08 · CUMPLIMIENTO REGULATORIO Y PRIVACIDAD</span>
       </div>
-      <h2 class="font-poppins font-black text-2xl sm:text-4xl text-white tracking-tight">
+      <h2 class="font-poppins font-black text-2xl sm:text-4xl text-tertiary tracking-tight">
         Protección de Datos Personales (Ley 21.719)
       </h2>
-      <p class="font-manrope text-base text-brand-textMuted mt-3 leading-relaxed">
+      <p class="font-manrope text-base text-structure-dark mt-3 leading-relaxed">
         Compromiso técnico y metodológico de PatagoniaCoach para el tratamiento seguro de los datos de los emprendedores y visitantes, conforme al nuevo estándar de privacidad en Chile.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       
-      <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-        <div class="w-10 h-10 rounded-lg bg-brand-blue/20 text-brand-blueLight flex items-center justify-center">
-          <span class="material-symbols-outlined text-[22px]">shield</span>
+      <div class="p-6 rounded-xl bg-white border border-card-border space-y-3 shadow-sm">
+        <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+          <span class="material-symbols-outlined text-[22px]">lock</span>
         </div>
-        <h4 class="font-poppins font-bold text-white text-base">Separación Pública y Privada</h4>
-        <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+        <h3 class="font-poppins font-bold text-base text-tertiary">Separación Pública y Privada</h3>
+        <p class="text-xs text-structure-dark leading-relaxed">
           Solo se publican los antecedentes estrictamente comerciales autorizados por el titular (nombre de fantasía, WhatsApp de venta, catálogo). Los datos personales sensibles permanecen fuera del alcance público.
         </p>
       </div>
 
-      <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-        <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+      <div class="p-6 rounded-xl bg-white border border-card-border space-y-3 shadow-sm">
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center">
           <span class="material-symbols-outlined text-[22px]">manage_accounts</span>
         </div>
-        <h4 class="font-poppins font-bold text-white text-base">Canal de Derechos ARCO</h4>
-        <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+        <h3 class="font-poppins font-bold text-base text-tertiary">Canal de Derechos ARCO</h3>
+        <p class="text-xs text-structure-dark leading-relaxed">
           Se habilita un procedimiento expedito para que cualquier participante solicite el acceso, rectificación, actualización o eliminación inmediata de su ficha comercial a través del correo oficial del Centro.
         </p>
       </div>
 
-      <div class="bg-brand-card p-6 rounded-2xl border border-brand-cardBorder space-y-3">
-        <div class="w-10 h-10 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center">
+      <div class="p-6 rounded-xl bg-white border border-card-border space-y-3 shadow-sm">
+        <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-600 flex items-center justify-center">
           <span class="material-symbols-outlined text-[22px]">visibility_off</span>
         </div>
-        <h4 class="font-poppins font-bold text-white text-base">Cero Rastreos Invasivos</h4>
-        <p class="font-manrope text-xs text-slate-300 leading-relaxed">
+        <h3 class="font-poppins font-bold text-base text-tertiary">Cero Rastreos Invasivos</h3>
+        <p class="text-xs text-structure-dark leading-relaxed">
           La landing de presentación no incluye formularios de captura innecesaria, píxeles publicitarios de retargeting ni cookies de terceros sin consentimiento informado.
         </p>
       </div>
@@ -1176,79 +1086,80 @@
   <!-- =======================================================================
        SECCIÓN J: CIERRE Y CONTACTO OFICIAL
        ======================================================================= -->
-  <section id="contacto" class="py-20 bg-gradient-to-b from-brand-dark to-brand-navy border-t border-brand-cardBorder px-4 sm:px-6 lg:px-8">
+  <section id="contacto" class="py-20 bg-surface-warm border-t border-card-border px-4 sm:px-6 lg:px-8">
     <div class="max-w-5xl mx-auto text-center space-y-8">
       
       <div class="space-y-3">
-        <span class="inline-flex items-center gap-1.5 font-mono text-xs text-brand-accentCyan font-bold uppercase tracking-wider">
-          <span class="w-2 h-2 rounded-full bg-brand-accentCyan animate-pulse"></span>
+        <span class="inline-flex items-center gap-1.5 font-mono text-xs text-secondary font-bold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
           <span>DISPONIBILIDAD INMEDIATA PARA EL INICIO</span>
         </span>
-        <h2 class="font-poppins font-black text-3xl sm:text-5xl text-white tracking-tight">
+        <h2 class="font-poppins font-black text-3xl sm:text-5xl text-tertiary tracking-tight">
           Listos para Dar Vida a la Vitrina de Magallanes
         </h2>
-        <p class="font-manrope text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="font-manrope text-base sm:text-lg text-structure-dark max-w-2xl mx-auto leading-relaxed">
           Quedamos a entera disposición de Felipe Herrera y del equipo del Centro de Negocios Sercotec Punta Arenas para coordinar la reunión de arranque y validar el cronograma definitivo.
         </p>
       </div>
 
       <!-- Ficha de Contacto Directo -->
-      <div class="p-8 rounded-3xl bg-brand-card border border-brand-cardBorder max-w-2xl mx-auto space-y-4 shadow-xl">
+      <div class="p-8 rounded-xl bg-white border border-card-border max-w-2xl mx-auto space-y-4 shadow-md">
         <div class="flex flex-col items-center">
-          <div class="w-16 h-16 rounded-full bg-brand-blue/20 border border-brand-blue/40 flex items-center justify-center text-brand-blueLight mb-2">
+          <div class="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-2">
             <span class="material-symbols-outlined text-[32px]">person</span>
           </div>
-          <h3 class="font-poppins font-bold text-xl text-white">Franco Gallardo S.</h3>
-          <span class="font-mono text-xs text-brand-accentCyan uppercase tracking-wider">Representante · Agencia PatagoniaCoach</span>
+          <h3 class="font-poppins font-bold text-xl text-tertiary">Franco Gallardo S.</h3>
+          <span class="font-mono text-xs text-secondary uppercase tracking-wider font-bold">Representante · Agencia PatagoniaCoach</span>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-xs font-manrope text-slate-300 text-left">
-          <div class="flex items-center gap-3 p-3 bg-brand-navy rounded-xl border border-brand-cardBorder min-w-0">
-            <span class="material-symbols-outlined text-brand-blueLight text-[20px] shrink-0">mail</span>
-            <a href="mailto:fgallardo@agenciapatagoniacoach.cl" class="hover:text-white transition-colors truncate text-[11px] sm:text-xs">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 text-xs font-manrope text-structure-dark text-left">
+          <div class="flex items-center gap-3 p-3 bg-surface-warm rounded border border-card-border min-w-0">
+            <span class="material-symbols-outlined text-primary text-[20px] shrink-0">mail</span>
+            <a href="mailto:fgallardo@agenciapatagoniacoach.cl" class="hover:text-primary transition-colors truncate text-[11px] sm:text-xs font-medium text-text-editorial">
               fgallardo@agenciapatagoniacoach.cl
             </a>
           </div>
 
-          <div class="flex items-center gap-3 p-3 bg-brand-navy rounded-xl border border-brand-cardBorder">
-            <span class="material-symbols-outlined text-emerald-400 text-[20px]">call</span>
-            <a href="tel:+56995684198" class="hover:text-white transition-colors">
+          <div class="flex items-center gap-3 p-3 bg-surface-warm rounded border border-card-border min-w-0">
+            <span class="material-symbols-outlined text-emerald-600 text-[20px] shrink-0">call</span>
+            <a href="tel:+56995684198" class="hover:text-primary transition-colors text-[11px] sm:text-xs font-medium text-text-editorial">
               +56 9 9568 4198
             </a>
           </div>
 
-          <div class="flex items-center gap-3 p-3 bg-brand-navy rounded-xl border border-brand-cardBorder">
-            <span class="material-symbols-outlined text-amber-400 text-[20px]">location_on</span>
-            <span>Av. Manuel Bulnes 215, Punta Arenas</span>
+          <div class="flex items-center gap-3 p-3 bg-surface-warm rounded border border-card-border min-w-0">
+            <span class="material-symbols-outlined text-amber-600 text-[20px] shrink-0">location_on</span>
+            <span class="text-[11px] sm:text-xs text-text-editorial">Av. Manuel Bulnes 215, Punta Arenas</span>
           </div>
 
-          <div class="flex items-center gap-3 p-3 bg-brand-navy rounded-xl border border-brand-cardBorder">
-            <span class="material-symbols-outlined text-brand-accentCyan text-[20px]">language</span>
-            <a href="https://agenciapatagoniacoach.cl" target="_blank" class="hover:text-white transition-colors">
+          <div class="flex items-center gap-3 p-3 bg-surface-warm rounded border border-card-border min-w-0">
+            <span class="material-symbols-outlined text-primary text-[20px] shrink-0">language</span>
+            <a href="https://agenciapatagoniacoach.cl" target="_blank" class="hover:text-primary transition-colors text-[11px] sm:text-xs font-medium text-text-editorial">
               agenciapatagoniacoach.cl
             </a>
           </div>
         </div>
 
         <!-- Botones Finales de Doble Acción -->
-        <div class="pt-6 flex flex-wrap items-center justify-center gap-4">
+        <div class="pt-6 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
           <a 
             href="../index.html" 
             target="_blank" 
-            class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-blue hover:bg-brand-blue/90 text-white font-poppins text-xs font-bold shadow-md transition-all hover:scale-105 active:scale-95"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded bg-primary hover:bg-primary-container text-white font-poppins text-xs font-bold shadow transition-all hover:scale-105 active:scale-95"
           >
+            <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
             <span>Explorar Demo del Directorio</span>
-            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
           </a>
 
           <a 
             href="../assets/docs/Propuesta_comercial_Sercotec_PatagoniaCoach.pdf" 
             target="_blank" 
             download 
-            class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-poppins text-xs font-bold transition-all hover:scale-105 active:scale-95"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded bg-surface-warm hover:bg-slate-100 text-text-editorial border border-card-border font-poppins text-xs font-semibold transition-all hover:scale-105 active:scale-95"
           >
-            <span class="material-symbols-outlined text-[16px] text-brand-accentCyan">download</span>
-            <span>Descargar Propuesta PDF (41p)</span>
+            <span class="material-symbols-outlined text-[18px] text-secondary">picture_as_pdf</span>
+            <span>Descargar Propuesta PDF (41 págs)</span>
           </a>
         </div>
       </div>
@@ -1257,36 +1168,82 @@
   </section>
 
   <!-- =======================================================================
-       FOOTER INSTITUCIONAL DE LA PRESENTACIÓN
+       FOOTER INSTITUCIONAL HOMOLOGADO (SERCOTEC & INACAP - 2026)
        ======================================================================= -->
-  <footer class="w-full bg-[#070A11] border-t border-brand-cardBorder py-8 px-4 sm:px-8 text-center text-xs font-mono text-slate-500">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p>
-        © 2026 Agencia PatagoniaCoach. Todos los derechos reservados.
-      </p>
-      <p class="text-slate-400">
-        Propuesta para el Centro de Negocios Sercotec Punta Arenas &amp; Satélites (Operado por INACAP).
-      </p>
+  <footer class="w-full bg-[#1A1D20] text-white pt-12 pb-8 border-t border-white/10" id="footer-regional">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-white/10">
+        
+        <!-- Columna 1: Marca y Propósito (6 cols) -->
+        <div class="md:col-span-6 space-y-4">
+          <div class="flex flex-col">
+            <span class="font-poppins text-[20px] md:text-[22px] font-black uppercase tracking-tight text-white leading-none">
+              MAGALLANES
+            </span>
+            <span class="font-poppins text-[12px] text-white/60 font-medium tracking-normal mt-1">
+              Hecho por su gente
+            </span>
+          </div>
+          <p class="font-manrope text-[14px] text-white/70 max-w-md leading-relaxed">
+            Propuesta técnica y comercial de vitrina territorial presentada por Agencia PatagoniaCoach para el Centro de Negocios Sercotec Punta Arenas, operado por INACAP. Conectamos directamente a la comunidad con emprendedores de toda la Patagonia austral.
+          </p>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <span class="px-2.5 py-1 bg-white/10 text-white/90 rounded font-mono text-[10px] font-bold">SERCOTEC</span>
+            <span class="px-2.5 py-1 bg-white/10 text-white/90 rounded font-mono text-[10px] font-bold">INACAP</span>
+            <span class="px-2.5 py-1 bg-white/10 text-white/90 rounded font-mono text-[10px] font-bold">MINISTERIO DE ECONOMÍA</span>
+          </div>
+        </div>
+
+        <!-- Columna 2: Ficha Oficial Centro Punta Arenas (6 cols) -->
+        <div class="md:col-span-6 space-y-3 md:pl-8 lg:pl-12 border-t md:border-t-0 md:border-l border-white/10 pt-6 md:pt-0">
+          <h3 class="font-poppins text-[15px] uppercase text-white tracking-wider font-bold">
+            Centro de Negocios Sercotec Punta Arenas
+          </h3>
+          <div class="space-y-2 text-[13px] text-white/80 font-manrope">
+            <p class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5" aria-hidden="true">location_on</span>
+              <span>C. Lautaro Navarro 305, 6212767 Punta Arenas, Magallanes y la Antártica Chilena</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-primary shrink-0" aria-hidden="true">call</span>
+              <span>+56 61 224 4570</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-emerald-400 shrink-0" aria-hidden="true">schedule</span>
+              <span>Lunes a Viernes 09:00 a 18:00 hrs</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior de Derechos -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-white/50 text-center sm:text-left">
+        <p>© 2026 Agencia PatagoniaCoach. Todos los derechos reservados.</p>
+        <p>Sitio de demostración de propuesta técnica activo hasta el 15 de noviembre de 2026.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- Script para Interacciones del Menú Móvil -->
+  <!-- Script para Interacción Menú Móvil -->
   <script>
-    const btnMobileNav = document.getElementById('btn-mobile-nav');
-    const mobileMenu = document.getElementById('mobile-menu');
+    document.addEventListener('DOMContentLoaded', () => {
+      const btnMobile = document.getElementById('btn-mobile-nav');
+      const mobileNav = document.getElementById('mobile-nav');
 
-    if (btnMobileNav && mobileMenu) {
-      btnMobileNav.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-
-      // Cerrar al pulsar un enlace
-      mobileMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
+      if (btnMobile && mobileNav) {
+        btnMobile.addEventListener('click', () => {
+          mobileNav.classList.toggle('hidden');
         });
-      });
-    }
+        
+        // Cerrar menú al hacer click en enlace
+        mobileNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileNav.classList.add('hidden');
+          });
+        });
+      }
+    });
   </script>
 
 </body>
